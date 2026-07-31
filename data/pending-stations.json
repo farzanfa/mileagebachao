@@ -7,12 +7,12 @@
   "city": "Kochi",
   "citySlug": "kochi",
   "state": "Kerala",
-  "pincode": "682021",
-  "lat": 9.967903,
-  "lng": 76.244438,
+  "pincode": "682029",
+  "lat": 9.936573,
+  "lng": 76.27255,
   "roCode": "400238",
   "address": "Kochi, Ernakulam",
-  "phone": null,
+  "phone": "+919496384061",
   "grades": [
    {
     "grade": "poWer 100",
@@ -33,7 +33,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by an official HPCL source"
+  "pendingReason": "grade not confirmed by an official HPCL source | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "hpcl-aluva-pm-louis-sons",
@@ -44,11 +44,11 @@
   "citySlug": "aluva",
   "state": "Kerala",
   "pincode": "683101",
-  "lat": 10.107768,
-  "lng": 76.356853,
+  "lat": 10.107811,
+  "lng": 76.359831,
   "roCode": "395395",
   "address": "Aluva, Ernakulam",
-  "phone": null,
+  "phone": "+919142527487",
   "grades": [
    {
     "grade": "poWer 100",
@@ -69,7 +69,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by an official HPCL source"
+  "pendingReason": "grade not confirmed by an official HPCL source | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "hpcl-kothamangalam-smart-fuels",
@@ -79,12 +79,12 @@
   "city": "Kothamangalam",
   "citySlug": "kothamangalam",
   "state": "Kerala",
-  "pincode": "686691",
-  "lat": 10.13328,
-  "lng": 76.736122,
+  "pincode": "686693",
+  "lat": 10.052387,
+  "lng": 76.707184,
   "roCode": "418535",
   "address": "Kothamangalam, Ernakulam",
-  "phone": null,
+  "phone": "+919895275723",
   "grades": [
    {
     "grade": "poWer 100",
@@ -105,7 +105,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by an official HPCL source"
+  "pendingReason": "grade not confirmed by an official HPCL source | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "hpcl-thrissur-unique-petroleum-chungam",
@@ -115,12 +115,12 @@
   "city": "Thrissur",
   "citySlug": "thrissur",
   "state": "Kerala",
-  "pincode": "680001",
-  "lat": 10.430271,
-  "lng": 76.279449,
+  "pincode": "683578",
+  "lat": 10.156951,
+  "lng": 76.326411,
   "roCode": "399880",
   "address": "Chungam, Thrissur",
-  "phone": null,
+  "phone": "+919447617900",
   "grades": [
    {
     "grade": "poWer 100",
@@ -141,7 +141,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by an official HPCL source"
+  "pendingReason": "grade not confirmed by an official HPCL source | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "bpcl-blr-cubbon-park-speed100",
@@ -993,7 +993,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-kochi-hijaz-kaloor",
@@ -1035,7 +1035,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-ekm-kuzhiparambil-karukutty",
@@ -1077,7 +1077,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-tvm-manakattil-attipra",
@@ -1119,7 +1119,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-tvm-ksm-kochuveli",
@@ -1161,7 +1161,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-calicut-calicut-petrols",
@@ -1203,7 +1203,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-kozhikode-pp-sons-karuvannur",
@@ -1245,7 +1245,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-kozhikode-mavoor-mahe",
@@ -1287,7 +1287,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-calicut-kokkallur-balussery",
@@ -1329,7 +1329,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-kannur-kc-petroleum-kodiyeri",
@@ -1371,7 +1371,7 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  },
  {
   "id": "iocl-kannur-kallikkandy-thrippangottur",
@@ -1413,6 +1413,6 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null,
-  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only)"
+  "pendingReason": "grade not confirmed by the current official XP100 list (announcement/candidate only) | exact coords + phone pre-fetched from locator page; needs grade confirmation only"
  }
 ]
