@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Find 100-octane, ethanol-free (E0) petrol stations in India.",
   "engines": {
-    "node": ">=20"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "next dev",

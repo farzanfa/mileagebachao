@@ -19,7 +19,7 @@
 # The builder stage below hard-fails with a clear message if the standalone output
 # is missing, so a misconfiguration surfaces immediately rather than at COPY time.
 
-ARG NODE_VERSION=20
+ARG NODE_VERSION=24
 
 ########################################
 # base — shared foundation
