@@ -11684,5 +11684,1541 @@
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
   "lastVerified": null
+ },
+ {
+  "id": "iocl-tvm-coco-anayara",
+  "slug": "coco-anayara-trivandrum",
+  "name": "IndianOil, COCO Anayara",
+  "brand": "IOCL",
+  "city": "Thiruvananthapuram",
+  "citySlug": "thiruvananthapuram",
+  "state": "Kerala",
+  "pincode": "695029",
+  "lat": 8.513067,
+  "lng": 76.900338,
+  "roCode": "276348",
+  "address": "TC 91\\/268\\/4, Anayara",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "locator.iocl.com (RO 276348, IndianOil COCO)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator (IndianOil COCO RO; XP100 availability not field-confirmed); coords approximate (locality centroid)"
+   },
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list confirmation (RO 353981)"
+   },
+   {
+    "source": "locator outlet page (indianoil-coco-anayara-petrol-pump-anayara-thiruvananthapura)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "hpcl-kalamassery-kumar-sales",
+  "slug": "kumar-sales-services-kalamassery",
+  "name": "HP Petrol Pump, Kumar Sales & Services, Kalamassery",
+  "brand": "HPCL",
+  "city": "Kalamassery",
+  "citySlug": "kalamassery",
+  "state": "Kerala",
+  "pincode": "683104",
+  "lat": 10.062211,
+  "lng": 76.323211,
+  "roCode": "393465",
+  "address": "Ground Floor, Kalamassery",
+  "phone": "9645087491",
+  "grades": [
+   {
+    "grade": "poWer 100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   },
+   {
+    "grade": "poWer 99",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "petrolpump.hpretail.in (RO 393465)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed); coords approximate (locality centroid)"
+   },
+   {
+    "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-28T00:00:00.000Z",
+    "method": "official product-page table (poWer 99)"
+   },
+   {
+    "source": "locator outlet page (hindustan-petroleum-corporation-limited-kumar-sales-and-serv)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-250179",
+  "slug": "sri-kali-highway-service-indianoil-sasaram",
+  "name": "IndianOil, Sri Kali Highway Service",
+  "brand": "IOCL",
+  "city": "Sasaram",
+  "citySlug": "sasaram",
+  "state": "Bihar",
+  "pincode": "821109",
+  "lat": 25.188917,
+  "lng": 83.700592,
+  "roCode": "250179",
+  "address": "Ground Floor, Shukulpipra, Kaimur, Akorhi",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-sri-kali-highway-service-petrol-pump-akorhi-mohani)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-159850",
+  "slug": "ashish-petroleum-agency-indianoil-agartala",
+  "name": "IndianOil, Ashish Petroleum Agency",
+  "brand": "IOCL",
+  "city": "Agartala",
+  "citySlug": "agartala",
+  "state": "Tripura",
+  "pincode": "799005",
+  "lat": 23.845608,
+  "lng": 91.28252,
+  "roCode": "159850",
+  "address": "Ground Floor, Agartala, Abhoynagar",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-ashish-petroleum-agency-petrol-pump-abhoynagar-wes)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-159995",
+  "slug": "pannalal-rameswar-co-indianoil-dibrugarh",
+  "name": "IndianOil, Pannalal Rameswar & Co",
+  "brand": "IOCL",
+  "city": "Dibrugarh",
+  "citySlug": "dibrugarh",
+  "state": "Assam",
+  "pincode": "785670",
+  "lat": 27.187458,
+  "lng": 94.914969,
+  "roCode": "159995",
+  "address": "Ground Floor, Moranhat",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-pannalal-rameswar-co-petrol-pump-moranhat-sivasaga)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-368818",
+  "slug": "mebo-automobiles-adhoc-indianoil-pasighat",
+  "name": "IndianOil, Mebo Automobiles (adhoc)",
+  "brand": "IOCL",
+  "city": "Pasighat",
+  "citySlug": "pasighat",
+  "state": "Arunachal Pradesh",
+  "pincode": "791104",
+  "lat": 28.1636,
+  "lng": 95.4072,
+  "roCode": "368818",
+  "address": "Ground Floor, Mebo, Ayeng",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-mebo-automobiles-petrol-pump-ayeng-east-siang-2391)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-223736",
+  "slug": "sharana-maganur-basappa-f-s-indianoil-davanagere",
+  "name": "IndianOil, ** Sharana Maganur Basappa F/s",
+  "brand": "IOCL",
+  "city": "Davanagere",
+  "citySlug": "davanagere",
+  "state": "Karnataka",
+  "pincode": "577005",
+  "lat": 14.441534,
+  "lng": 75.922312,
+  "roCode": "223736",
+  "address": "L No 207, Hadadi Road, Nituvalli",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-sharana-maganur-basappa-filling-station-petrol-pum)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-118159",
+  "slug": "sri-sai-petroleum-indianoil-hosapete",
+  "name": "IndianOil, Sri Sai Petroleum",
+  "brand": "IOCL",
+  "city": "Hosapete",
+  "citySlug": "hosapete",
+  "state": "Karnataka",
+  "pincode": "571234",
+  "lat": 12.462003,
+  "lng": 75.963906,
+  "roCode": "118159",
+  "address": "Survey No 64\\/1, Mulusoge, Kushalnagar, Somwarpet, Badagarakeri",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-sri-shirdi-sai-traders-petrol-pump-badagarakeri-ku)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-117897",
+  "slug": "karavali-service-station-indianoil-mangaluru",
+  "name": "IndianOil, Karavali Service Station",
+  "brand": "IOCL",
+  "city": "Mangaluru",
+  "citySlug": "mangaluru",
+  "state": "Karnataka",
+  "pincode": "574313",
+  "lat": 12.62121,
+  "lng": 75.25334,
+  "roCode": "117897",
+  "address": "Ground Floor, Puttur, Ishwaramangala",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-susheel-sales-petrol-pump-ishwaramangala-dakshina-)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-365193",
+  "slug": "sandeep-r-coco-bidadi-indianoil-mysuru",
+  "name": "IndianOil, Sandeep R Coco Bidadi",
+  "brand": "IOCL",
+  "city": "Mysuru",
+  "citySlug": "mysuru",
+  "state": "Karnataka",
+  "pincode": "562109",
+  "lat": 12.816131,
+  "lng": 77.408462,
+  "roCode": "365193",
+  "address": "53\\/A, Bangalore Mysore Rd, Ramanagara, Bidadi, Bhimanahalli, Kanchugaranahalli",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-sandeep-r-coco-bidadi-petrol-pump-kanchugaranahall)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-344980",
+  "slug": "coco-kamothe-indianoil-alibag-raigad",
+  "name": "IndianOil, Coco Kamothe",
+  "brand": "IOCL",
+  "city": "Alibag (Raigad)",
+  "citySlug": "alibag-raigad",
+  "state": "Maharashtra",
+  "pincode": "410210",
+  "lat": 19.012583,
+  "lng": 73.088403,
+  "roCode": "344980",
+  "address": "Plot No 4, Modern Port, Phase 2, Kamothe, Kharghar, Sector 18",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-petrol-pump-panvel-coco-kamothe-petrol-pump-khargh)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-223910",
+  "slug": "prakash-expressway-filling-station-indianoil-panvel-raigad",
+  "name": "IndianOil, Prakash Expressway Filling Station",
+  "brand": "IOCL",
+  "city": "Panvel (Raigad)",
+  "citySlug": "panvel-raigad",
+  "state": "Maharashtra",
+  "pincode": "410206",
+  "lat": 18.790611,
+  "lng": 73.299609,
+  "roCode": "223910",
+  "address": "Ground Floor, Mumbai Pune Expressway, Panvel, Sajgaon, Khalapur, Lodhivali",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-petrol-pump-lodhivali-prakash-expressway-filling-s)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-358216",
+  "slug": "coco-sarsan-adh-r-shivaji-energy-s-indianoil-panvel-raigad",
+  "name": "IndianOil, Coco Sarsan (adh-r Shivaji Energy S",
+  "brand": "IOCL",
+  "city": "Panvel (Raigad)",
+  "citySlug": "panvel-raigad",
+  "state": "Maharashtra",
+  "pincode": "410203",
+  "lat": 18.793623,
+  "lng": 73.295787,
+  "roCode": "358216",
+  "address": "Ground Floor, Mumbai Pune Expressway, Sarsan",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-petrol-pump-sarsan-coco-sarsan-adh-r-shivaji-energ)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-158890",
+  "slug": "coco-rbi-square-indianoil-nagpur",
+  "name": "IndianOil, Coco-rbi Square",
+  "brand": "IOCL",
+  "city": "Nagpur",
+  "citySlug": "nagpur",
+  "state": "Maharashtra",
+  "pincode": "440012",
+  "lat": 21.138597,
+  "lng": 79.079313,
+  "roCode": "158890",
+  "address": "Ground Floor, Panchsheel Square",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-pardhey-co-petrol-pump-panchsheel-square-nagpur-18)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-369465",
+  "slug": "coco-56-sukhmeet-singh-service-prov-indianoil-chandigarh",
+  "name": "IndianOil, Coco 56 Sukhmeet Singh Service Prov",
+  "brand": "IOCL",
+  "city": "Chandigarh",
+  "citySlug": "chandigarh",
+  "state": "Chandigarh",
+  "pincode": "160002",
+  "lat": 30.692696,
+  "lng": 76.802197,
+  "roCode": "369465",
+  "address": "Phase 1, Industrial Area",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-citco-petrol-cng-station-petrol-pump-industrial-ar)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-102988",
+  "slug": "sukhna-automobiles-indianoil-chandigarh",
+  "name": "IndianOil, Sukhna Automobiles",
+  "brand": "IOCL",
+  "city": "Chandigarh",
+  "citySlug": "chandigarh",
+  "state": "Chandigarh",
+  "pincode": "160022",
+  "lat": 30.736792,
+  "lng": 76.776122,
+  "roCode": "102988",
+  "address": "Ground Floor, Sector 22",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-chandigarh-automobiles-petrol-pump-sector-22-chand)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-321918",
+  "slug": "sambaturi-venkat-ramana-reddy-indianoil-hyderabad",
+  "name": "IndianOil, Sambaturi Venkat Ramana Reddy",
+  "brand": "IOCL",
+  "city": "Hyderabad",
+  "citySlug": "hyderabad",
+  "state": "Telangana",
+  "pincode": "507115",
+  "lat": 17.615115,
+  "lng": 80.704126,
+  "roCode": "321918",
+  "address": "Ground Floor, Palvancha",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-venkata-ramana-filling-station-petrol-pump-palvanc)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-188315",
+  "slug": "h-laxmikantha-reddy-f-s-adoni-indianoil-kurnool",
+  "name": "IndianOil, H. Laxmikantha Reddy F/s Adoni",
+  "brand": "IOCL",
+  "city": "Kurnool",
+  "citySlug": "kurnool",
+  "state": "Andhra Pradesh",
+  "pincode": "518301",
+  "lat": 15.616743,
+  "lng": 77.2691,
+  "roCode": "188315",
+  "address": "Survey No 352A, Door No 17\\/117, Allur Road, Kallubavi",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-h-laxmikantha-reddy-fs-adoni-petrol-pump-kallubavi)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-127492",
+  "slug": "kdlomacs-ndmnr-indianoil-vijayawada",
+  "name": "IndianOil, Kdlomacs (ndmnr)",
+  "brand": "IOCL",
+  "city": "Vijayawada",
+  "citySlug": "vijayawada",
+  "state": "Andhra Pradesh",
+  "pincode": "521104",
+  "lat": 16.51113,
+  "lng": 80.732238,
+  "roCode": "127492",
+  "address": "Lock No T1\\/50\\/1\\/2\\/3\\/4, D No 18, Gudavalli, Nidamanuru",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-swagat-kdlomacs-ndmnr-petrol-pump-nidamanuru-krish)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-341694",
+  "slug": "coco-kailasagiri-sp-behara-jayakish-indianoil-visakhapatnam",
+  "name": "IndianOil, Coco Kailasagiri-sp Behara Jayakish",
+  "brand": "IOCL",
+  "city": "Visakhapatnam",
+  "citySlug": "visakhapatnam",
+  "state": "Andhra Pradesh",
+  "pincode": "530001",
+  "lat": 17.743019,
+  "lng": 83.344105,
+  "roCode": "341694",
+  "address": "MNVP Colony, Beach Road, Kailasagiri",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-coco-kailashagiri-sp-m-kiran-kumar-petrol-pump-kai)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-188206",
+  "slug": "sri-raghavendra-agencies-indianoil-chengalpattu",
+  "name": "IndianOil, Sri Raghavendra Agencies",
+  "brand": "IOCL",
+  "city": "Chengalpattu",
+  "citySlug": "chengalpattu",
+  "state": "Tamil Nadu",
+  "pincode": "603103",
+  "lat": 12.783521,
+  "lng": 80.219124,
+  "roCode": "188206",
+  "address": "Lock No 1037, Kelambakkam, Old Mahabalipuram Rd, Navalur",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-sri-raghavendra-agencies-petrol-pump-navalur-kanch)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-174453",
+  "slug": "shri-padmavathi-agencies-indianoil-chennai",
+  "name": "IndianOil, **shri Padmavathi Agencies",
+  "brand": "IOCL",
+  "city": "Chennai",
+  "citySlug": "chennai",
+  "state": "Tamil Nadu",
+  "pincode": "600115",
+  "lat": 12.909636,
+  "lng": 80.250283,
+  "roCode": "174453",
+  "address": "Lock No 1111\\/122, Tin 33690928002, SH 49, EC Road, Injambakkam",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-shri-padmavathi-agencies-cng-pump-injambakkam-kanc)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-133597",
+  "slug": "kavithaa-agency-indianoil-chennai-tambaram",
+  "name": "IndianOil, Kavithaa Agency",
+  "brand": "IOCL",
+  "city": "Chennai (Tambaram)",
+  "citySlug": "chennai-tambaram",
+  "state": "Tamil Nadu",
+  "pincode": "600073",
+  "lat": 12.922899,
+  "lng": 80.150879,
+  "roCode": "133597",
+  "address": "No 58A, Vellacherry, Selaiyur Main Road, East Tambaram",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-sri-vigneswary-agency-cng-pump-east-tambaram-chenn)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-134072",
+  "slug": "sakthi-fuel-agencies-indianoil-coimbatore",
+  "name": "IndianOil, Sakthi Fuel Agencies",
+  "brand": "IOCL",
+  "city": "Coimbatore",
+  "citySlug": "coimbatore",
+  "state": "Tamil Nadu",
+  "pincode": "626106",
+  "lat": 9.689389,
+  "lng": 78.098106,
+  "roCode": "134072",
+  "address": "No 13S, Kallupatti, Mudukkankulam",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-sri-sakthivel-agencies-petrol-pump-mudukkankulam-v)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-172310",
+  "slug": "jai-durga-filling-station-indianoil-prayagraj",
+  "name": "IndianOil, Jai Durga Filling Station",
+  "brand": "IOCL",
+  "city": "Prayagraj",
+  "citySlug": "prayagraj",
+  "state": "Uttar Pradesh",
+  "pincode": "271821",
+  "lat": 27.413298,
+  "lng": 81.89422,
+  "roCode": "172310",
+  "address": "Ground Floor, Tikona Bisheshwarganj Rd, Payagpur, Lakkharampur",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-jai-maa-durga-ksk-petrol-pump-lakkharampur-bahraic)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-358864",
+  "slug": "adhoc-samarth-filling-centre-indianoil-lucknow",
+  "name": "IndianOil, Adhoc Samarth Filling Centre",
+  "brand": "IOCL",
+  "city": "Lucknow",
+  "citySlug": "lucknow",
+  "state": "Uttar Pradesh",
+  "pincode": "226010",
+  "lat": 26.872132,
+  "lng": 80.996478,
+  "roCode": "358864",
+  "address": "Polytechnic Chauraha, Gomti Nagar",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-samarth-filling-centre-petrol-pump-gomti-nagar-luc)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-156086",
+  "slug": "shanti-petro-lubes-indianoil-rae-bareli",
+  "name": "IndianOil, Shanti Petro Lubes",
+  "brand": "IOCL",
+  "city": "Rae Bareli",
+  "citySlug": "rae-bareli",
+  "state": "Uttar Pradesh",
+  "pincode": "229001",
+  "lat": 26.29008,
+  "lng": 81.204213,
+  "roCode": "156086",
+  "address": "Ground Floor, NH 24B, Lucknow Road, Gangaganj, Deaur",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-shanti-petro-lubes-petrol-pump-deaur-raebareli-218)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-119941",
+  "slug": "prince-service-station-i-504-indianoil-new-town-kolkata",
+  "name": "IndianOil, Prince Service Station((i-504)",
+  "brand": "IOCL",
+  "city": "New Town (Kolkata)",
+  "citySlug": "new-town-kolkata",
+  "state": "West Bengal",
+  "pincode": "700157",
+  "lat": 22.622966,
+  "lng": 88.443244,
+  "roCode": "119941",
+  "address": "Rajarhat Gopalpur, Atghara, Baguiati, Sukanta Pally",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-new-town-filling-station-petrol-pump-sukanta-pally)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-138059",
+  "slug": "mira-service-stat-12018-12020-indianoil-new-town-kolkata",
+  "name": "IndianOil, Mira Service Stat.(12018/12020)",
+  "brand": "IOCL",
+  "city": "New Town (Kolkata)",
+  "citySlug": "new-town-kolkata",
+  "state": "West Bengal",
+  "pincode": "700156",
+  "lat": 22.617771,
+  "lng": 88.370434,
+  "roCode": "138059",
+  "address": "Plot No AA,IIIC\\/1, Kolkata",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-adhoc-mira-service-station-coco-new-petrol-pump-ko)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-266450",
+  "slug": "champian-hub-indianoil-new-town-kolkata",
+  "name": "IndianOil, Champian Hub",
+  "brand": "IOCL",
+  "city": "New Town (Kolkata)",
+  "citySlug": "new-town-kolkata",
+  "state": "West Bengal",
+  "pincode": "700156",
+  "lat": 22.577639,
+  "lng": 88.462067,
+  "roCode": "266450",
+  "address": "Plot No CF\\/19, Premises No 05240, New Town",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-champian-hub-petrol-pump-new-town-kolkata-183373)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "iocl-138588",
+  "slug": "belvedere-service-station-i-415-indianoil-kolkata",
+  "name": "IndianOil, Belvedere Service Station (i-415)",
+  "brand": "IOCL",
+  "city": "Kolkata",
+  "citySlug": "kolkata",
+  "state": "West Bengal",
+  "pincode": "700027",
+  "lat": 22.534839,
+  "lng": 88.333838,
+  "roCode": "138588",
+  "address": "No 34\\/1, Belvedere Road, Alipore",
+  "phone": "18002333555",
+  "grades": [
+   {
+    "grade": "XP100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-list (IOCL XP100 RO list)"
+   },
+   {
+    "source": "locator outlet page (indianoil-belvedere-service-station-petrol-pump-alipore-kolk)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "hpcl-maco-co-op-society-ltd-mangaluru",
+  "slug": "maco-co-op-society-ltd-hp-mangaluru",
+  "name": "HP, Maco Co-op Society Ltd.",
+  "brand": "HPCL",
+  "city": "Mangaluru",
+  "citySlug": "mangaluru",
+  "state": "Karnataka",
+  "pincode": "575002",
+  "lat": 12.873141,
+  "lng": 74.851671,
+  "roCode": "",
+  "address": "Ground Floor, Balmatta",
+  "phone": "9449662630",
+  "grades": [
+   {
+    "grade": "poWer 99",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-28T00:00:00.000Z",
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
+   },
+   {
+    "source": "locator outlet page (hindustan-petroleum-corporation-limited-m-s-maco-cooperative)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "hpcl-bharat-agency-alibag",
+  "slug": "bharat-agency-hp-alibag",
+  "name": "HP, Bharat Agency",
+  "brand": "HPCL",
+  "city": "Alibag",
+  "citySlug": "alibag",
+  "state": "Maharashtra",
+  "pincode": "400705",
+  "lat": 18.652371,
+  "lng": 72.881191,
+  "roCode": "",
+  "address": "Ground Floor, Chendhare, Alibag Pen Road, Alibag",
+  "phone": "9373755555",
+  "grades": [
+   {
+    "grade": "poWer 99",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-28T00:00:00.000Z",
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
+   },
+   {
+    "source": "locator outlet page (hindustan-petroleum-corporation-limited-m-s-bharat-agency-al)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "hpcl-parkar-brothers-mumbai",
+  "slug": "parkar-brothers-hp-mumbai",
+  "name": "HP, Parkar Brothers",
+  "brand": "HPCL",
+  "city": "Mumbai",
+  "citySlug": "mumbai",
+  "state": "Maharashtra",
+  "pincode": "400053",
+  "lat": 19.146012,
+  "lng": 72.830019,
+  "roCode": "",
+  "address": "Tarapore Tower, Adarsh Nagar, Andheri West",
+  "phone": "022-42018222/9892590729",
+  "grades": [
+   {
+    "grade": "poWer 99",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-28T00:00:00.000Z",
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
+   },
+   {
+    "source": "locator outlet page (hindustan-petroleum-corporation-limited-parkar-bros-petrol-p)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "hpcl-hp-auto-care-centre-osmania-hyderabad",
+  "slug": "hp-auto-care-centre-osmania-hp-hyderabad",
+  "name": "HP, Hp Auto Care Centre Osmania",
+  "brand": "HPCL",
+  "city": "Hyderabad",
+  "citySlug": "hyderabad",
+  "state": "Telangana",
+  "pincode": "500019",
+  "lat": 17.445751,
+  "lng": 78.277982,
+  "roCode": "",
+  "address": "Ground Floor, Tellapur, Nagar Colony, Osman Nagar",
+  "phone": "8008433389",
+  "grades": [
+   {
+    "grade": "poWer 99",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-28T00:00:00.000Z",
+    "method": "official product-page table (poWer 99)"
+   },
+   {
+    "source": "locator outlet page (hindustan-petroleum-corporation-limited-nikhil-reddy-petro-p)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "hpcl-batra-brothers-co-delhi",
+  "slug": "batra-brothers-co-hp-delhi",
+  "name": "HP, Batra Brothers & Co.",
+  "brand": "HPCL",
+  "city": "Delhi",
+  "citySlug": "delhi",
+  "state": "Delhi",
+  "pincode": "110040",
+  "lat": 28.854463,
+  "lng": 77.124827,
+  "roCode": "",
+  "address": "No 1\\/26\\/2, Singhu Border, GT Karnal Road",
+  "phone": "9810424242",
+  "grades": [
+   {
+    "grade": "poWer 100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-28T00:00:00.000Z",
+    "method": "official product-page table (poWer 100)"
+   },
+   {
+    "source": "locator outlet page (hindustan-petroleum-corporation-limited-batra-oil-company-pe)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
+ },
+ {
+  "id": "hpcl-petro-india-filling-station-panchkula",
+  "slug": "petro-india-filling-station-hp-panchkula",
+  "name": "HP, Petro India Filling Station",
+  "brand": "HPCL",
+  "city": "Panchkula",
+  "citySlug": "panchkula",
+  "state": "Haryana",
+  "pincode": "134116",
+  "lat": 30.668071,
+  "lng": 76.858398,
+  "roCode": "",
+  "address": "Ground Floor, Main Market, Sector 20",
+  "phone": "9898098980",
+  "grades": [
+   {
+    "grade": "poWer 100",
+    "availability": "unknown",
+    "lastVerifiedDays": null,
+    "checkins": 0,
+    "status": "official-listed"
+   }
+  ],
+  "price": null,
+  "sources": [
+   {
+    "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-28T00:00:00.000Z",
+    "method": "official product-page table (poWer 100)"
+   },
+   {
+    "source": "locator outlet page (hindustan-petroleum-corporation-limited-m-s-petro-india-fill)",
+    "license": "facts:EBC-v-Modak",
+    "retrievedAt": "2026-07-31T00:00:00.000Z",
+    "method": "official-locator page; exact pump coordinates (state-wide rematch)"
+   }
+  ],
+  "firstSeen": "2026-07-31T00:00:00.000Z",
+  "lastVerified": null
  }
 ]

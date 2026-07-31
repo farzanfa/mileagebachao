@@ -1,8 +1,8 @@
 # MileageBachao — Data Coverage & Provenance
 
-_As of 2026-07-31. **286 pumps on the map, across 27 states/UTs — every single pin has (a) its
+_As of 2026-07-31. **323 pumps on the map, across 29 states/UTs — every single pin has (a) its
 fuel grade confirmed by an official oil-company source AND (b) exact coordinates from that
-company's own locator page or API.** No assumed grades, no approximate pins. A further 97
+company's own locator page or API.** No assumed grades, no approximate pins. A further 60
 outlets sit in `data/pending-stations.json` (never rendered) awaiting exact verification._
 
 ## The strict rule (why you can trust a pin)
@@ -20,13 +20,13 @@ pending, not on the map.
 ## On-map totals
 
 - **286 pumps · 27 states/UTs**
-- By grade: **XP100 155 · Speed 100 92 · Speed 97 (legacy) 17 · poWer 99 13 · poWer 100 11**
+- By grade: **XP100 185 · Speed 100 92 · Speed 97 (legacy) 17 · poWer 99 18 · poWer 100 14**
 - Top states: Delhi 40 · UP 33 · Karnataka 29 · Rajasthan 27 · Maharashtra 23 · Gujarat 22 ·
-  Haryana 14 · **Kerala 12** · Tamil Nadu 12
+  Haryana 14 · **Kerala 14** · Tamil Nadu 12
 - All rows ship availability **"unknown" / Unverified** — a listing is not a same-day stock
   guarantee; community check-ins add freshness.
 
-## Kerala (12 exact pumps)
+## Kerala (14 exact pumps)
 
 - **XP100 (7, IOCL official list + locator GPS):** COCO Vytilla (Kochi), Kerala Transport Co
   (Kozhikode), Madhavam Fuels + Swagat Pongam (Thrissur), Lakshmi Trading + Lakshmi Sales &
