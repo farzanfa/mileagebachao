@@ -6501,7 +6501,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99)"
    },
    {
     "source": "petrolpump.hpretail.in outlet page",
@@ -6624,7 +6624,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99)"
    },
    {
     "source": "petrolpump.hpretail.in outlet page",
@@ -6788,7 +6788,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99)"
    },
    {
     "source": "petrolpump.hpretail.in outlet page",
@@ -6918,7 +6918,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99)"
    },
    {
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
@@ -7006,7 +7006,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100)"
    },
    {
     "source": "petrolpump.hpretail.in outlet page",
@@ -7129,7 +7129,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100)"
    },
    {
     "source": "petrolpump.hpretail.in outlet page",
@@ -7211,7 +7211,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100)"
    },
    {
     "source": "petrolpump.hpretail.in outlet page",
@@ -11714,7 +11714,7 @@
     "source": "locator.iocl.com (RO 276348, IndianOil COCO)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-locator (IndianOil COCO RO; XP100 availability not field-confirmed); coords approximate (locality centroid)"
+    "method": "official-locator (IndianOil COCO RO; XP100 availability not field-confirmed)"
    },
    {
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
@@ -11768,7 +11768,7 @@
     "source": "petrolpump.hpretail.in (RO 393465)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed); coords approximate (locality centroid)"
+    "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed)"
    },
    {
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
