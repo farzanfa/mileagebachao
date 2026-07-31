@@ -19,7 +19,7 @@ pending, not on the map.
 
 ## On-map totals
 
-- **286 pumps · 27 states/UTs**
+- **323 pumps · 29 states/UTs**
 - By grade: **XP100 185 · Speed 100 92 · Speed 97 (legacy) 17 · poWer 99 18 · poWer 100 14**
 - Top states: Delhi 40 · UP 33 · Karnataka 29 · Rajasthan 27 · Maharashtra 23 · Gujarat 22 ·
   Haryana 14 · **Kerala 14** · Tamil Nadu 12
@@ -28,13 +28,14 @@ pending, not on the map.
 
 ## Kerala (14 exact pumps)
 
-- **XP100 (7, IOCL official list + locator GPS):** COCO Vytilla (Kochi), Kerala Transport Co
+- **XP100 (8, IOCL official list + locator GPS):** COCO Vytilla (Kochi), Kerala Transport Co
   (Kozhikode), Madhavam Fuels + Swagat Pongam (Thrissur), Lakshmi Trading + Lakshmi Sales &
-  Services (Kozhikode), COCO Pallipuram (Thiruvananthapuram).
+  Services (Kozhikode), COCO Pallipuram + COCO Anayara (Thiruvananthapuram).
+- **poWer 99 (1, HPCL official table + locator GPS):** Kumar Sales & Services (Kalamassery).
 - **Speed 100 (5, BPCL API with GPS + live ₹169.00 price):** BP Ernakulam Marine Drive (Kochi),
   BP Thalappara NH-17 (Malappuram), Narayanan & Co + M Kutty Hassan Kutty & Co + KMR Petroleum
   (Kozhikode).
-- In pending: Kanhangad/Triveni (Kasaragod) and COCO Anayara (TVM) — official XP100 outlets whose
+- In pending: Kanhangad/Triveni (Kasaragod) — an official XP100 outlet whose
   exact locator pages didn't match yet; plus all former locator-search candidates (grade unproven).
 
 ## Pending (97, hidden from the map)
