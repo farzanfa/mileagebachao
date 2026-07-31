@@ -140,7 +140,7 @@ async function main(): Promise<void> {
             (public_id, slug, brand_id, name, brand_ro_code, address, pincode, city_id, state_id,
              location, location_accuracy_m, status, phone, primary_source_id, created_at)
           VALUES
-            (${s.id}, ${s.slug}, ${bId}, ${s.name}, ${s.roCode}, ${s.address}, ${s.pincode},
+            (${s.id}, ${s.slug}, ${bId}, ${s.name}, ${s.roCode || null}, ${s.address}, ${s.pincode},
              ${cityId}, ${stId},
              ST_SetSRID(ST_MakePoint(${s.lng}, ${s.lat}), 4326)::geography, 100,
              'active'::app.station_status, ${s.phone}, ${primarySourceId}, ${s.firstSeen})

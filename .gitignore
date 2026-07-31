@@ -50,3 +50,6 @@ venv/
 
 # typescript build info
 *.tsbuildinfo
+.vercel
+.env*
+.env.vercel*
