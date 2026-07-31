@@ -1,0 +1,7 @@
+[
+  { "name": "XP100", "brand": "IOCL", "ron": 100, "e0": true, "legacy": false, "full": "IndianOil XP100" },
+  { "name": "poWer 100", "brand": "HPCL", "ron": 100, "e0": true, "legacy": false, "full": "HPCL poWer 100" },
+  { "name": "Speed 100", "brand": "BPCL", "ron": 100, "e0": true, "legacy": false, "full": "BPCL Speed 100" },
+  { "name": "poWer 99", "brand": "HPCL", "ron": 99, "e0": null, "legacy": true, "full": "HPCL poWer 99 (legacy)" },
+  { "name": "Speed 97", "brand": "BPCL", "ron": 97, "e0": false, "legacy": true, "full": "BPCL Speed 97 (legacy, E20)" }
+]

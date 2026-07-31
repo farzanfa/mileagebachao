@@ -1,0 +1,5 @@
+[
+  { "id": "IOCL", "name": "IndianOil", "colorVar": "--brand-iocl" },
+  { "id": "HPCL", "name": "HPCL", "colorVar": "--brand-hpcl" },
+  { "id": "BPCL", "name": "BPCL", "colorVar": "--brand-bpcl" }
+]

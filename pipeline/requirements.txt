@@ -1,0 +1,23 @@
+# OctaneFinder data pipeline — Python 3.12
+#
+# The pipeline is intentionally dependency-light. Every module is import-safe and
+# runnable on the standard library alone: `requests`, `psycopg` and `boto3` are
+# optional and guarded (the code falls back to urllib, prints a clear message, or
+# writes to a local directory when they are absent). Install these for the full
+# production experience.
+
+# Polite HTTP client (connection pooling, sane defaults). Optional: common.py
+# falls back to urllib.request when this is not installed.
+requests==2.32.3
+
+# PostgreSQL driver for load.py. Optional: load.py --dry-run needs no driver;
+# an actual load raises a clear DbUnavailable error if this is missing.
+# The [binary] extra ships prebuilt libpq wheels (no local build toolchain).
+psycopg[binary]==3.2.3
+
+# S3 / DigitalOcean Spaces client for snapshotting to object storage. Optional:
+# common.py falls back to a local snapshot directory when this is not installed.
+boto3==1.35.76
+
+# --- Dev / test only (uncomment to run the pipeline test-suite) ---
+# pytest==8.3.4

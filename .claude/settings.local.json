@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(curl -s --max-time 240 'https://overpass-api.de/api/interpreter' --data-urlencode 'data=[out:json][timeout:200];area[\"ISO3166-1\"=\"IN\"][admin_level=2]->.a;\\(node[\"amenity\"=\"fuel\"]\\(area.a\\);way[\"amenity\"=\"fuel\"]\\(area.a\\);relation[\"amenity\"=\"fuel\"]\\(area.a\\);\\);out count;')",
+      "WebFetch(domain:www.cartoq.com)"
+    ]
+  }
+}
