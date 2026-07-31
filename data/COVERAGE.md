@@ -1,8 +1,8 @@
 # MileageBachao — Data Coverage & Provenance
 
-_As of 2026-07-31. **323 pumps on the map, across 29 states/UTs — every single pin has (a) its
+_As of 2026-07-31. **345 pumps on the map, across 29 states/UTs — every single pin has (a) its
 fuel grade confirmed by an official oil-company source AND (b) exact coordinates from that
-company's own locator page or API.** No assumed grades, no approximate pins. A further 60
+company's own locator page or API.** No assumed grades, no approximate pins. A further 37
 outlets sit in `data/pending-stations.json` (never rendered) awaiting exact verification._
 
 ## The strict rule (why you can trust a pin)
@@ -19,14 +19,14 @@ pending, not on the map.
 
 ## On-map totals
 
-- **323 pumps · 29 states/UTs**
-- By grade: **XP100 185 · Speed 100 92 · Speed 97 (legacy) 17 · poWer 99 18 · poWer 100 14**
+- **345 pumps · 29 states/UTs**
+- By grade: **XP100 197 · Speed 100 92 · Speed 97 (legacy) 17 · poWer 99 22 · poWer 100 20**
 - Top states: Delhi 40 · UP 33 · Karnataka 29 · Rajasthan 27 · Maharashtra 23 · Gujarat 22 ·
-  Haryana 14 · **Kerala 14** · Tamil Nadu 12
+  Haryana 14 · **Kerala 15** · Tamil Nadu 12
 - All rows ship availability **"unknown" / Unverified** — a listing is not a same-day stock
   guarantee; community check-ins add freshness.
 
-## Kerala (14 exact pumps)
+## Kerala (15 exact pumps)
 
 - **XP100 (8, IOCL official list + locator GPS):** COCO Vytilla (Kochi), Kerala Transport Co
   (Kozhikode), Madhavam Fuels + Swagat Pongam (Thrissur), Lakshmi Trading + Lakshmi Sales &
@@ -35,7 +35,8 @@ pending, not on the map.
 - **Speed 100 (5, BPCL API with GPS + live ₹169.00 price):** BP Ernakulam Marine Drive (Kochi),
   BP Thalappara NH-17 (Malappuram), Narayanan & Co + M Kutty Hassan Kutty & Co + KMR Petroleum
   (Kozhikode).
-- In pending: Kanhangad/Triveni (Kasaragod) — an official XP100 outlet whose
+- **XP100 also:** Triveni Fuels (Chempanthotty, Kannur — the official 'Kanhangad RSA' outlet, hand-verified).
+- In pending: remaining outlets whose
   exact locator pages didn't match yet; plus all former locator-search candidates (grade unproven).
 
 ## Pending (97, hidden from the map)
