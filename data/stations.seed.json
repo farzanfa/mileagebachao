@@ -105,7 +105,7 @@
   "lat": 12.975124,
   "lng": 77.6016,
   "roCode": "118227",
-  "address": "No 37\\/2, St Marks Road",
+  "address": "No 37/2, St Marks Road",
   "phone": "18002333555",
   "grades": [
    {
@@ -785,7 +785,7 @@
   "lat": 28.504267,
   "lng": 77.171683,
   "roCode": "186866",
-  "address": "Khasra No 76\\/26, Mehrauli Gurgaon Road, Andheria Mor",
+  "address": "Khasra No 76/26, Mehrauli Gurgaon Road, Andheria Mor",
   "phone": "18002333555",
   "grades": [
    {
@@ -1154,7 +1154,7 @@
   "lat": 28.357078,
   "lng": 77.315297,
   "roCode": "186877",
-  "address": "No 20\\/6, Mathura Road",
+  "address": "No 20/6, Mathura Road",
   "phone": "18002333555",
   "grades": [
    {
@@ -1195,7 +1195,7 @@
   "lat": 28.426006,
   "lng": 77.309883,
   "roCode": "186884",
-  "address": "No 15\\/7, Mathura Road",
+  "address": "No 15/7, Mathura Road",
   "phone": "18002333555",
   "grades": [
    {
@@ -2138,7 +2138,7 @@
   "lat": 22.295077,
   "lng": 73.157546,
   "roCode": "364332",
-  "address": "Survey No113\\/P, Block No 109, Vasna saiyad Road, Vasna saiyad Road",
+  "address": "Survey No113/P, Block No 109, Vasna saiyad Road, Vasna saiyad Road",
   "phone": "18002333555",
   "grades": [
    {
@@ -2671,7 +2671,7 @@
   "lat": 12.860155,
   "lng": 77.589945,
   "roCode": "295999",
-  "address": "No 23\\/1, Gottigere, Kalena Agrahara",
+  "address": "No 23/1, Gottigere, Kalena Agrahara",
   "phone": "18002333555",
   "grades": [
    {
@@ -2835,7 +2835,7 @@
   "lat": 15.105567,
   "lng": 76.898421,
   "roCode": "329828",
-  "address": "Survey No 24A\\/3, Mundragi",
+  "address": "Survey No 24A/3, Mundragi",
   "phone": "18002333555",
   "grades": [
    {
@@ -2917,7 +2917,7 @@
   "lat": 12.353654,
   "lng": 76.617142,
   "roCode": "197927",
-  "address": "No 440\\/A, Outer Ring, Kasaba Hobli, Hebbal Indl Area, Hebbal",
+  "address": "No 440/A, Outer Ring, Kasaba Hobli, Hebbal Indl Area, Hebbal",
   "phone": "18002333555",
   "grades": [
    {
@@ -3153,8 +3153,8 @@
  },
  {
   "id": "iocl-353778",
-  "slug": "dr-aswathy-g-sasikumar-coco-palli-indianoil-thiruvananthapuram",
-  "name": "IndianOil, Dr. Aswathy G Sasikumar (coco Palli",
+  "slug": "coco-pallichal-indianoil-thiruvananthapuram",
+  "name": "IndianOil COCO Pallichal (Dr. Aswathy G Sasikumar)",
   "brand": "IOCL",
   "city": "Thiruvananthapuram",
   "citySlug": "thiruvananthapuram",
@@ -3163,7 +3163,7 @@
   "lat": 8.43621,
   "lng": 77.02488,
   "roCode": "353778",
-  "address": "Survey No 170\\/10 10\\/1 & 10\\/2, Neyyattinkara, Pallichal",
+  "address": "Survey No 170/10 10/1 & 10/2, Neyyattinkara, Pallichal",
   "phone": "18002333555",
   "grades": [
    {
@@ -3204,7 +3204,7 @@
   "lat": 23.182436,
   "lng": 77.432748,
   "roCode": "335532",
-  "address": "S No 80\\/2\\/1\\/1\\/2, Extol College, Shahpura Thana",
+  "address": "S No 80/2/1/1/2, Extol College, Shahpura Thana",
   "phone": "18002333555",
   "grades": [
    {
@@ -3245,7 +3245,7 @@
   "lat": 23.29584,
   "lng": 77.34705,
   "roCode": "340048",
-  "address": "S No 519\\/2\\/6\\/2, 519\\/2\\/14Kh, Gondarmau",
+  "address": "S No 519/2/6/2, 519/2/14Kh, Gondarmau",
   "phone": "18002333555",
   "grades": [
    {
@@ -3286,7 +3286,7 @@
   "lat": 22.7051,
   "lng": 75.8442,
   "roCode": "170356",
-  "address": "Plot No 5\\/61, Babu Labh, Chand Chhajlani Marg, Lokmanya Nagar",
+  "address": "Plot No 5/61, Babu Labh, Chand Chhajlani Marg, Lokmanya Nagar",
   "phone": "18002333555",
   "grades": [
    {
@@ -3327,7 +3327,7 @@
   "lat": 22.685089,
   "lng": 75.855876,
   "roCode": "326324",
-  "address": "17\\/2\\/1 Titliyarao, Manakbagh Road, Rajiv Gandhi Circle",
+  "address": "17/2/1 Titliyarao, Manakbagh Road, Rajiv Gandhi Circle",
   "phone": "18002333555",
   "grades": [
    {
@@ -3778,7 +3778,7 @@
   "lat": 19.060246,
   "lng": 72.864471,
   "roCode": "356194",
-  "address": "No C\\/67, Block G, BN Bhavan",
+  "address": "No C/67, Block G, BN Bhavan",
   "phone": "18002333555",
   "grades": [
    {
@@ -3901,7 +3901,7 @@
   "lat": 18.506661,
   "lng": 73.897857,
   "roCode": "126297",
-  "address": "No 499\\/A, Pune Sholapur Road, Bhairoba Nala",
+  "address": "No 499/A, Pune Sholapur Road, Bhairoba Nala",
   "phone": "18002333555",
   "grades": [
    {
@@ -3942,7 +3942,7 @@
   "lat": 18.592458,
   "lng": 73.76093,
   "roCode": "181638",
-  "address": "S No 1\\/1, New Mumbai Bang Express Highway, Wakad",
+  "address": "S No 1/1, New Mumbai Bang Express Highway, Wakad",
   "phone": "18002333555",
   "grades": [
    {
@@ -3983,7 +3983,7 @@
   "lat": 18.630017,
   "lng": 73.742951,
   "roCode": "336616",
-  "address": "S No 158\\/3 & 158\\/7, Mulshi, Tathawade, Punawale",
+  "address": "S No 158/3 & 158/7, Mulshi, Tathawade, Punawale",
   "phone": "18002333555",
   "grades": [
    {
@@ -4270,7 +4270,7 @@
   "lat": 31.291987,
   "lng": 75.656452,
   "roCode": "108769",
-  "address": "No 222\\/5, GT Road, Pragpur",
+  "address": "No 222/5, GT Road, Pragpur",
   "phone": "18002333555",
   "grades": [
    {
@@ -4844,7 +4844,7 @@
   "lat": 17.416959,
   "lng": 78.41042,
   "roCode": "282485",
-  "address": "Sy No 120 & 102\\/1, Road No 1, Block No 2, Ward No 8, Film Nagar, Shaikpet, Hakimpet",
+  "address": "Sy No 120 & 102/1, Road No 1, Block No 2, Ward No 8, Film Nagar, Shaikpet, Hakimpet",
   "phone": "18002333555",
   "grades": [
    {
@@ -5049,7 +5049,7 @@
   "lat": 16.581285,
   "lng": 80.526448,
   "roCode": "127657",
-  "address": "Lock T1\\/103\\/4\\/5, D No 34, Vijayawada, Ibrahimpatnam, Chilukuru",
+  "address": "Lock T1/103/4/5, D No 34, Vijayawada, Ibrahimpatnam, Chilukuru",
   "phone": "18002333555",
   "grades": [
    {
@@ -5090,7 +5090,7 @@
   "lat": 13.044472,
   "lng": 80.263243,
   "roCode": "133649",
-  "address": "Lock No 1091\\/122 59, Dr Radhakrishnan Road, Mylapore",
+  "address": "Lock No 1091/122 59, Dr Radhakrishnan Road, Mylapore",
   "phone": "18002333555",
   "grades": [
    {
@@ -5172,7 +5172,7 @@
   "lat": 13.0656,
   "lng": 80.191682,
   "roCode": "368177",
-  "address": "SN 198\\/1A\\/200\\/8\\/200\\/1, Lk 120, Koyambedu, Tin No 3393076060, Sri Iyappa Nagar",
+  "address": "SN 198/1A/200/8/200/1, Lk 120, Koyambedu, Tin No 3393076060, Sri Iyappa Nagar",
   "phone": "18002333555",
   "grades": [
    {
@@ -5213,7 +5213,7 @@
   "lat": 12.43383,
   "lng": 79.566228,
   "roCode": "334607",
-  "address": "No 154\\/3, Nadukuppam, Vandavasi, Chitragavur Pudur",
+  "address": "No 154/3, Nadukuppam, Vandavasi, Chitragavur Pudur",
   "phone": "18002333555",
   "grades": [
    {
@@ -5254,7 +5254,7 @@
   "lat": 11.027791,
   "lng": 76.951574,
   "roCode": "134046",
-  "address": "No 302\\/256, Lock No 02010, MTP Road",
+  "address": "No 302/256, Lock No 02010, MTP Road",
   "phone": "18002333555",
   "grades": [
    {
@@ -5336,7 +5336,7 @@
   "lat": 11.312506,
   "lng": 77.611631,
   "roCode": "135329",
-  "address": "SF No 281\\/1, Thiruvachi, NH 47, Vavikadai, Karumandisellipalayam",
+  "address": "SF No 281/1, Thiruvachi, NH 47, Vavikadai, Karumandisellipalayam",
   "phone": "18002333555",
   "grades": [
    {
@@ -5377,7 +5377,7 @@
   "lat": 9.882772,
   "lng": 78.037871,
   "roCode": "188226",
-  "address": "Sy No 200\\/1, Thanakkankulam, Thirunagar",
+  "address": "Sy No 200/1, Thanakkankulam, Thirunagar",
   "phone": "18002333555",
   "grades": [
    {
@@ -5418,7 +5418,7 @@
   "lat": 12.727299,
   "lng": 77.8512,
   "roCode": "181274",
-  "address": "S No 419\\/1A, Lock No Ig 7107, Mornapalli, Krishnagiri, Avalapalli",
+  "address": "S No 419/1A, Lock No Ig 7107, Mornapalli, Krishnagiri, Avalapalli",
   "phone": "18002333555",
   "grades": [
    {
@@ -5500,7 +5500,7 @@
   "lat": 11.939334,
   "lng": 79.787727,
   "roCode": "135334",
-  "address": "Lock No 1182\\/122, CST No 34630001814, Rs No 192\\/1, Vazhudavur Road, Mettupalayam",
+  "address": "Lock No 1182/122, CST No 34630001814, Rs No 192/1, Vazhudavur Road, Mettupalayam",
   "phone": "18002333555",
   "grades": [
    {
@@ -5664,7 +5664,7 @@
   "lat": 26.476366,
   "lng": 80.325027,
   "roCode": "154720",
-  "address": "No 9\\/46, Lk No 12004\\/22036, Benajhabar Road",
+  "address": "No 9/46, Lk No 12004/22036, Benajhabar Road",
   "phone": "18002333555",
   "grades": [
    {
@@ -5705,7 +5705,7 @@
   "lat": 26.885708,
   "lng": 80.99245,
   "roCode": "340573",
-  "address": "No 16\\/Cp\\/104, Munshi Pulia, Ring Road, Indira Nagar",
+  "address": "No 16/Cp/104, Munshi Pulia, Ring Road, Indira Nagar",
   "phone": "18002333555",
   "grades": [
    {
@@ -5869,7 +5869,7 @@
   "lat": 26.958218,
   "lng": 79.046761,
   "roCode": "312980",
-  "address": "Ground Floor, Km Stone 104\\/3, Basrehar",
+  "address": "Ground Floor, Km Stone 104/3, Basrehar",
   "phone": "18002333555",
   "grades": [
    {
@@ -6320,7 +6320,7 @@
   "lat": 22.53142,
   "lng": 88.32657,
   "roCode": "138632",
-  "address": "No 57\\/1, Diamond Harbour Road, Ekbalpur",
+  "address": "No 57/1, Diamond Harbour Road, Ekbalpur",
   "phone": "18002333555",
   "grades": [
    {
@@ -11697,7 +11697,7 @@
   "lat": 8.513067,
   "lng": 76.900338,
   "roCode": "276348",
-  "address": "TC 91\\/268\\/4, Anayara",
+  "address": "TC 91/268/4, Anayara",
   "phone": "18002333555",
   "grades": [
    {
@@ -12003,7 +12003,7 @@
   "lat": 12.462003,
   "lng": 75.963906,
   "roCode": "118159",
-  "address": "Survey No 64\\/1, Mulusoge, Kushalnagar, Somwarpet, Badagarakeri",
+  "address": "Survey No 64/1, Mulusoge, Kushalnagar, Somwarpet, Badagarakeri",
   "phone": "18002333555",
   "grades": [
    {
@@ -12085,7 +12085,7 @@
   "lat": 12.816131,
   "lng": 77.408462,
   "roCode": "365193",
-  "address": "53\\/A, Bangalore Mysore Rd, Ramanagara, Bidadi, Bhimanahalli, Kanchugaranahalli",
+  "address": "53/A, Bangalore Mysore Rd, Ramanagara, Bidadi, Bhimanahalli, Kanchugaranahalli",
   "phone": "18002333555",
   "grades": [
    {
@@ -12413,7 +12413,7 @@
   "lat": 15.616743,
   "lng": 77.2691,
   "roCode": "188315",
-  "address": "Survey No 352A, Door No 17\\/117, Allur Road, Kallubavi",
+  "address": "Survey No 352A, Door No 17/117, Allur Road, Kallubavi",
   "phone": "18002333555",
   "grades": [
    {
@@ -12454,7 +12454,7 @@
   "lat": 16.51113,
   "lng": 80.732238,
   "roCode": "127492",
-  "address": "Lock No T1\\/50\\/1\\/2\\/3\\/4, D No 18, Gudavalli, Nidamanuru",
+  "address": "Lock No T1/50/1/2/3/4, D No 18, Gudavalli, Nidamanuru",
   "phone": "18002333555",
   "grades": [
    {
@@ -12577,7 +12577,7 @@
   "lat": 12.909636,
   "lng": 80.250283,
   "roCode": "174453",
-  "address": "Lock No 1111\\/122, Tin 33690928002, SH 49, EC Road, Injambakkam",
+  "address": "Lock No 1111/122, Tin 33690928002, SH 49, EC Road, Injambakkam",
   "phone": "18002333555",
   "grades": [
    {
@@ -12864,7 +12864,7 @@
   "lat": 22.617771,
   "lng": 88.370434,
   "roCode": "138059",
-  "address": "Plot No AA,IIIC\\/1, Kolkata",
+  "address": "Plot No AA,IIIC/1, Kolkata",
   "phone": "18002333555",
   "grades": [
    {
@@ -12905,7 +12905,7 @@
   "lat": 22.577639,
   "lng": 88.462067,
   "roCode": "266450",
-  "address": "Plot No CF\\/19, Premises No 05240, New Town",
+  "address": "Plot No CF/19, Premises No 05240, New Town",
   "phone": "18002333555",
   "grades": [
    {
@@ -12946,7 +12946,7 @@
   "lat": 22.534839,
   "lng": 88.333838,
   "roCode": "138588",
-  "address": "No 34\\/1, Belvedere Road, Alipore",
+  "address": "No 34/1, Belvedere Road, Alipore",
   "phone": "18002333555",
   "grades": [
    {
@@ -13151,7 +13151,7 @@
   "lat": 28.854463,
   "lng": 77.124827,
   "roCode": "",
-  "address": "No 1\\/26\\/2, Singhu Border, GT Karnal Road",
+  "address": "No 1/26/2, Singhu Border, GT Karnal Road",
   "phone": "9810424242",
   "grades": [
    {

@@ -30,7 +30,7 @@ pending, not on the map.
 
 - **XP100 (8, IOCL official list + locator GPS):** COCO Vytilla (Kochi), Kerala Transport Co
   (Kozhikode), Madhavam Fuels + Swagat Pongam (Thrissur), Lakshmi Trading + Lakshmi Sales &
-  Services (Kozhikode), COCO Pallipuram + COCO Anayara (Thiruvananthapuram).
+  Services (Kozhikode), COCO Pallichal + COCO Anayara (Thiruvananthapuram).
 - **poWer 99 (1, HPCL official table + locator GPS):** Kumar Sales & Services (Kalamassery).
 - **Speed 100 (5, BPCL API with GPS + live ₹169.00 price):** BP Ernakulam Marine Drive (Kochi),
   BP Thalappara NH-17 (Malappuram), Narayanan & Co + M Kutty Hassan Kutty & Co + KMR Petroleum
