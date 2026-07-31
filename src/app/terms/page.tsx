@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 };
 
 const LAST_UPDATED = "30 July 2026";
-const GRIEVANCE_EMAIL = "grievance@octanefinder.in";
-const LEGAL_EMAIL = "legal@octanefinder.in";
+const GRIEVANCE_EMAIL = "grievance@mileagebachao.in";
+const LEGAL_EMAIL = "legal@mileagebachao.in";
 
 /* ---------- shared, token-driven presentation primitives ---------- */
 

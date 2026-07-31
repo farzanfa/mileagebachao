@@ -1,4 +1,4 @@
-# Deploying OctaneFinder to Vercel
+# Deploying MileageBachao to Vercel — mileagebachao.in
 
 The app is a standard Next.js 15 App Router project, so Vercel builds and serves it natively —
 route handlers become serverless functions, the city/station pages are prerendered (SSG/ISR), and
@@ -13,11 +13,36 @@ vercel            # link the project, accept defaults
 vercel --prod
 ```
 
+## 1a. Attach the domain (mileagebachao.in)
+
+```bash
+vercel domains add mileagebachao.in
+vercel domains add www.mileagebachao.in   # Vercel auto-redirects www -> apex
+```
+
+Then at your registrar's DNS panel set:
+
+| Record | Host | Value |
+| --- | --- | --- |
+| `A` | `@` (apex) | `76.76.21.21` |
+| `CNAME` | `www` | `cname.vercel-dns.com` |
+
+(If the registrar supports it, switching nameservers to Vercel — `ns1.vercel-dns.com` /
+`ns2.vercel-dns.com` — is even simpler and lets Vercel manage everything.) TLS certificates are
+issued automatically once DNS propagates (usually minutes, up to ~48h). Verify with
+`vercel domains inspect mileagebachao.in`.
+
+**Then set `NEXT_PUBLIC_SITE_URL=https://mileagebachao.in`** in the Vercel project's env vars and
+redeploy — this drives canonical URLs, the sitemap, robots.txt, and OpenGraph URLs. The grievance /
+privacy / legal contact addresses in the app are `grievance@ / privacy@ / legal@mileagebachao.in`
+— create these mailboxes (or aliases) at your mail provider; the IT Rules grievance address must
+actually receive mail before UGC goes live.
+
 Set at minimum:
 
 | Env var | Value |
 | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | your production URL (e.g. `https://octanefinder.vercel.app`) |
+| `NEXT_PUBLIC_SITE_URL` | your production URL (e.g. `https://mileagebachao.in`) |
 | `NEXT_PUBLIC_MAP_STYLE_URL` | a Stadia/MapTiler style URL (leave empty to show the "configure map" panel) |
 
 That alone gives you the full read-only product: search, filters, map, city/station SEO pages,

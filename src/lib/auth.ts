@@ -37,7 +37,7 @@ function emailMagicLinkProvider(): Provider {
     id: "email",
     name: "Email",
     type: "email",
-    from: process.env.EMAIL_FROM ?? "no-reply@octanefinder.in",
+    from: process.env.EMAIL_FROM ?? "no-reply@mileagebachao.in",
     server: process.env.EMAIL_SERVER ?? "",
     maxAge: 15 * 60, // 15-minute single-use magic link (final-api.md §7.4)
     options: {},
@@ -63,7 +63,7 @@ function emailMagicLinkProvider(): Provider {
       const transport = nm.createTransport(params.provider.server ?? "");
       await transport.sendMail({
         to: params.identifier,
-        from: params.provider.from ?? "no-reply@octanefinder.in",
+        from: params.provider.from ?? "no-reply@mileagebachao.in",
         subject: `Sign in to ${SITE_NAME}`,
         text:
           `Sign in to ${SITE_NAME}\n\n${params.url}\n\n` +
