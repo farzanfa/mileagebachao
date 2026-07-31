@@ -46,3 +46,51 @@ export async function submitCorrection(input: CorrectionInput): Promise<{ id: st
   if (!id) throw new Error("correction insert returned no id");
   return { id };
 }
+
+/** Payload of a community "add a pump" suggestion (anonymous, moderated). */
+export interface NewStationInput {
+  fuel: string;
+  pumpName: string;
+  city: string;
+  area?: string;
+  state: string;
+  note?: string;
+  contact?: string;
+}
+
+/**
+ * Enqueue a community-suggested new pump for moderation. The user_reports schema
+ * allows station_id NULL exactly when kind = 'new_station' (migration 0001 CHECK).
+ */
+export async function submitNewStation(input: NewStationInput): Promise<{ id: string }> {
+  const sql = getDb();
+  if (!sql) {
+    throw new DbUnavailableError(
+      "DATABASE_URL is not configured; pump suggestions require a database.",
+    );
+  }
+
+  const rows = await sql<{ id: string }[]>`
+    INSERT INTO user_reports (user_id, station_id, kind, payload, status)
+    VALUES (
+      NULL,
+      NULL,
+      'new_station'::report_kind,
+      ${sql.json({
+        fuel: input.fuel,
+        pumpName: input.pumpName,
+        city: input.city,
+        area: input.area ?? null,
+        state: input.state,
+        note: input.note ?? null,
+        contact: input.contact ?? null,
+      })},
+      'pending'::moderation_status
+    )
+    RETURNING id::text AS id
+  `;
+
+  const id = rows[0]?.id;
+  if (!id) throw new Error("new-station insert returned no id");
+  return { id };
+}

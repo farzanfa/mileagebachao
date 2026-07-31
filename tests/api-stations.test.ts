@@ -44,11 +44,11 @@ describe("GET /api/v1/stations (seed fallback, no DB)", () => {
   });
 
   it("filters by free-text query (city)", async () => {
-    const { body } = await call("?q=delhi&limit=50");
+    const { body } = await call("?q=kochi&limit=50");
     expect(body.data.length).toBeGreaterThan(0);
     for (const s of body.data) {
       const hay = `${s.city} ${s.state} ${s.pincode} ${s.address} ${s.name}`.toLowerCase();
-      expect(hay).toContain("delhi");
+      expect(hay).toContain("kochi");
     }
   });
 

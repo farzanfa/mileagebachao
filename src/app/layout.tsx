@@ -4,10 +4,6 @@ import "./globals.css";
 import { publicEnv } from "@/lib/env";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from "@/lib/constants";
 
-// Set the persisted theme before first paint to avoid a flash of the wrong theme.
-// Reads localStorage("theme"); ThemeToggle (UICORE) writes it and stamps data-theme.
-const THEME_INIT = `(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.dataset.theme=t;}}catch(e){}})();`;
-
 export const metadata: Metadata = {
   metadataBase: new URL(publicEnv.siteUrl),
   title: {
@@ -41,10 +37,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#eef1ef" },
-    { media: "(prefers-color-scheme: dark)", color: "#0c1316" },
-  ],
+  themeColor: "#eef1ef",
   width: "device-width",
   initialScale: 1,
 };
@@ -53,11 +46,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }

@@ -10,7 +10,6 @@ import Link from "next/link";
 
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants";
 import Button from "@/components/ui/Button";
-import ThemeToggle from "@/components/ThemeToggle";
 
 const NAV_LINK =
   "px-3 py-2 rounded-[8px] text-[13px] font-[650] text-[var(--ink-2)] no-underline transition-colors hover:bg-[var(--surface-2)] hover:text-[var(--ink)]";
@@ -47,19 +46,15 @@ export function Header() {
       </Link>
 
       <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
-        <Link href="/#cities" className={NAV_LINK}>
-          Cities
-        </Link>
         <Link href="/about" className={NAV_LINK}>
           About
         </Link>
       </nav>
 
       <div className="flex items-center gap-2">
-        <Button href="/map" variant="primary" size="sm">
+        <Button href="/" variant="primary" size="sm">
           Open map
         </Button>
-        <ThemeToggle />
       </div>
     </header>
   );

@@ -27,11 +27,19 @@ export function getDb(): ReturnType<typeof postgres> | null {
   const url = dbUrl();
   if (!url) return null;
   if (!initialized) {
+    // Serverless (Vercel) tuning: many short-lived function instances must each hold
+    // very few connections, and transaction-pooled endpoints (Neon/Supabase pgbouncer)
+    // do not support prepared statements. A long-running server (e.g. DigitalOcean)
+    // keeps the original pool. Override with DB_POOL_MAX / DB_PREPARE if needed.
+    const serverless = process.env.VERCEL === "1" || process.env.DB_SERVERLESS === "true";
+    const pooled = /-pooler\.|pgbouncer=true|\bpgbouncer\b/.test(url);
     cached = postgres(url, {
-      max: 10,
+      max: Number(process.env.DB_POOL_MAX ?? (serverless ? 1 : 10)),
       idle_timeout: 20,
       connect_timeout: 10,
-      prepare: true,
+      prepare: process.env.DB_PREPARE
+        ? process.env.DB_PREPARE === "true"
+        : !(pooled || serverless),
     });
     initialized = true;
   }

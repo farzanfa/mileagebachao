@@ -1,7 +1,10 @@
 [
+  { "id": "cok", "name": "Kochi (Vytilla)", "lat": 9.9682, "lng": 76.3188 },
+  { "id": "tvm", "name": "Thiruvananthapuram (Kulathoor)", "lat": 8.5241, "lng": 76.9366 },
+  { "id": "ccj", "name": "Kozhikode (Mini Bypass)", "lat": 11.2588, "lng": 75.7804 },
+  { "id": "blr", "name": "Bengaluru (MG Road)", "lat": 12.9756, "lng": 77.6068 },
   { "id": "del", "name": "Delhi (Connaught Place)", "lat": 28.6304, "lng": 77.2177 },
   { "id": "mum", "name": "Mumbai (Bandra)", "lat": 19.0596, "lng": 72.8295 },
-  { "id": "blr", "name": "Bengaluru (MG Road)", "lat": 12.9756, "lng": 77.6068 },
   { "id": "maa", "name": "Chennai (T. Nagar)", "lat": 13.0418, "lng": 80.2341 },
   { "id": "hyd", "name": "Hyderabad (Banjara Hills)", "lat": 17.4126, "lng": 78.438 },
   { "id": "pnq", "name": "Pune (Kothrud)", "lat": 18.5074, "lng": 73.8077 }

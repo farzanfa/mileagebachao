@@ -12,7 +12,7 @@
 //   "configure map" panel instead of crashing — the list stays fully usable.
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { Map as MaplibreMap, Marker as MaplibreMarker } from "maplibre-gl";
+import type { Map as MaplibreMap, Marker as MaplibreMarker, StyleSpecification } from "maplibre-gl";
 
 import type { Brand, GradeName, Station } from "@/lib/types";
 import { bestFreshness } from "@/lib/freshness";
@@ -44,6 +44,24 @@ const CLUSTER_CELL_PX = 64;
 // India-wide default camera.
 const INDIA_CENTER: [number, number] = [80.9, 22.5];
 const INDIA_ZOOM = 3.6;
+
+// Zero-config fallback basemap: OpenStreetMap raster tiles. Renders a familiar
+// Google-Maps-like map with no API key. Fine for development and small deployments;
+// switch NEXT_PUBLIC_MAP_STYLE_URL to a commercial style (Stadia/MapTiler) for
+// production scale, per the OSM tile usage policy.
+const OSM_RASTER_STYLE: StyleSpecification = {
+  version: 8,
+  sources: {
+    osm: {
+      type: "raster",
+      tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+      tileSize: 256,
+      maxzoom: 19,
+      attribution: "© OpenStreetMap contributors",
+    },
+  },
+  layers: [{ id: "osm", type: "raster", source: "osm" }],
+};
 
 export interface MapLibreMapProps {
   stations: Station[];
@@ -241,9 +259,8 @@ export default function MapLibreMap({
     renderRef.current = renderMarkers;
   }, [renderMarkers]);
 
-  // ---- initialise the map once a style URL is available ----
+  // ---- initialise the map (custom style URL, or the zero-config OSM fallback) ----
   useEffect(() => {
-    if (!resolvedStyle) return;
     const container = containerRef.current;
     if (!container) return;
 
@@ -261,7 +278,7 @@ export default function MapLibreMap({
         mlRef.current = maplibregl;
         const map = new maplibregl.Map({
           container,
-          style: resolvedStyle,
+          style: resolvedStyle || OSM_RASTER_STYLE,
           center: INDIA_CENTER,
           zoom: INDIA_ZOOM,
           attributionControl: false,
@@ -351,63 +368,6 @@ export default function MapLibreMap({
     if (reduce) map.jumpTo({ center: [s.lng, s.lat] });
     else map.easeTo({ center: [s.lng, s.lat], duration: 400 });
   }, [ready, selectedId, stations]);
-
-  // ---- "configure map" fallback (no style URL) ----
-  if (!resolvedStyle) {
-    return (
-      <div
-        role="status"
-        aria-live="polite"
-        style={{
-          position: "absolute",
-          inset: 0,
-          display: "grid",
-          placeItems: "center",
-          padding: 24,
-          background: "var(--map-ocean, var(--surface-2))",
-          color: "var(--ink-2)",
-        }}
-      >
-        <div style={{ maxWidth: 420, textAlign: "center" }}>
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-            style={{ opacity: 0.55, marginBottom: 12 }}
-          >
-            <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
-            <line x1="3" y1="3" x2="21" y2="21" />
-          </svg>
-          <h2 style={{ margin: "0 0 6px", fontSize: 16, fontWeight: 800, color: "var(--ink)" }}>
-            Map style not configured
-          </h2>
-          <p style={{ margin: 0, fontSize: 13, lineHeight: 1.5 }}>
-            Set{" "}
-            <code
-              className="mono"
-              style={{
-                background: "var(--surface)",
-                border: "1px solid var(--line)",
-                borderRadius: 5,
-                padding: "1px 5px",
-                fontSize: 12,
-              }}
-            >
-              NEXT_PUBLIC_MAP_STYLE_URL
-            </code>{" "}
-            to a MapLibre style URL to enable the interactive map. The station list on the left
-            stays fully usable without it.
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div style={{ position: "relative", width: "100%", height: "100%" }}>

@@ -1,580 +1,602 @@
 [
   {
-    "id": "iocl-dl-0421",
-    "slug": "connaught-place-indianoil",
-    "name": "IndianOil, Connaught Place",
+    "id": "iocl-kochi-vytilla",
+    "slug": "vytilla-indianoil-kochi",
+    "name": "IndianOil, Vytilla",
     "brand": "IOCL",
-    "city": "Delhi",
-    "citySlug": "delhi",
-    "state": "Delhi",
-    "pincode": "110001",
-    "lat": 28.6289,
-    "lng": 77.2311,
-    "roCode": "IOCL-DL-0421",
-    "address": "Barakhamba Rd, Connaught Place",
-    "phone": null,
-    "grades": [
-      { "grade": "XP100", "availability": "in_stock", "lastVerifiedDays": 4, "checkins": 7, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
-    ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": "2026-07-26T00:00:00.000Z"
-  },
-  {
-    "id": "bpcl-dl-1187",
-    "slug": "kg-marg-bharatpetroleum",
-    "name": "BPCL Fuel Station, Kasturba Gandhi Marg",
-    "brand": "BPCL",
-    "city": "Delhi",
-    "citySlug": "delhi",
-    "state": "Delhi",
-    "pincode": "110001",
-    "lat": 28.6218,
-    "lng": 77.2245,
-    "roCode": "BPCL-DL-1187",
-    "address": "KG Marg, near Metro",
-    "phone": "+91 11 2331 5xxx",
-    "grades": [
-      { "grade": "Speed 100", "availability": "in_stock", "lastVerifiedDays": 2, "checkins": 11, "status": "field-verified" }
-    ],
-    "price": { "grade": "Speed 100", "value": "169.00", "currency": "INR", "source": "BPCL locator API", "asOf": "2026-07-28" },
-    "sources": [
-      { "source": "BPCL locator API", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-28T00:00:00.000Z", "method": "locator-api" }
-    ],
-    "firstSeen": "2026-06-01T00:00:00.000Z",
-    "lastVerified": "2026-07-28T00:00:00.000Z"
-  },
-  {
-    "id": "hpcl-dl-0663",
-    "slug": "pandara-road-hpcl",
-    "name": "HP Petrol Pump, Pandara Road",
-    "brand": "HPCL",
-    "city": "Delhi",
-    "citySlug": "delhi",
-    "state": "Delhi",
-    "pincode": "110003",
-    "lat": 28.6096,
-    "lng": 77.2361,
-    "roCode": "HPCL-DL-0663",
-    "address": "Pandara Rd Market",
-    "phone": null,
-    "grades": [
-      { "grade": "poWer 100", "availability": "in_stock", "lastVerifiedDays": 9, "checkins": 4, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "HPCL poWer product-page outlet table", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-22T00:00:00.000Z", "method": "product-page-table" }
-    ],
-    "firstSeen": "2026-05-20T00:00:00.000Z",
-    "lastVerified": "2026-07-21T00:00:00.000Z"
-  },
-  {
-    "id": "iocl-hr-2210",
-    "slug": "dlf-cyber-city-indianoil",
-    "name": "IndianOil, DLF Cyber City",
-    "brand": "IOCL",
-    "city": "Gurugram",
-    "citySlug": "gurugram",
-    "state": "Haryana",
-    "pincode": "122002",
-    "lat": 28.4949,
-    "lng": 77.0895,
-    "roCode": "IOCL-HR-2210",
-    "address": "NH-48 service rd, Sector 24",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "state": "Kerala",
+    "pincode": "682019",
+    "lat": 9.9682,
+    "lng": 76.3188,
+    "roCode": "",
+    "address": "Vytilla Junction, Kochi, Ernakulam",
     "phone": null,
     "grades": [
       { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
     ],
     "price": null,
     "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
+      { "source": "IndianOil Kerala official announcement (XP100 launch in Kochi)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-announcement (XP100 confirmed); coords approximate (locality centroid)" }
     ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
+    "firstSeen": "2026-07-31T00:00:00.000Z",
     "lastVerified": null
   },
   {
-    "id": "bpcl-hr-3341",
-    "slug": "sohna-road-bharatpetroleum",
-    "name": "BPCL, Sohna Road",
-    "brand": "BPCL",
-    "city": "Gurugram",
-    "citySlug": "gurugram",
-    "state": "Haryana",
-    "pincode": "122018",
-    "lat": 28.4192,
-    "lng": 77.0367,
-    "roCode": "BPCL-HR-3341",
-    "address": "Sohna Rd, Sector 48",
-    "phone": null,
-    "grades": [
-      { "grade": "Speed 100", "availability": "in_stock", "lastVerifiedDays": 18, "checkins": 3, "status": "field-verified" }
-    ],
-    "price": { "grade": "Speed 100", "value": "169.00", "currency": "INR", "source": "BPCL locator API", "asOf": "2026-07-28" },
-    "sources": [
-      { "source": "BPCL locator API", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-28T00:00:00.000Z", "method": "locator-api" }
-    ],
-    "firstSeen": "2026-06-01T00:00:00.000Z",
-    "lastVerified": "2026-07-12T00:00:00.000Z"
-  },
-  {
-    "id": "iocl-up-4402",
-    "slug": "sector-18-noida-indianoil",
-    "name": "IndianOil, Sector 18 Noida",
+    "id": "iocl-kochi-thevara",
+    "slug": "thevara-indianoil-kochi",
+    "name": "IndianOil, Thevara",
     "brand": "IOCL",
-    "city": "Noida",
-    "citySlug": "noida",
-    "state": "Uttar Pradesh",
-    "pincode": "201301",
-    "lat": 28.5705,
-    "lng": 77.321,
-    "roCode": "IOCL-UP-4402",
-    "address": "Film City Rd, Sector 16A",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "state": "Kerala",
+    "pincode": "682013",
+    "lat": 9.9451,
+    "lng": 76.2973,
+    "roCode": "",
+    "address": "Thevara, Kochi, Ernakulam",
     "phone": null,
     "grades": [
       { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
     ],
     "price": null,
     "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
+      { "source": "IndianOil Kerala official announcement (XP100 launch in Kochi)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-announcement (XP100 confirmed); coords approximate (locality centroid)" }
     ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
+    "firstSeen": "2026-07-31T00:00:00.000Z",
     "lastVerified": null
   },
   {
-    "id": "iocl-mh-0912",
-    "slug": "worli-sea-face-indianoil",
-    "name": "IndianOil, Worli Sea Face",
+    "id": "iocl-kochi-sr-fuels-padivattom",
+    "slug": "sr-fuels-padivattom-kochi",
+    "name": "IndianOil, SR Fuels, Padivattom",
     "brand": "IOCL",
-    "city": "Mumbai",
-    "citySlug": "mumbai",
-    "state": "Maharashtra",
-    "pincode": "400018",
-    "lat": 19.0088,
-    "lng": 72.8161,
-    "roCode": "IOCL-MH-0912",
-    "address": "Dr Annie Besant Rd, Worli",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "state": "Kerala",
+    "pincode": "682024",
+    "lat": 10.0163,
+    "lng": 76.3110,
+    "roCode": "196365",
+    "address": "Cochin Bypass Road, Padivattom, Ernakulam",
     "phone": null,
     "grades": [
-      { "grade": "XP100", "availability": "in_stock", "lastVerifiedDays": 6, "checkins": 9, "status": "field-verified" }
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
     ],
     "price": null,
     "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
+      { "source": "locator.iocl.com (RO 196365)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
     ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": "2026-07-24T00:00:00.000Z"
-  },
-  {
-    "id": "bpcl-mh-1553",
-    "slug": "bandra-reclamation-bharatpetroleum",
-    "name": "BPCL, Bandra Reclamation",
-    "brand": "BPCL",
-    "city": "Mumbai",
-    "citySlug": "mumbai",
-    "state": "Maharashtra",
-    "pincode": "400050",
-    "lat": 19.047,
-    "lng": 72.818,
-    "roCode": "BPCL-MH-1553",
-    "address": "Bandra Reclamation, WEH",
-    "phone": "+91 22 2645 2xxx",
-    "grades": [
-      { "grade": "Speed 100", "availability": "in_stock", "lastVerifiedDays": 3, "checkins": 14, "status": "field-verified" },
-      { "grade": "Speed 97", "availability": "out_of_stock", "lastVerifiedDays": 5, "checkins": 2, "status": "field-verified" }
-    ],
-    "price": { "grade": "Speed 100", "value": "169.00", "currency": "INR", "source": "BPCL locator API", "asOf": "2026-07-28" },
-    "sources": [
-      { "source": "BPCL locator API", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-28T00:00:00.000Z", "method": "locator-api" }
-    ],
-    "firstSeen": "2026-06-01T00:00:00.000Z",
-    "lastVerified": "2026-07-27T00:00:00.000Z"
-  },
-  {
-    "id": "hpcl-mh-0774",
-    "slug": "haji-ali-hpcl",
-    "name": "HP Petrol Pump, Haji Ali",
-    "brand": "HPCL",
-    "city": "Mumbai",
-    "citySlug": "mumbai",
-    "state": "Maharashtra",
-    "pincode": "400034",
-    "lat": 18.9821,
-    "lng": 72.809,
-    "roCode": "HPCL-MH-0774",
-    "address": "Lala Lajpatrai Marg",
-    "phone": null,
-    "grades": [
-      { "grade": "poWer 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" },
-      { "grade": "poWer 99", "availability": "in_stock", "lastVerifiedDays": 21, "checkins": 3, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "HPCL poWer product-page outlet table", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-22T00:00:00.000Z", "method": "product-page-table" }
-    ],
-    "firstSeen": "2026-05-20T00:00:00.000Z",
-    "lastVerified": "2026-07-09T00:00:00.000Z"
-  },
-  {
-    "id": "iocl-mh-3120",
-    "slug": "fc-road-pune-indianoil",
-    "name": "IndianOil, FC Road",
-    "brand": "IOCL",
-    "city": "Pune",
-    "citySlug": "pune",
-    "state": "Maharashtra",
-    "pincode": "411005",
-    "lat": 18.5236,
-    "lng": 73.8412,
-    "roCode": "IOCL-MH-3120",
-    "address": "Fergusson College Rd",
-    "phone": null,
-    "grades": [
-      { "grade": "XP100", "availability": "in_stock", "lastVerifiedDays": 12, "checkins": 5, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
-    ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": "2026-07-18T00:00:00.000Z"
-  },
-  {
-    "id": "hpcl-mh-2298",
-    "slug": "baner-pune-hpcl",
-    "name": "HP Petrol Pump, Baner",
-    "brand": "HPCL",
-    "city": "Pune",
-    "citySlug": "pune",
-    "state": "Maharashtra",
-    "pincode": "411045",
-    "lat": 18.559,
-    "lng": 73.7868,
-    "roCode": "HPCL-MH-2298",
-    "address": "Baner Rd, near Balewadi",
-    "phone": null,
-    "grades": [
-      { "grade": "poWer 99", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "HPCL poWer product-page outlet table", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-22T00:00:00.000Z", "method": "product-page-table" }
-    ],
-    "firstSeen": "2026-05-20T00:00:00.000Z",
+    "firstSeen": "2026-07-31T00:00:00.000Z",
     "lastVerified": null
   },
   {
-    "id": "iocl-ka-0501",
-    "slug": "mg-road-bengaluru-indianoil",
-    "name": "IndianOil, MG Road",
+    "id": "iocl-kochi-hijaz-kaloor",
+    "slug": "hijaz-enterprises-kaloor-kochi",
+    "name": "IndianOil, Hijaz Enterprises, Kaloor",
+    "brand": "IOCL",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "state": "Kerala",
+    "pincode": "682017",
+    "lat": 9.9975,
+    "lng": 76.2983,
+    "roCode": "278750",
+    "address": "Kathrikadavu, Kaloor, Ernakulam",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 278750)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-ekm-kuzhiparambil-karukutty",
+    "slug": "kuzhiparambil-fuels-karukutty",
+    "name": "IndianOil, Kuzhiparambil Fuels, Karukutty",
+    "brand": "IOCL",
+    "city": "Karukutty",
+    "citySlug": "karukutty",
+    "state": "Kerala",
+    "pincode": "683576",
+    "lat": 10.2031,
+    "lng": 76.3986,
+    "roCode": "235446",
+    "address": "Karukutty, Ernakulam",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 235446)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-tvm-manakattil-attipra",
+    "slug": "manakattil-fuels-attipra-trivandrum",
+    "name": "IndianOil, Manakattil Fuels, Attipra",
+    "brand": "IOCL",
+    "city": "Thiruvananthapuram",
+    "citySlug": "thiruvananthapuram",
+    "state": "Kerala",
+    "pincode": "695583",
+    "lat": 8.5300,
+    "lng": 76.8990,
+    "roCode": "197632",
+    "address": "Trivandrum Bypass, Attipra, Kulathoor, Thiruvananthapuram",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 197632)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-tvm-coco-anayara",
+    "slug": "coco-anayara-trivandrum",
+    "name": "IndianOil, COCO Anayara",
+    "brand": "IOCL",
+    "city": "Thiruvananthapuram",
+    "citySlug": "thiruvananthapuram",
+    "state": "Kerala",
+    "pincode": "695029",
+    "lat": 8.4890,
+    "lng": 76.9210,
+    "roCode": "276348",
+    "address": "TC 91/268/4, Near Lulu Mall, Anayara, Thiruvananthapuram",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 276348, IndianOil COCO)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil COCO RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-tvm-ksm-kochuveli",
+    "slug": "ksm-fuels-kochuveli-trivandrum",
+    "name": "IndianOil, KSM Fuels, Kochuveli",
+    "brand": "IOCL",
+    "city": "Thiruvananthapuram",
+    "citySlug": "thiruvananthapuram",
+    "state": "Kerala",
+    "pincode": "695021",
+    "lat": 8.5330,
+    "lng": 76.8800,
+    "roCode": "196348",
+    "address": "Kochuveli, Thiruvananthapuram",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 196348)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-calicut-calicut-petrols",
+    "slug": "calicut-petrols-chakkorathukulam",
+    "name": "IndianOil, Calicut Petrols, Chakkorathukulam",
+    "brand": "IOCL",
+    "city": "Kozhikode",
+    "citySlug": "kozhikode",
+    "state": "Kerala",
+    "pincode": "673006",
+    "lat": 11.2700,
+    "lng": 75.7900,
+    "roCode": "196404",
+    "address": "Chakkorathukulam, Calicut (Kozhikode)",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 196404)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-kozhikode-kerala-transport-co",
+    "slug": "kerala-transport-co-mini-bypass-kozhikode",
+    "name": "IndianOil, Kerala Transport Co, Mini Bypass",
+    "brand": "IOCL",
+    "city": "Kozhikode",
+    "citySlug": "kozhikode",
+    "state": "Kerala",
+    "pincode": "673004",
+    "lat": 11.2400,
+    "lng": 75.8000,
+    "roCode": "196372",
+    "address": "Mini Bypass, Kozhikode",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 196372)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-kozhikode-pp-sons-karuvannur",
+    "slug": "pp-sons-karuvannur-kozhikode",
+    "name": "IndianOil, P P Sons, Karuvannur",
+    "brand": "IOCL",
+    "city": "Kozhikode",
+    "citySlug": "kozhikode",
+    "state": "Kerala",
+    "pincode": "673632",
+    "lat": 11.4000,
+    "lng": 75.9000,
+    "roCode": "236076",
+    "address": "Karuvannur, Kozhikode",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 236076)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-kozhikode-mavoor-mahe",
+    "slug": "mavoor-trade-links-mahe",
+    "name": "IndianOil, Mavoor Trade Links, Mahe",
+    "brand": "IOCL",
+    "city": "Mahe",
+    "citySlug": "mahe",
+    "state": "Puducherry (Mahe)",
+    "pincode": "673310",
+    "lat": 11.7000,
+    "lng": 75.5300,
+    "roCode": "239098",
+    "address": "Mahe (near Kozhikode/Kannur border)",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 239098)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-calicut-kokkallur-balussery",
+    "slug": "kokkallur-fuels-balussery-calicut",
+    "name": "IndianOil, Kokkallur Fuels, Balussery",
+    "brand": "IOCL",
+    "city": "Kozhikode",
+    "citySlug": "kozhikode",
+    "state": "Kerala",
+    "pincode": "673612",
+    "lat": 11.4400,
+    "lng": 75.8200,
+    "roCode": "235641",
+    "address": "Balussery, Calicut (Kozhikode)",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 235641)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-kannur-kc-petroleum-kodiyeri",
+    "slug": "kc-petroleum-kodiyeri-kannur",
+    "name": "IndianOil, K C Petroleum, Kodiyeri",
+    "brand": "IOCL",
+    "city": "Kannur",
+    "citySlug": "kannur",
+    "state": "Kerala",
+    "pincode": "670643",
+    "lat": 11.7500,
+    "lng": 75.4900,
+    "roCode": "518481",
+    "address": "Kodiyeri, Thalassery, Kannur",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 518481)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-kannur-kallikkandy-thrippangottur",
+    "slug": "kallikkandy-petroleum-thrippangottur-kannur",
+    "name": "IndianOil, Kallikkandy Petroleum, Thrippangottur",
+    "brand": "IOCL",
+    "city": "Kannur",
+    "citySlug": "kannur",
+    "state": "Kerala",
+    "pincode": "670650",
+    "lat": 11.9000,
+    "lng": 75.6000,
+    "roCode": "235367",
+    "address": "Thrippangottur, Kannur",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "locator.iocl.com (RO 235367)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (IndianOil RO; XP100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "hpcl-kochi-falcon-fuels",
+    "slug": "falcon-fuels-hpcl-kochi",
+    "name": "HP Petrol Pump, Falcon Fuels",
+    "brand": "HPCL",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "state": "Kerala",
+    "pincode": "682021",
+    "lat": 9.9800,
+    "lng": 76.2830,
+    "roCode": "400238",
+    "address": "Kochi, Ernakulam",
+    "phone": null,
+    "grades": [
+      { "grade": "poWer 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "petrolpump.hpretail.in (RO 400238)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "hpcl-kalamassery-kumar-sales",
+    "slug": "kumar-sales-services-kalamassery",
+    "name": "HP Petrol Pump, Kumar Sales & Services, Kalamassery",
+    "brand": "HPCL",
+    "city": "Kalamassery",
+    "citySlug": "kalamassery",
+    "state": "Kerala",
+    "pincode": "683104",
+    "lat": 10.0600,
+    "lng": 76.3200,
+    "roCode": "393465",
+    "address": "FACT Road, Kalamassery, Ernakulam",
+    "phone": null,
+    "grades": [
+      { "grade": "poWer 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "petrolpump.hpretail.in (RO 393465)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "hpcl-aluva-pm-louis-sons",
+    "slug": "pm-louis-sons-aluva",
+    "name": "HP Petrol Pump, PM Louis Sons, Aluva",
+    "brand": "HPCL",
+    "city": "Aluva",
+    "citySlug": "aluva",
+    "state": "Kerala",
+    "pincode": "683101",
+    "lat": 10.1080,
+    "lng": 76.3520,
+    "roCode": "395395",
+    "address": "Aluva, Ernakulam",
+    "phone": null,
+    "grades": [
+      { "grade": "poWer 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "petrolpump.hpretail.in (RO 395395)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "hpcl-kothamangalam-smart-fuels",
+    "slug": "smart-fuels-kothamangalam",
+    "name": "HP Petrol Pump, Smart Fuels, Kothamangalam",
+    "brand": "HPCL",
+    "city": "Kothamangalam",
+    "citySlug": "kothamangalam",
+    "state": "Kerala",
+    "pincode": "686691",
+    "lat": 10.0600,
+    "lng": 76.6300,
+    "roCode": "418535",
+    "address": "Kothamangalam, Ernakulam",
+    "phone": null,
+    "grades": [
+      { "grade": "poWer 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "petrolpump.hpretail.in (RO 418535)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "hpcl-thrissur-unique-petroleum-chungam",
+    "slug": "unique-petroleum-chungam-thrissur",
+    "name": "HP Petrol Pump, Unique Petroleum, Chungam",
+    "brand": "HPCL",
+    "city": "Thrissur",
+    "citySlug": "thrissur",
+    "state": "Kerala",
+    "pincode": "680001",
+    "lat": 10.5200,
+    "lng": 76.2100,
+    "roCode": "399880",
+    "address": "Chungam, Thrissur",
+    "phone": null,
+    "grades": [
+      { "grade": "poWer 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "petrolpump.hpretail.in (RO 399880)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-locator (HPCL RO; poWer 100 availability not field-confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-blr-bowring-st-marks",
+    "slug": "bowring-service-station-st-marks-road-bengaluru",
+    "name": "IndianOil, Bowring Service Station, St Mark's Road",
     "brand": "IOCL",
     "city": "Bengaluru",
     "citySlug": "bengaluru",
     "state": "Karnataka",
     "pincode": "560001",
-    "lat": 12.975,
-    "lng": 77.609,
-    "roCode": "IOCL-KA-0501",
-    "address": "Mahatma Gandhi Rd",
-    "phone": null,
-    "grades": [
-      { "grade": "XP100", "availability": "in_stock", "lastVerifiedDays": 5, "checkins": 12, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
-    ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": "2026-07-25T00:00:00.000Z"
-  },
-  {
-    "id": "bpcl-ka-1902",
-    "slug": "koramangala-bharatpetroleum",
-    "name": "BPCL, Koramangala",
-    "brand": "BPCL",
-    "city": "Bengaluru",
-    "citySlug": "bengaluru",
-    "state": "Karnataka",
-    "pincode": "560095",
-    "lat": 12.9349,
-    "lng": 77.6205,
-    "roCode": "BPCL-KA-1902",
-    "address": "80 Ft Rd, Koramangala 4th Blk",
-    "phone": "+91 80 2553 1xxx",
-    "grades": [
-      { "grade": "Speed 100", "availability": "in_stock", "lastVerifiedDays": 7, "checkins": 8, "status": "field-verified" }
-    ],
-    "price": { "grade": "Speed 100", "value": "169.00", "currency": "INR", "source": "BPCL locator API", "asOf": "2026-07-28" },
-    "sources": [
-      { "source": "BPCL locator API", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-28T00:00:00.000Z", "method": "locator-api" }
-    ],
-    "firstSeen": "2026-06-01T00:00:00.000Z",
-    "lastVerified": "2026-07-23T00:00:00.000Z"
-  },
-  {
-    "id": "hpcl-ka-0855",
-    "slug": "indiranagar-hpcl",
-    "name": "HP Petrol Pump, Indiranagar",
-    "brand": "HPCL",
-    "city": "Bengaluru",
-    "citySlug": "bengaluru",
-    "state": "Karnataka",
-    "pincode": "560038",
-    "lat": 12.9719,
-    "lng": 77.6412,
-    "roCode": "HPCL-KA-0855",
-    "address": "100 Ft Rd, Indiranagar",
-    "phone": null,
-    "grades": [
-      { "grade": "poWer 100", "availability": "in_stock", "lastVerifiedDays": 26, "checkins": 2, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "HPCL poWer product-page outlet table", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-22T00:00:00.000Z", "method": "product-page-table" }
-    ],
-    "firstSeen": "2026-05-20T00:00:00.000Z",
-    "lastVerified": "2026-07-04T00:00:00.000Z"
-  },
-  {
-    "id": "iocl-tn-0330",
-    "slug": "anna-salai-indianoil",
-    "name": "IndianOil, Anna Salai",
-    "brand": "IOCL",
-    "city": "Chennai",
-    "citySlug": "chennai",
-    "state": "Tamil Nadu",
-    "pincode": "600002",
-    "lat": 13.0604,
-    "lng": 80.2649,
-    "roCode": "IOCL-TN-0330",
-    "address": "Anna Salai, Mount Rd",
+    "lat": 12.9720,
+    "lng": 77.6050,
+    "roCode": "",
+    "address": "St Mark's Road, Bengaluru",
     "phone": null,
     "grades": [
       { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
     ],
     "price": null,
     "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
+      { "source": "Team-BHP / press (Bengaluru XP100 launch outlets)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-announcement (XP100 confirmed); coords approximate (locality centroid)" }
     ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
+    "firstSeen": "2026-07-31T00:00:00.000Z",
     "lastVerified": null
   },
   {
-    "id": "bpcl-tn-1440",
-    "slug": "adyar-bharatpetroleum",
-    "name": "BPCL, Adyar",
-    "brand": "BPCL",
-    "city": "Chennai",
-    "citySlug": "chennai",
-    "state": "Tamil Nadu",
-    "pincode": "600020",
-    "lat": 13.0012,
-    "lng": 80.2565,
-    "roCode": "BPCL-TN-1440",
-    "address": "Lattice Bridge Rd, Adyar",
-    "phone": "+91 44 2441 6xxx",
-    "grades": [
-      { "grade": "Speed 100", "availability": "in_stock", "lastVerifiedDays": 9, "checkins": 6, "status": "field-verified" }
-    ],
-    "price": { "grade": "Speed 100", "value": "169.00", "currency": "INR", "source": "BPCL locator API", "asOf": "2026-07-28" },
-    "sources": [
-      { "source": "BPCL locator API", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-28T00:00:00.000Z", "method": "locator-api" }
-    ],
-    "firstSeen": "2026-06-01T00:00:00.000Z",
-    "lastVerified": "2026-07-21T00:00:00.000Z"
-  },
-  {
-    "id": "iocl-tg-0620",
-    "slug": "banjara-hills-indianoil",
-    "name": "IndianOil, Banjara Hills",
+    "id": "iocl-blr-coco-iti-krpuram",
+    "slug": "coco-iti-kr-puram-bengaluru",
+    "name": "IndianOil, COCO ITI, KR Puram",
     "brand": "IOCL",
-    "city": "Hyderabad",
-    "citySlug": "hyderabad",
-    "state": "Telangana",
-    "pincode": "500034",
-    "lat": 17.4139,
-    "lng": 78.4382,
-    "roCode": "IOCL-TG-0620",
-    "address": "Road No.12, Banjara Hills",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "pincode": "560036",
+    "lat": 13.0070,
+    "lng": 77.6960,
+    "roCode": "",
+    "address": "KR Puram, Bengaluru",
     "phone": null,
     "grades": [
-      { "grade": "XP100", "availability": "in_stock", "lastVerifiedDays": 15, "checkins": 4, "status": "field-verified" }
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
     ],
     "price": null,
     "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
+      { "source": "Team-BHP / press (Bengaluru XP100 launch outlets)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-announcement (XP100 confirmed); coords approximate (locality centroid)" }
     ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": "2026-07-15T00:00:00.000Z"
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
   },
   {
-    "id": "bpcl-tg-1770",
-    "slug": "gachibowli-bharatpetroleum",
-    "name": "BPCL, Gachibowli",
+    "id": "iocl-blr-patel-jp-nagar",
+    "slug": "patel-fuel-station-jp-nagar-bengaluru",
+    "name": "IndianOil, Patel Fuel Station, JP Nagar",
+    "brand": "IOCL",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "pincode": "560078",
+    "lat": 12.9070,
+    "lng": 77.5850,
+    "roCode": "",
+    "address": "JP Nagar, Bengaluru",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "Team-BHP / press (Bengaluru XP100 launch outlets)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-announcement (XP100 confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "iocl-blr-sowbhagya-hsr",
+    "slug": "sowbhagya-hsr-layout-bengaluru",
+    "name": "IndianOil, Sowbhagya, HSR Layout",
+    "brand": "IOCL",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "pincode": "560102",
+    "lat": 12.9110,
+    "lng": 77.6380,
+    "roCode": "",
+    "address": "HSR Layout, Bengaluru",
+    "phone": null,
+    "grades": [
+      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
+    ],
+    "price": null,
+    "sources": [
+      { "source": "Team-BHP / press (Bengaluru XP100 launch outlets)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-announcement (XP100 confirmed); coords approximate (locality centroid)" }
+    ],
+    "firstSeen": "2026-07-31T00:00:00.000Z",
+    "lastVerified": null
+  },
+  {
+    "id": "bpcl-blr-cubbon-park-speed100",
+    "slug": "bp-cubbon-park-speed-100-bengaluru",
+    "name": "BPCL, BP Cubbon Park",
     "brand": "BPCL",
-    "city": "Hyderabad",
-    "citySlug": "hyderabad",
-    "state": "Telangana",
-    "pincode": "500032",
-    "lat": 17.4401,
-    "lng": 78.3489,
-    "roCode": "BPCL-TG-1770",
-    "address": "ORR service rd, Gachibowli",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "pincode": "560001",
+    "lat": 12.9757,
+    "lng": 77.5929,
+    "roCode": "",
+    "address": "Cubbon Park area, Bengaluru",
     "phone": null,
     "grades": [
       { "grade": "Speed 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
     ],
     "price": { "grade": "Speed 100", "value": "169.00", "currency": "INR", "source": "BPCL locator API", "asOf": "2026-07-28" },
     "sources": [
-      { "source": "BPCL locator API", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-28T00:00:00.000Z", "method": "locator-api" }
+      { "source": "BPCL Retail (Speed 100 launch, Bengaluru)", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-31T00:00:00.000Z", "method": "official-announcement (Speed 100 confirmed); coords approximate (locality centroid)" }
     ],
-    "firstSeen": "2026-06-01T00:00:00.000Z",
-    "lastVerified": null
-  },
-  {
-    "id": "iocl-rj-0410",
-    "slug": "c-scheme-jaipur-indianoil",
-    "name": "IndianOil, C-Scheme",
-    "brand": "IOCL",
-    "city": "Jaipur",
-    "citySlug": "jaipur",
-    "state": "Rajasthan",
-    "pincode": "302001",
-    "lat": 26.9066,
-    "lng": 75.7965,
-    "roCode": "IOCL-RJ-0410",
-    "address": "Ashok Marg, C-Scheme",
-    "phone": null,
-    "grades": [
-      { "grade": "XP100", "availability": "in_stock", "lastVerifiedDays": 22, "checkins": 3, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
-    ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": "2026-07-08T00:00:00.000Z"
-  },
-  {
-    "id": "iocl-ch-0140",
-    "slug": "sector-26-chandigarh-indianoil",
-    "name": "IndianOil, Sector 26",
-    "brand": "IOCL",
-    "city": "Chandigarh",
-    "citySlug": "chandigarh",
-    "state": "Chandigarh",
-    "pincode": "160019",
-    "lat": 30.7268,
-    "lng": 76.802,
-    "roCode": "IOCL-CH-0140",
-    "address": "Madhya Marg, Sector 26",
-    "phone": null,
-    "grades": [
-      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
-    ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": null
-  },
-  {
-    "id": "iocl-gj-0770",
-    "slug": "sg-highway-ahmedabad-indianoil",
-    "name": "IndianOil, SG Highway",
-    "brand": "IOCL",
-    "city": "Ahmedabad",
-    "citySlug": "ahmedabad",
-    "state": "Gujarat",
-    "pincode": "380054",
-    "lat": 23.041,
-    "lng": 72.514,
-    "roCode": "IOCL-GJ-0770",
-    "address": "Sarkhej-Gandhinagar Hwy",
-    "phone": null,
-    "grades": [
-      { "grade": "XP100", "availability": "in_stock", "lastVerifiedDays": 38, "checkins": 2, "status": "stale" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
-    ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": "2026-06-22T00:00:00.000Z"
-  },
-  {
-    "id": "iocl-wb-0290",
-    "slug": "park-street-kolkata-indianoil",
-    "name": "IndianOil, Park Street",
-    "brand": "IOCL",
-    "city": "Kolkata",
-    "citySlug": "kolkata",
-    "state": "West Bengal",
-    "pincode": "700016",
-    "lat": 22.5535,
-    "lng": 88.352,
-    "roCode": "IOCL-WB-0290",
-    "address": "Park St, near Maidan",
-    "phone": null,
-    "grades": [
-      { "grade": "XP100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "IOCL XP100 official retail-outlet list", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-20T00:00:00.000Z", "method": "official-list" }
-    ],
-    "firstSeen": "2026-04-10T00:00:00.000Z",
-    "lastVerified": null
-  },
-  {
-    "id": "hpcl-wb-0512",
-    "slug": "salt-lake-hpcl",
-    "name": "HP Petrol Pump, Salt Lake",
-    "brand": "HPCL",
-    "city": "Kolkata",
-    "citySlug": "kolkata",
-    "state": "West Bengal",
-    "pincode": "700091",
-    "lat": 22.5804,
-    "lng": 88.4179,
-    "roCode": "HPCL-WB-0512",
-    "address": "Sector V, Salt Lake",
-    "phone": null,
-    "grades": [
-      { "grade": "poWer 99", "availability": "out_of_stock", "lastVerifiedDays": 11, "checkins": 4, "status": "field-verified" }
-    ],
-    "price": null,
-    "sources": [
-      { "source": "HPCL poWer product-page outlet table", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-22T00:00:00.000Z", "method": "product-page-table" }
-    ],
-    "firstSeen": "2026-05-20T00:00:00.000Z",
-    "lastVerified": "2026-07-19T00:00:00.000Z"
-  },
-  {
-    "id": "bpcl-up-1330",
-    "slug": "hazratganj-lucknow-bharatpetroleum",
-    "name": "BPCL, Hazratganj",
-    "brand": "BPCL",
-    "city": "Lucknow",
-    "citySlug": "lucknow",
-    "state": "Uttar Pradesh",
-    "pincode": "226001",
-    "lat": 26.85,
-    "lng": 80.947,
-    "roCode": "BPCL-UP-1330",
-    "address": "MG Marg, Hazratganj",
-    "phone": null,
-    "grades": [
-      { "grade": "Speed 100", "availability": "unknown", "lastVerifiedDays": null, "checkins": 0, "status": "official-listed" }
-    ],
-    "price": { "grade": "Speed 100", "value": "169.00", "currency": "INR", "source": "BPCL locator API", "asOf": "2026-07-28" },
-    "sources": [
-      { "source": "BPCL locator API", "license": "facts:EBC-v-Modak", "retrievedAt": "2026-07-28T00:00:00.000Z", "method": "locator-api" }
-    ],
-    "firstSeen": "2026-06-01T00:00:00.000Z",
+    "firstSeen": "2026-07-31T00:00:00.000Z",
     "lastVerified": null
   }
 ]
