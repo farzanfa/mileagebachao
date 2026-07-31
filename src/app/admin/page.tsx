@@ -8,22 +8,13 @@
 import type { ReactNode } from "react";
 
 import { revalidatePath } from "next/cache";
-import { cookies } from "next/headers";
+import Link from "next/link";
 
 import { DbUnavailableError } from "@/lib/api";
-import { ADMIN_COOKIE, adminTokenConfigured, verifyAdminCookie } from "@/lib/adminToken";
-import { auth, isAdminEmail } from "@/lib/auth";
+import { isAuthorized } from "@/lib/adminGate";
+import { adminTokenConfigured } from "@/lib/adminToken";
 import { decideQueue, listQueue, type QueueItem } from "@/lib/queries/admin";
-
-/** Admin = allow-listed session email OR a valid admin-token cookie. */
-async function isAuthorized(): Promise<{ ok: boolean; who: string | null }> {
-  const session = await auth();
-  const email = session?.user?.email ?? null;
-  if (isAdminEmail(email)) return { ok: true, who: email };
-  const jar = await cookies();
-  if (verifyAdminCookie(jar.get(ADMIN_COOKIE)?.value)) return { ok: true, who: "admin (token)" };
-  return { ok: false, who: null };
-}
+import { adminStats, type AdminStats } from "@/lib/queries/adminStations";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -299,9 +290,11 @@ export default async function AdminModerationPage({
   }
 
   let items: QueueItem[] = [];
+  let stats: AdminStats | null = null;
   let dbUnavailable = false;
   try {
     items = await listQueue({});
+    stats = await adminStats();
   } catch (e) {
     if (e instanceof DbUnavailableError) {
       dbUnavailable = true;
@@ -334,32 +327,88 @@ export default async function AdminModerationPage({
         minHeight: "100vh",
       }}
     >
-      <header style={{ marginBottom: "1.5rem", display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "1rem", flexWrap: "wrap" }}>
+      <header style={{ marginBottom: "1.25rem", display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "1rem", flexWrap: "wrap" }}>
         <div>
-          <h1 style={{ fontSize: "1.5rem", fontWeight: 800 }}>Moderation queue</h1>
-          <p style={{ color: "var(--ink-2)", marginTop: "0.25rem" }}>
-            {pending} pending · {items.length} total. Signed in as {who}.
-          </p>
+          <h1 style={{ fontSize: "1.5rem", fontWeight: 800 }}>MileageBachao admin</h1>
+          <p style={{ color: "var(--ink-2)", marginTop: "0.25rem" }}>Signed in as {who}.</p>
         </div>
-        <form method="post" action="/admin/logout">
-          <button
-            type="submit"
+        <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+          <Link
+            href="/admin/pumps"
             style={{
               minHeight: "40px",
-              padding: "0 0.9rem",
-              fontSize: "0.8rem",
+              display: "inline-flex",
+              alignItems: "center",
+              padding: "0 1rem",
+              fontSize: "0.85rem",
               fontWeight: 700,
-              cursor: "pointer",
-              background: "transparent",
-              color: "var(--ink-2)",
-              border: "1px solid var(--line-strong)",
+              background: "var(--accent)",
+              color: "#fff",
               borderRadius: "0.5rem",
+              textDecoration: "none",
             }}
           >
-            Log out
-          </button>
-        </form>
+            Manage pumps
+          </Link>
+          <form method="post" action="/admin/logout">
+            <button
+              type="submit"
+              style={{
+                minHeight: "40px",
+                padding: "0 0.9rem",
+                fontSize: "0.8rem",
+                fontWeight: 700,
+                cursor: "pointer",
+                background: "transparent",
+                color: "var(--ink-2)",
+                border: "1px solid var(--line-strong)",
+                borderRadius: "0.5rem",
+              }}
+            >
+              Log out
+            </button>
+          </form>
+        </div>
       </header>
+
+      {stats && (
+        <section
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
+            gap: "0.75rem",
+            marginBottom: "1.75rem",
+          }}
+        >
+          {[
+            ["Pumps in DB", String(stats.stations)],
+            ["Pending reports", String(stats.pendingReports)],
+            ...stats.byBrand.map((b) => [b.brand, String(b.n)] as [string, string]),
+            ["Last edit", stats.lastEdit ?? "—"],
+          ].map(([label, value]) => (
+            <div
+              key={label}
+              style={{
+                background: "var(--surface)",
+                border: "1px solid var(--line)",
+                borderRadius: "0.75rem",
+                padding: "0.9rem 1rem",
+              }}
+            >
+              <div style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--ink-3)" }}>
+                {label}
+              </div>
+              <div style={{ fontSize: "1.25rem", fontWeight: 800, marginTop: "0.15rem", fontVariantNumeric: "tabular-nums" }}>
+                {value}
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      <h2 style={{ fontSize: "1.1rem", fontWeight: 800, marginBottom: "0.75rem" }}>
+        Moderation queue — {pending} pending · {items.length} total
+      </h2>
 
       {items.length === 0 ? (
         <p style={{ color: "var(--ink-2)" }}>The queue is empty. Nothing to review right now.</p>

@@ -141,5 +141,22 @@ export async function decideQueue(
 
   const row = rows[0];
   if (!row) throw new Error(`moderation item ${id} not found`);
+
+  // Approving an "Add a pump" report creates the station itself (status 'unverified',
+  // provenance = the community report). It reaches the public map on the next publish.
+  if (decision === "approve") {
+    const kind = await sql<{ kind: string }[]>`
+      SELECT kind::text AS kind FROM app.user_reports WHERE id = ${id}::bigint`;
+    if (kind[0]?.kind === "new_station") {
+      const { promoteNewStationReport } = await import("@/lib/queries/adminStations");
+      try {
+        await promoteNewStationReport(id);
+      } catch (e) {
+        // Promotion failure must not silently lose the approval — surface it.
+        throw new Error(`approved, but station creation failed: ${(e as Error).message}`);
+      }
+    }
+  }
+
   return { id: row.id, status: row.status };
 }
