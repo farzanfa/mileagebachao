@@ -53,3 +53,4 @@ venv/
 .vercel
 .env*
 .env.vercel*
+.admin-token.local.txt
