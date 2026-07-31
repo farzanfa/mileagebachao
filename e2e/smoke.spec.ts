@@ -9,6 +9,20 @@ test("homepage is the map with search and add-a-pump", async ({ page }) => {
   await expect(page).toHaveTitle(/OctaneFinder/i);
   await expect(page.getByRole("searchbox").first()).toBeVisible();
   await expect(page.getByRole("button", { name: /add a pump/i })).toBeVisible();
+  await expect(page.getByRole("button", { name: /find pumps near me/i })).toBeVisible();
+});
+
+test("GPS locate shows the nearest-pumps panel", async ({ browser }) => {
+  const context = await browser.newContext({
+    geolocation: { latitude: 9.97, longitude: 76.32 }, // Kochi
+    permissions: ["geolocation"],
+  });
+  const page = await context.newPage();
+  await page.goto("/");
+  await page.getByRole("button", { name: /find pumps near me/i }).click();
+  await expect(page.getByText(/nearest pumps to you/i)).toBeVisible();
+  await expect(page.getByText(/vytilla/i).first()).toBeVisible();
+  await context.close();
 });
 
 test("search finds a Kochi pump and shows its card", async ({ page }) => {

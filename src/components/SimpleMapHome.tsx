@@ -10,7 +10,8 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 
 import MapLibreMap from "@/components/map/MapLibreMap";
-import type { Station } from "@/lib/types";
+import { haversineKm } from "@/lib/geo";
+import type { Coord, Station } from "@/lib/types";
 
 const FUELS = ["XP100", "poWer 100", "Speed 100", "poWer 99", "Speed 97", "Not sure"] as const;
 
@@ -58,6 +59,10 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
   const [form, setForm] = useState<SuggestForm>(EMPTY_FORM);
   const [submitState, setSubmitState] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [submitMessage, setSubmitMessage] = useState("");
+  const [userLoc, setUserLoc] = useState<Coord | null>(null);
+  const [locState, setLocState] = useState<"idle" | "locating" | "error">("idle");
+  const [locError, setLocError] = useState("");
+  const [showNearest, setShowNearest] = useState(false);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -71,9 +76,45 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
 
   const selected = selectedId ? stations.find((s) => s.id === selectedId) ?? null : null;
 
+  const nearest = useMemo(() => {
+    if (!userLoc) return [];
+    return stations
+      .map((s) => ({ s, km: haversineKm(userLoc, { lat: s.lat, lng: s.lng }) }))
+      .sort((a, b) => a.km - b.km)
+      .slice(0, 5);
+  }, [stations, userLoc]);
+
   function pick(id: string) {
     setSelectedId(id);
     setQuery("");
+  }
+
+  function locate() {
+    if (typeof navigator === "undefined" || !("geolocation" in navigator)) {
+      setLocState("error");
+      setLocError("Your browser doesn't support location.");
+      return;
+    }
+    setLocState("locating");
+    setLocError("");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        // Client-side only: the coordinates never leave this device.
+        setUserLoc({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+        setLocState("idle");
+        setSelectedId(null);
+        setShowNearest(true);
+      },
+      (geoErr) => {
+        setLocState("error");
+        setLocError(
+          geoErr.code === geoErr.PERMISSION_DENIED
+            ? "Location access was denied. Allow location for this site and try again."
+            : "Couldn't get your location. Please try again.",
+        );
+      },
+      { enableHighAccuracy: true, timeout: 10_000, maximumAge: 60_000 },
+    );
   }
 
   async function submitSuggestion() {
@@ -123,6 +164,7 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
         selectedId={selectedId}
         onSelectStation={pick}
         styleUrl={styleUrl}
+        userLocation={userLoc}
       />
 
       {/* Floating search card */}
@@ -205,6 +247,55 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
         </p>
       </div>
 
+      {/* Locate-me (GPS) button */}
+      <button
+        type="button"
+        aria-label="Find pumps near me"
+        title="Find pumps near me"
+        disabled={locState === "locating"}
+        onClick={locate}
+        className="absolute bottom-[92px] right-4 z-10 grid h-[48px] w-[48px] place-items-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--accent-ink)] shadow-[0_4px_16px_rgba(16,24,25,.25)] hover:bg-[var(--surface-2)] disabled:opacity-60"
+      >
+        {locState === "locating" ? (
+          <span
+            aria-hidden
+            className="block h-5 w-5 animate-spin rounded-full border-2 border-[var(--line-strong)] border-t-[var(--accent)]"
+          />
+        ) : (
+          <svg
+            aria-hidden
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+          >
+            <circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none" />
+            <circle cx="12" cy="12" r="7.5" />
+            <path d="M12 1.8v3M12 19.2v3M1.8 12h3M19.2 12h3" />
+          </svg>
+        )}
+      </button>
+
+      {/* Location error toast */}
+      {locState === "error" && (
+        <div
+          role="alert"
+          className={`absolute bottom-[152px] right-4 z-10 w-[min(300px,calc(100vw-24px))] ${CARD} p-3 text-[12.5px] text-[var(--ink)]`}
+        >
+          {locError}
+          <button
+            type="button"
+            onClick={() => setLocState("idle")}
+            className="mt-2 block text-[12px] font-bold text-[var(--accent-ink)] underline"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
       {/* Add a pump button */}
       <button
         type="button"
@@ -219,6 +310,51 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
         </span>
         Add a pump
       </button>
+
+      {/* Nearest pumps panel (after locating) */}
+      {showNearest && userLoc && !selected && nearest.length > 0 && (
+        <div
+          className={`absolute bottom-6 left-3 z-10 w-[min(380px,calc(100vw-24px))] ${CARD} p-4`}
+          role="dialog"
+          aria-label="Nearest pumps to your location"
+        >
+          <button
+            type="button"
+            aria-label="Close nearest pumps"
+            onClick={() => setShowNearest(false)}
+            className="absolute right-2 top-2 grid h-8 w-8 place-items-center rounded-lg text-[var(--ink-3)] hover:bg-[var(--surface-2)] hover:text-[var(--ink)]"
+          >
+            ✕
+          </button>
+          <h2 className="text-[14px] font-extrabold text-[var(--ink)]">Nearest pumps to you</h2>
+          <ul className="mt-2 divide-y divide-[var(--line)]">
+            {nearest.map(({ s, km }) => (
+              <li key={s.id}>
+                <button
+                  type="button"
+                  onClick={() => pick(s.id)}
+                  className="flex w-full items-baseline justify-between gap-3 px-1 py-2 text-left hover:bg-[var(--surface-2)]"
+                >
+                  <span className="min-w-0">
+                    <span className="block truncate text-[13px] font-bold text-[var(--ink)]">
+                      {s.name}
+                    </span>
+                    <span className="block text-[11.5px] text-[var(--ink-3)]">
+                      {s.city}, {s.state}
+                    </span>
+                  </span>
+                  <span className="shrink-0 text-[12.5px] font-bold text-[var(--accent-ink)]">
+                    {km < 10 ? km.toFixed(1) : Math.round(km)} km
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 text-[10.5px] text-[var(--ink-3)]">
+            Straight-line (aerial) distance · your location never leaves this device.
+          </p>
+        </div>
+      )}
 
       {/* Selected pump card */}
       {selected && (
@@ -245,6 +381,12 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
             {selected.address}, {selected.city}, {selected.state}
             {selected.pincode ? ` ${selected.pincode}` : ""}
           </p>
+          {userLoc && (
+            <p className="mt-1 text-[12px] font-bold text-[var(--accent-ink)]">
+              {haversineKm(userLoc, { lat: selected.lat, lng: selected.lng }).toFixed(1)} km from
+              you <span className="font-normal text-[var(--ink-3)]">(aerial)</span>
+            </p>
+          )}
           <div className="mt-2 flex flex-wrap gap-1.5">
             {selected.grades.map((g) => (
               <span

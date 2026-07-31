@@ -14,7 +14,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Map as MaplibreMap, Marker as MaplibreMarker, StyleSpecification } from "maplibre-gl";
 
-import type { Brand, GradeName, Station } from "@/lib/types";
+import type { Brand, Coord, GradeName, Station } from "@/lib/types";
 import { bestFreshness } from "@/lib/freshness";
 
 // maplibre-gl ships its control styling as a plain stylesheet; importing it inside
@@ -68,6 +68,8 @@ export interface MapLibreMapProps {
   selectedId?: string | null;
   onSelectStation?: (id: string) => void;
   styleUrl?: string;
+  /** The user's GPS position (client-side only, never persisted). Shown as a blue dot. */
+  userLocation?: Coord | null;
 }
 
 function prefersReducedMotion(): boolean {
@@ -163,11 +165,13 @@ export default function MapLibreMap({
   selectedId = null,
   onSelectStation,
   styleUrl,
+  userLocation = null,
 }: MapLibreMapProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<MaplibreMap | null>(null);
   const mlRef = useRef<typeof import("maplibre-gl") | null>(null);
   const markersRef = useRef<MaplibreMarker[]>([]);
+  const userMarkerRef = useRef<MaplibreMarker | null>(null);
   const renderRef = useRef<() => void>(() => {});
   const fittedKeyRef = useRef<string>("");
 
@@ -314,6 +318,8 @@ export default function MapLibreMap({
       cancelled = true;
       for (const m of markersRef.current) m.remove();
       markersRef.current = [];
+      userMarkerRef.current?.remove();
+      userMarkerRef.current = null;
       mapRef.current?.remove();
       mapRef.current = null;
       mlRef.current = null;
@@ -355,6 +361,38 @@ export default function MapLibreMap({
     for (const s of stations) b.extend([s.lng, s.lat]);
     map.fitBounds(b, { padding: 64, maxZoom: 12, duration: reduce ? 0 : 400 });
   }, [ready, stations]);
+
+  // ---- user GPS position: blue dot + fly-to (kept separate from station markers) ----
+  useEffect(() => {
+    if (!ready) return;
+    const map = mapRef.current;
+    const maplibregl = mlRef.current;
+    if (!map || !maplibregl) return;
+
+    userMarkerRef.current?.remove();
+    userMarkerRef.current = null;
+    if (!userLocation) return;
+
+    const el = document.createElement("div");
+    el.setAttribute("aria-label", "Your location");
+    el.style.cssText = [
+      "width:18px",
+      "height:18px",
+      "border-radius:50%",
+      "background:#1a73e8",
+      "border:3px solid #ffffff",
+      "box-shadow:0 0 0 3px rgba(26,115,232,.30), 0 1px 4px rgba(0,0,0,.35)",
+    ].join(";");
+    userMarkerRef.current = new maplibregl.Marker({ element: el, anchor: "center" })
+      .setLngLat([userLocation.lng, userLocation.lat])
+      .addTo(map);
+
+    if (prefersReducedMotion()) {
+      map.jumpTo({ center: [userLocation.lng, userLocation.lat], zoom: 12 });
+    } else {
+      map.easeTo({ center: [userLocation.lng, userLocation.lat], zoom: 12, duration: 600 });
+    }
+  }, [ready, userLocation]);
 
   // ---- gently reveal the selected station if it is off-screen ----
   useEffect(() => {
