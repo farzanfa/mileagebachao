@@ -37,22 +37,36 @@ interface SimpleMapHomeProps {
 interface SuggestForm {
   fuel: (typeof FUELS)[number];
   pumpName: string;
+  address: string;
   city: string;
-  area: string;
   state: string;
+  pincode: string;
+  mapsLink: string;
   note: string;
-  contact: string;
+  reporterName: string;
+  reporterPhone: string;
+  reporterEmail: string;
+  confirmSeen: boolean;
 }
 
 const EMPTY_FORM: SuggestForm = {
   fuel: "XP100",
   pumpName: "",
+  address: "",
   city: "",
-  area: "",
   state: "",
+  pincode: "",
+  mapsLink: "",
   note: "",
-  contact: "",
+  reporterName: "",
+  reporterPhone: "",
+  reporterEmail: "",
+  confirmSeen: false,
 };
+
+const PHONE_RE = /^(\+91[\s-]?)?[6-9]\d{9}$/;
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const MAPS_RE = /(maps\.google|google\.[a-z.]+\/maps|goo\.gl\/maps|maps\.app\.goo\.gl)/i;
 
 export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -67,6 +81,8 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
   const [showNearest, setShowNearest] = useState(false);
   const [route, setRoute] = useState<RouteResult | null>(null);
   const [routeState, setRouteState] = useState<"idle" | "loading" | "error">("idle");
+  const [formLoc, setFormLoc] = useState<{ lat: number; lng: number; accuracyM: number } | null>(null);
+  const [formLocState, setFormLocState] = useState<"idle" | "locating" | "error">("idle");
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -136,6 +152,26 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
     );
   }
 
+  function captureFormLocation() {
+    if (typeof navigator === "undefined" || !("geolocation" in navigator)) {
+      setFormLocState("error");
+      return;
+    }
+    setFormLocState("locating");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setFormLoc({
+          lat: pos.coords.latitude,
+          lng: pos.coords.longitude,
+          accuracyM: Math.round(pos.coords.accuracy),
+        });
+        setFormLocState("idle");
+      },
+      () => setFormLocState("error"),
+      { enableHighAccuracy: true, timeout: 12_000, maximumAge: 0 },
+    );
+  }
+
   async function submitSuggestion() {
     setSubmitState("sending");
     setSubmitMessage("");
@@ -146,16 +182,25 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
         body: JSON.stringify({
           fuel: form.fuel,
           pumpName: form.pumpName,
+          address: form.address,
           city: form.city,
-          area: form.area || undefined,
           state: form.state,
+          pincode: form.pincode || undefined,
+          lat: formLoc?.lat,
+          lng: formLoc?.lng,
+          accuracyM: formLoc?.accuracyM,
+          mapsLink: form.mapsLink || undefined,
           note: form.note || undefined,
-          contact: form.contact || undefined,
+          reporterName: form.reporterName,
+          reporterPhone: form.reporterPhone,
+          reporterEmail: form.reporterEmail,
+          confirmSeen: form.confirmSeen,
         }),
       });
       if (res.status === 202) {
         setSubmitState("done");
         setForm(EMPTY_FORM);
+        setFormLoc(null);
         return;
       }
       const body = (await res.json().catch(() => null)) as {
@@ -173,8 +218,18 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
     }
   }
 
+  const hasLocation = formLoc !== null || MAPS_RE.test(form.mapsLink.trim());
   const formValid =
-    form.pumpName.trim().length >= 3 && form.city.trim().length >= 2 && form.state.trim().length >= 2;
+    form.pumpName.trim().length >= 3 &&
+    form.address.trim().length >= 5 &&
+    form.city.trim().length >= 2 &&
+    form.state.trim().length >= 2 &&
+    (form.pincode.trim() === "" || /^\d{6}$/.test(form.pincode.trim())) &&
+    hasLocation &&
+    form.reporterName.trim().length >= 2 &&
+    PHONE_RE.test(form.reporterPhone.trim()) &&
+    EMAIL_RE.test(form.reporterEmail.trim()) &&
+    form.confirmSeen;
 
   return (
     <div className="fixed inset-0 overflow-hidden bg-[var(--map-ocean)]">
@@ -506,9 +561,12 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
                 </p>
 
                 <div className="mt-4 grid gap-3">
+                  <p className="text-[11px] font-bold uppercase tracking-wide text-[var(--ink-3)]">
+                    Pump details
+                  </p>
                   <div>
                     <label htmlFor="sg-fuel" className={LABEL}>
-                      Which fuel did you find?
+                      Which fuel did you see at the dispenser? *
                     </label>
                     <select
                       id="sg-fuel"
@@ -537,10 +595,22 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
                       onChange={(e) => setForm({ ...form, pumpName: e.target.value })}
                     />
                   </div>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label htmlFor="sg-address" className={LABEL}>
+                      Street / locality address *
+                    </label>
+                    <input
+                      id="sg-address"
+                      className={INPUT}
+                      placeholder="e.g. Cochin Bypass Rd, Padivattom"
+                      value={form.address}
+                      onChange={(e) => setForm({ ...form, address: e.target.value })}
+                    />
+                  </div>
+                  <div className="grid grid-cols-3 gap-3">
                     <div>
                       <label htmlFor="sg-city" className={LABEL}>
-                        City / town *
+                        City *
                       </label>
                       <input
                         id="sg-city"
@@ -562,18 +632,131 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
                         onChange={(e) => setForm({ ...form, state: e.target.value })}
                       />
                     </div>
+                    <div>
+                      <label htmlFor="sg-pin" className={LABEL}>
+                        PIN code
+                      </label>
+                      <input
+                        id="sg-pin"
+                        className={INPUT}
+                        placeholder="682024"
+                        inputMode="numeric"
+                        maxLength={6}
+                        value={form.pincode}
+                        onChange={(e) =>
+                          setForm({ ...form, pincode: e.target.value.replace(/\D/g, "") })
+                        }
+                      />
+                    </div>
                   </div>
+
+                  <p className="mt-1 text-[11px] font-bold uppercase tracking-wide text-[var(--ink-3)]">
+                    Exact location — required
+                  </p>
+                  <div className="rounded-lg border border-[var(--line)] bg-[var(--surface-2)] p-3">
+                    {formLoc ? (
+                      <p className="text-[12.5px] font-bold text-[var(--accent-ink)]">
+                        📍 Captured: {formLoc.lat.toFixed(5)}, {formLoc.lng.toFixed(5)}{" "}
+                        <span className="font-normal text-[var(--ink-3)]">
+                          (±{formLoc.accuracyM} m)
+                        </span>{" "}
+                        <button
+                          type="button"
+                          onClick={() => setFormLoc(null)}
+                          className="ml-1 font-bold text-[var(--dry)] underline"
+                        >
+                          clear
+                        </button>
+                      </p>
+                    ) : (
+                      <button
+                        type="button"
+                        disabled={formLocState === "locating"}
+                        onClick={captureFormLocation}
+                        className="inline-flex min-h-[42px] items-center gap-2 rounded-lg border border-[var(--accent)] px-4 text-[13px] font-bold text-[var(--accent-ink)] hover:bg-[var(--accent-soft)] disabled:opacity-60"
+                      >
+                        {formLocState === "locating"
+                          ? "Getting GPS…"
+                          : "📍 I'm at the pump — capture GPS"}
+                      </button>
+                    )}
+                    {formLocState === "error" && !formLoc && (
+                      <p className="mt-1 text-[11.5px] text-[var(--dry)]">
+                        Couldn&apos;t get GPS — paste the pump&apos;s Google Maps link below instead.
+                      </p>
+                    )}
+                    <div className="mt-2">
+                      <label htmlFor="sg-maps" className={LABEL}>
+                        {formLoc ? "Google Maps link (optional)" : "…or paste the pump's Google Maps link *"}
+                      </label>
+                      <input
+                        id="sg-maps"
+                        className={INPUT}
+                        placeholder="https://maps.app.goo.gl/…"
+                        value={form.mapsLink}
+                        onChange={(e) => setForm({ ...form, mapsLink: e.target.value })}
+                      />
+                      {form.mapsLink.trim() !== "" && !MAPS_RE.test(form.mapsLink.trim()) && (
+                        <p className="mt-1 text-[11.5px] text-[var(--dry)]">
+                          That doesn&apos;t look like a Google Maps link.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  <p className="mt-1 text-[11px] font-bold uppercase tracking-wide text-[var(--ink-3)]">
+                    Your details — required (used only to verify this report)
+                  </p>
                   <div>
-                    <label htmlFor="sg-area" className={LABEL}>
-                      Area / landmark
+                    <label htmlFor="sg-rname" className={LABEL}>
+                      Full name *
                     </label>
                     <input
-                      id="sg-area"
+                      id="sg-rname"
                       className={INPUT}
-                      placeholder="e.g. Vytilla Junction, near metro"
-                      value={form.area}
-                      onChange={(e) => setForm({ ...form, area: e.target.value })}
+                      placeholder="Your name"
+                      autoComplete="name"
+                      value={form.reporterName}
+                      onChange={(e) => setForm({ ...form, reporterName: e.target.value })}
                     />
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label htmlFor="sg-rphone" className={LABEL}>
+                        Mobile number *
+                      </label>
+                      <input
+                        id="sg-rphone"
+                        className={INPUT}
+                        placeholder="98765 43210"
+                        inputMode="tel"
+                        autoComplete="tel"
+                        value={form.reporterPhone}
+                        onChange={(e) =>
+                          setForm({ ...form, reporterPhone: e.target.value.replace(/[^\d+]/g, "") })
+                        }
+                      />
+                      {form.reporterPhone.trim() !== "" &&
+                        !PHONE_RE.test(form.reporterPhone.trim()) && (
+                          <p className="mt-1 text-[11px] text-[var(--dry)]">
+                            10-digit Indian mobile number.
+                          </p>
+                        )}
+                    </div>
+                    <div>
+                      <label htmlFor="sg-remail" className={LABEL}>
+                        Email *
+                      </label>
+                      <input
+                        id="sg-remail"
+                        className={INPUT}
+                        placeholder="you@example.com"
+                        inputMode="email"
+                        autoComplete="email"
+                        value={form.reporterEmail}
+                        onChange={(e) => setForm({ ...form, reporterEmail: e.target.value })}
+                      />
+                    </div>
                   </div>
                   <div>
                     <label htmlFor="sg-note" className={LABEL}>
@@ -581,24 +764,28 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
                     </label>
                     <textarea
                       id="sg-note"
-                      className={`${INPUT} min-h-[64px] resize-y`}
+                      className={`${INPUT} min-h-[56px] resize-y`}
                       placeholder="e.g. Saw the XP100 dispenser today, ₹160/L"
                       value={form.note}
                       onChange={(e) => setForm({ ...form, note: e.target.value })}
                     />
                   </div>
-                  <div>
-                    <label htmlFor="sg-contact" className={LABEL}>
-                      Your contact (optional, in case we have questions)
-                    </label>
+                  <label className="flex cursor-pointer items-start gap-2 text-[12.5px] text-[var(--ink-2)]">
                     <input
-                      id="sg-contact"
-                      className={INPUT}
-                      placeholder="email or phone"
-                      value={form.contact}
-                      onChange={(e) => setForm({ ...form, contact: e.target.value })}
+                      type="checkbox"
+                      className="mt-0.5 h-4 w-4 accent-[var(--accent)]"
+                      checked={form.confirmSeen}
+                      onChange={(e) => setForm({ ...form, confirmSeen: e.target.checked })}
                     />
-                  </div>
+                    <span>
+                      I saw this fuel at this pump myself. * My details will be used only to verify
+                      this report, per the{" "}
+                      <Link href="/privacy" className="underline">
+                        privacy policy
+                      </Link>
+                      .
+                    </span>
+                  </label>
                 </div>
 
                 {submitState === "error" && (

@@ -47,15 +47,24 @@ export async function submitCorrection(input: CorrectionInput): Promise<{ id: st
   return { id };
 }
 
-/** Payload of a community "add a pump" suggestion (anonymous, moderated). */
+/** Payload of a community "add a pump" report (identified reporter, moderated).
+ *  Location (GPS or a Google Maps link) and reporter details are REQUIRED —
+ *  unverifiable reports are how fake pins happen. */
 export interface NewStationInput {
   fuel: string;
   pumpName: string;
+  address: string;
   city: string;
-  area?: string;
   state: string;
+  pincode?: string;
+  lat?: number;
+  lng?: number;
+  accuracyM?: number;
+  mapsLink?: string;
   note?: string;
-  contact?: string;
+  reporterName: string;
+  reporterPhone: string;
+  reporterEmail: string;
 }
 
 /**
@@ -79,11 +88,20 @@ export async function submitNewStation(input: NewStationInput): Promise<{ id: st
       ${sql.json({
         fuel: input.fuel,
         pumpName: input.pumpName,
+        address: input.address,
         city: input.city,
-        area: input.area ?? null,
         state: input.state,
+        pincode: input.pincode ?? null,
+        lat: input.lat ?? null,
+        lng: input.lng ?? null,
+        accuracyM: input.accuracyM ?? null,
+        mapsLink: input.mapsLink ?? null,
         note: input.note ?? null,
-        contact: input.contact ?? null,
+        reporter: {
+          name: input.reporterName,
+          phone: input.reporterPhone,
+          email: input.reporterEmail,
+        },
       })},
       'pending'::moderation_status
     )

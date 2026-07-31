@@ -18,15 +18,42 @@ export const dynamic = "force-dynamic";
 const SUGGEST_MAX = 10;
 const SUGGEST_WINDOW_MS = 60 * 60_000; // 1 hour
 
-const suggestSchema = z.object({
-  fuel: z.enum(["XP100", "poWer 100", "Speed 100", "poWer 99", "Speed 97", "Not sure"]),
-  pumpName: z.string().trim().min(3).max(120),
-  city: z.string().trim().min(2).max(80),
-  area: z.string().trim().max(120).optional(),
-  state: z.string().trim().min(2).max(60),
-  note: z.string().trim().max(500).optional(),
-  contact: z.string().trim().max(120).optional(),
-});
+const suggestSchema = z
+  .object({
+    fuel: z.enum(["XP100", "poWer 100", "Speed 100", "poWer 99", "Speed 97", "Not sure"]),
+    pumpName: z.string().trim().min(3).max(120),
+    address: z.string().trim().min(5).max(200),
+    city: z.string().trim().min(2).max(80),
+    state: z.string().trim().min(2).max(60),
+    pincode: z
+      .string()
+      .trim()
+      .regex(/^\d{6}$/, "6-digit PIN code")
+      .optional()
+      .or(z.literal("").transform(() => undefined)),
+    lat: z.number().min(6).max(36).optional(),
+    lng: z.number().min(68).max(97.5).optional(),
+    accuracyM: z.number().min(0).max(100000).optional(),
+    mapsLink: z
+      .string()
+      .trim()
+      .max(300)
+      .regex(/(maps\.google|google\.[a-z.]+\/maps|goo\.gl\/maps|maps\.app\.goo\.gl)/i, "Must be a Google Maps link")
+      .optional()
+      .or(z.literal("").transform(() => undefined)),
+    note: z.string().trim().max(500).optional(),
+    reporterName: z.string().trim().min(2).max(80),
+    reporterPhone: z
+      .string()
+      .trim()
+      .regex(/^(\+91[\s-]?)?[6-9]\d{9}$/, "Valid Indian mobile number"),
+    reporterEmail: z.string().trim().email().max(120),
+    confirmSeen: z.literal(true),
+  })
+  .refine((v) => (v.lat !== undefined && v.lng !== undefined) || v.mapsLink !== undefined, {
+    message: "Pump location required: capture GPS at the pump or paste its Google Maps link.",
+    path: ["mapsLink"],
+  });
 
 function clientIp(req: Request): string {
   const fwd = req.headers.get("x-forwarded-for");
