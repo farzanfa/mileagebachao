@@ -90,16 +90,16 @@ export async function recordCheckin(
     // coordinates are NOT persisted — only the observation is (DPDP minimization, memo D.5);
     // the geofence pass/fail lives with the route.
     const reports = await tx<{ id: string }[]>`
-      INSERT INTO user_reports
+      INSERT INTO app.user_reports
         (user_id, station_id, fuel_type_id, kind, availability, payload, status)
       VALUES (
         ${userId},
         ${input.stationId},
-        (SELECT id FROM fuel_types WHERE code = ${fuelCode}),
-        ${p.reportKind}::report_kind,
-        ${p.availability}::availability_status,
+        (SELECT id FROM app.fuel_types WHERE code = ${fuelCode}),
+        ${p.reportKind}::app.report_kind,
+        ${p.availability}::app.availability_status,
         ${sql.json({ grade: input.grade, result: input.result })},
-        ${p.status}::moderation_status
+        ${p.status}::app.moderation_status
       )
       RETURNING id::text AS id
     `;
@@ -109,11 +109,11 @@ export async function recordCheckin(
     if (p.outcome) {
       // The append-only event; the projection trigger moves last_verified_at + the score.
       await tx`
-        INSERT INTO verification_history
+        INSERT INTO app.verification_history
           (station_id, fuel_type_id, method, outcome, verified_at, verified_by, user_report_id)
         VALUES (
           ${input.stationId},
-          (SELECT id FROM fuel_types WHERE code = ${fuelCode}),
+          (SELECT id FROM app.fuel_types WHERE code = ${fuelCode}),
           'user_checkin'::verification_method,
           ${p.outcome}::verification_outcome,
           ${verifiedAt}::timestamptz,

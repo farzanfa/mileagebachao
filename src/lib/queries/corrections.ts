@@ -26,18 +26,18 @@ export async function submitCorrection(input: CorrectionInput): Promise<{ id: st
   }
 
   const rows = await sql<{ id: string }[]>`
-    INSERT INTO user_reports (user_id, station_id, kind, payload, status)
+    INSERT INTO app.user_reports (user_id, station_id, kind, payload, status)
     VALUES (
       NULL,
       ${input.stationId},
-      'detail_correction'::report_kind,
+      'detail_correction'::app.report_kind,
       ${sql.json({
         field: input.field,
         value: input.value,
         note: input.note ?? null,
         contact: input.contact ?? null,
       })},
-      'pending'::moderation_status
+      'pending'::app.moderation_status
     )
     RETURNING id::text AS id
   `;
@@ -80,11 +80,11 @@ export async function submitNewStation(input: NewStationInput): Promise<{ id: st
   }
 
   const rows = await sql<{ id: string }[]>`
-    INSERT INTO user_reports (user_id, station_id, kind, payload, status)
+    INSERT INTO app.user_reports (user_id, station_id, kind, payload, status)
     VALUES (
       NULL,
       NULL,
-      'new_station'::report_kind,
+      'new_station'::app.report_kind,
       ${sql.json({
         fuel: input.fuel,
         pumpName: input.pumpName,
@@ -103,7 +103,7 @@ export async function submitNewStation(input: NewStationInput): Promise<{ id: st
           email: input.reporterEmail,
         },
       })},
-      'pending'::moderation_status
+      'pending'::app.moderation_status
     )
     RETURNING id::text AS id
   `;

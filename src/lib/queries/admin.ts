@@ -89,7 +89,7 @@ export async function listQueue(opts: { type?: string; status?: string }): Promi
         ELSE 'rejected'
       END AS status,
       created_at
-    FROM user_reports
+    FROM app.user_reports
     WHERE (${kinds}::text[] IS NULL OR kind::text = ANY (${kinds}::text[]))
       AND (${statuses}::text[] IS NULL OR status::text = ANY (${statuses}::text[]))
     ORDER BY (status = 'pending') DESC, created_at DESC
@@ -127,8 +127,8 @@ export async function decideQueue(
   const noteVal = note && note.trim().length > 0 ? note.trim() : null;
 
   const rows = await sql<{ id: string; status: string }[]>`
-    UPDATE user_reports
-       SET status = ${nextStatus}::moderation_status,
+    UPDATE app.user_reports
+       SET status = ${nextStatus}::app.moderation_status,
            reviewed_at = now(),
            payload = CASE
              WHEN ${noteVal}::text IS NULL THEN payload
