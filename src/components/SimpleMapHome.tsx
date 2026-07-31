@@ -12,6 +12,7 @@ import Link from "next/link";
 import BrandMark from "@/components/BrandMark";
 import MapLibreMap from "@/components/map/MapLibreMap";
 import { haversineKm } from "@/lib/geo";
+import { fetchRoute, type RouteResult } from "@/lib/routing";
 import type { Coord, Station } from "@/lib/types";
 
 const FUELS = ["XP100", "poWer 100", "Speed 100", "poWer 99", "Speed 97", "Not sure"] as const;
@@ -64,6 +65,8 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
   const [locState, setLocState] = useState<"idle" | "locating" | "error">("idle");
   const [locError, setLocError] = useState("");
   const [showNearest, setShowNearest] = useState(false);
+  const [route, setRoute] = useState<RouteResult | null>(null);
+  const [routeState, setRouteState] = useState<"idle" | "loading" | "error">("idle");
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -88,6 +91,21 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
   function pick(id: string) {
     setSelectedId(id);
     setQuery("");
+    setRoute(null);
+    setRouteState("idle");
+  }
+
+  async function showRoute(station: Station) {
+    if (!userLoc) return;
+    setRouteState("loading");
+    const r = await fetchRoute(userLoc, { lat: station.lat, lng: station.lng });
+    if (r) {
+      setRoute(r);
+      setRouteState("idle");
+    } else {
+      setRoute(null);
+      setRouteState("error");
+    }
   }
 
   function locate() {
@@ -166,6 +184,7 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
         onSelectStation={pick}
         styleUrl={styleUrl}
         userLocation={userLoc}
+        routeGeometry={route?.geometry ?? null}
       />
 
       {/* Floating search card */}
@@ -361,7 +380,11 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
           <button
             type="button"
             aria-label="Close"
-            onClick={() => setSelectedId(null)}
+            onClick={() => {
+              setSelectedId(null);
+              setRoute(null);
+              setRouteState("idle");
+            }}
             className="absolute right-2 top-2 grid h-8 w-8 place-items-center rounded-lg text-[var(--ink-3)] hover:bg-[var(--surface-2)] hover:text-[var(--ink)]"
           >
             ✕
@@ -378,8 +401,15 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
           </p>
           {userLoc && (
             <p className="mt-1 text-[12px] font-bold text-[var(--accent-ink)]">
-              {haversineKm(userLoc, { lat: selected.lat, lng: selected.lng }).toFixed(1)} km from
-              you <span className="font-normal text-[var(--ink-3)]">(aerial)</span>
+              {route
+                ? `${route.distanceKm.toFixed(1)} km by road · ~${route.durationMin} min drive`
+                : `${haversineKm(userLoc, { lat: selected.lat, lng: selected.lng }).toFixed(1)} km from you`}{" "}
+              {!route && <span className="font-normal text-[var(--ink-3)]">(aerial)</span>}
+            </p>
+          )}
+          {routeState === "error" && (
+            <p className="mt-1 text-[11.5px] text-[var(--dry)]">
+              Couldn&apos;t fetch the road route right now — the Directions button still works.
             </p>
           )}
           <div className="mt-2 flex flex-wrap gap-1.5">
@@ -397,14 +427,38 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
               </span>
             )}
           </div>
-          <a
-            href={`https://www.google.com/maps/dir/?api=1&destination=${selected.lat},${selected.lng}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex min-h-[42px] items-center rounded-lg bg-[var(--accent)] px-4 text-[13.5px] font-bold text-white hover:bg-[var(--accent-ink)]"
-          >
-            Directions ↗
-          </a>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {userLoc ? (
+              <button
+                type="button"
+                disabled={routeState === "loading"}
+                onClick={() => void showRoute(selected)}
+                className="inline-flex min-h-[42px] items-center rounded-lg border border-[var(--accent)] px-4 text-[13.5px] font-bold text-[var(--accent-ink)] hover:bg-[var(--accent-soft)] disabled:opacity-60"
+              >
+                {routeState === "loading"
+                  ? "Finding route…"
+                  : route
+                    ? "Route shown ↺"
+                    : "Show route on map"}
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={locate}
+                className="inline-flex min-h-[42px] items-center rounded-lg border border-[var(--line)] px-4 text-[13px] font-bold text-[var(--ink-2)] hover:bg-[var(--surface-2)]"
+              >
+                📍 Locate me for the route
+              </button>
+            )}
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${selected.lat},${selected.lng}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-[42px] items-center rounded-lg bg-[var(--accent)] px-4 text-[13.5px] font-bold text-white hover:bg-[var(--accent-ink)]"
+            >
+              Navigate ↗
+            </a>
+          </div>
         </div>
       )}
 

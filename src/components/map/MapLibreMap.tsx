@@ -70,6 +70,8 @@ export interface MapLibreMapProps {
   styleUrl?: string;
   /** The user's GPS position (client-side only, never persisted). Shown as a blue dot. */
   userLocation?: Coord | null;
+  /** Driving-route geometry ([lng,lat] pairs) to draw and frame; null clears it. */
+  routeGeometry?: [number, number][] | null;
 }
 
 function prefersReducedMotion(): boolean {
@@ -166,6 +168,7 @@ export default function MapLibreMap({
   onSelectStation,
   styleUrl,
   userLocation = null,
+  routeGeometry = null,
 }: MapLibreMapProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<MaplibreMap | null>(null);
@@ -393,6 +396,54 @@ export default function MapLibreMap({
       map.easeTo({ center: [userLocation.lng, userLocation.lat], zoom: 12, duration: 600 });
     }
   }, [ready, userLocation]);
+
+  // ---- driving-route line: draw, update, frame; cleared when null ----
+  useEffect(() => {
+    if (!ready) return;
+    const map = mapRef.current;
+    const maplibregl = mlRef.current;
+    if (!map || !maplibregl) return;
+
+    const data = {
+      type: "Feature" as const,
+      properties: {},
+      geometry: {
+        type: "LineString" as const,
+        coordinates: routeGeometry ?? [],
+      },
+    };
+
+    const existing = map.getSource("mb-route");
+    if (existing && "setData" in existing) {
+      (existing as { setData: (d: unknown) => void }).setData(data);
+    } else {
+      try {
+        map.addSource("mb-route", { type: "geojson", data });
+        map.addLayer({
+          id: "mb-route-casing",
+          type: "line",
+          source: "mb-route",
+          layout: { "line-cap": "round", "line-join": "round" },
+          paint: { "line-color": "#ffffff", "line-width": 8, "line-opacity": 0.9 },
+        });
+        map.addLayer({
+          id: "mb-route-line",
+          type: "line",
+          source: "mb-route",
+          layout: { "line-cap": "round", "line-join": "round" },
+          paint: { "line-color": "#0F7A3D", "line-width": 4.5, "line-opacity": 0.95 },
+        });
+      } catch {
+        // style not ready yet; the next effect run (ready/route change) retries
+      }
+    }
+
+    if (routeGeometry && routeGeometry.length > 1) {
+      const b = new maplibregl.LngLatBounds();
+      for (const c of routeGeometry) b.extend(c);
+      map.fitBounds(b, { padding: 90, maxZoom: 14, duration: prefersReducedMotion() ? 0 : 500 });
+    }
+  }, [ready, routeGeometry]);
 
   // ---- gently reveal the selected station if it is off-screen ----
   useEffect(() => {
