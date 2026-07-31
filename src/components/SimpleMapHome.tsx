@@ -412,6 +412,12 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
               Couldn&apos;t fetch the road route right now — the Directions button still works.
             </p>
           )}
+          {selected.sources.some((x) => /centroid|scattered/.test(x.method)) && (
+            <p className="mt-1 text-[11px] font-semibold text-[var(--stale)]">
+              ⚠ Pin is approximate (city-level) — the exact pump location isn&apos;t published
+              yet. Call ahead or search the pump name in Maps before a long ride.
+            </p>
+          )}
           <div className="mt-2 flex flex-wrap gap-1.5">
             {selected.grades.map((g) => (
               <span

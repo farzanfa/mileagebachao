@@ -551,8 +551,8 @@
   "citySlug": "kochi",
   "state": "Kerala",
   "pincode": "682021",
-  "lat": 9.98,
-  "lng": 76.283,
+  "lat": 9.967903,
+  "lng": 76.244438,
   "roCode": "400238",
   "address": "Kochi, Ernakulam",
   "phone": null,
@@ -586,8 +586,8 @@
   "citySlug": "kalamassery",
   "state": "Kerala",
   "pincode": "683104",
-  "lat": 10.06,
-  "lng": 76.32,
+  "lat": 10.034607,
+  "lng": 76.363787,
   "roCode": "393465",
   "address": "FACT Road, Kalamassery, Ernakulam",
   "phone": "9645087491",
@@ -634,8 +634,8 @@
   "citySlug": "aluva",
   "state": "Kerala",
   "pincode": "683101",
-  "lat": 10.108,
-  "lng": 76.352,
+  "lat": 10.107768,
+  "lng": 76.356853,
   "roCode": "395395",
   "address": "Aluva, Ernakulam",
   "phone": null,
@@ -669,8 +669,8 @@
   "citySlug": "kothamangalam",
   "state": "Kerala",
   "pincode": "686691",
-  "lat": 10.06,
-  "lng": 76.63,
+  "lat": 10.13328,
+  "lng": 76.736122,
   "roCode": "418535",
   "address": "Kothamangalam, Ernakulam",
   "phone": null,
@@ -704,8 +704,8 @@
   "citySlug": "thrissur",
   "state": "Kerala",
   "pincode": "680001",
-  "lat": 10.52,
-  "lng": 76.21,
+  "lat": 10.430271,
+  "lng": 76.279449,
   "roCode": "399880",
   "address": "Chungam, Thrissur",
   "phone": null,
@@ -1055,8 +1055,8 @@
   "citySlug": "muzaffarpur",
   "state": "Bihar",
   "pincode": "",
-  "lat": 26.1225,
-  "lng": 85.3906,
+  "lat": 26.122552,
+  "lng": 85.39626,
   "roCode": "190925",
   "address": "Muzaffarpur (Muzaffarpur East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1075,7 +1075,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1090,8 +1090,8 @@
   "citySlug": "muzaffarpur",
   "state": "Bihar",
   "pincode": "",
-  "lat": 26.1225,
-  "lng": 85.3906,
+  "lat": 26.119126,
+  "lng": 85.382112,
   "roCode": "284183",
   "address": "Muzaffarpur (Muzaffarpur East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1110,7 +1110,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1230,8 +1230,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.622232,
+  "lng": 77.209422,
   "roCode": "102073",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1250,7 +1250,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1265,8 +1265,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.617916,
+  "lng": 77.205488,
   "roCode": "106272",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1285,7 +1285,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1300,8 +1300,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.613511,
+  "lng": 77.201121,
   "roCode": "106287",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1320,7 +1320,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1335,8 +1335,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.612077,
+  "lng": 77.202496,
   "roCode": "106321",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1355,7 +1355,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1370,8 +1370,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.605968,
+  "lng": 77.209849,
   "roCode": "186846",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1390,7 +1390,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1405,8 +1405,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.606491,
+  "lng": 77.214308,
   "roCode": "186866",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1425,7 +1425,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1440,8 +1440,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.609089,
+  "lng": 77.212262,
   "roCode": "190058",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1460,7 +1460,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1475,8 +1475,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.610783,
+  "lng": 77.216732,
   "roCode": "312687",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1495,7 +1495,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1510,8 +1510,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.612142,
+  "lng": 77.214568,
   "roCode": "368600",
   "address": "Delhi (Delhi South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1530,7 +1530,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1545,8 +1545,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.620338,
+  "lng": 77.208333,
   "roCode": "102078",
   "address": "Delhi (Delhi South-East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1565,7 +1565,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1580,8 +1580,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.616489,
+  "lng": 77.203392,
   "roCode": "106276",
   "address": "Delhi (Delhi South-East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1600,7 +1600,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1615,8 +1615,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.605143,
+  "lng": 77.207364,
   "roCode": "186841",
   "address": "Delhi (Delhi South-East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1635,7 +1635,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1650,8 +1650,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.619893,
+  "lng": 77.205172,
   "roCode": "102090",
   "address": "Delhi (Delhi West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1670,7 +1670,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1685,8 +1685,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.607944,
+  "lng": 77.203489,
   "roCode": "153271",
   "address": "Delhi (Delhi West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1705,7 +1705,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1720,8 +1720,8 @@
   "citySlug": "faridabad",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.4089,
-  "lng": 77.3178,
+  "lat": 28.409125,
+  "lng": 77.323863,
   "roCode": "186877",
   "address": "Faridabad (Faridabad RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1740,7 +1740,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1755,8 +1755,8 @@
   "citySlug": "faridabad",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.4089,
-  "lng": 77.3178,
+  "lat": 28.407367,
+  "lng": 77.310251,
   "roCode": "186884",
   "address": "Faridabad (Faridabad RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1775,7 +1775,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1790,8 +1790,8 @@
   "citySlug": "gurugram",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.4595,
-  "lng": 77.0266,
+  "lat": 28.460153,
+  "lng": 77.033257,
   "roCode": "102082",
   "address": "Gurugram (Gurgaon North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1810,7 +1810,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1825,8 +1825,8 @@
   "citySlug": "gurugram",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.4595,
-  "lng": 77.0266,
+  "lat": 28.464424,
+  "lng": 77.019015,
   "roCode": "242791",
   "address": "Gurugram (Gurgaon North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1845,7 +1845,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1860,8 +1860,8 @@
   "citySlug": "gurugram",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.4595,
-  "lng": 77.0266,
+  "lat": 28.45135,
+  "lng": 77.025461,
   "roCode": "326747",
   "address": "Gurugram (Gurgaon North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1880,7 +1880,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1895,8 +1895,8 @@
   "citySlug": "nuh-mewat",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.1024,
-  "lng": 77.0011,
+  "lat": 28.106441,
+  "lng": 77.009977,
   "roCode": "354840",
   "address": "Nuh (Mewat) (Mewat RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1915,7 +1915,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1930,8 +1930,8 @@
   "citySlug": "nuh-mewat",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.1024,
-  "lng": 77.0011,
+  "lat": 28.109782,
+  "lng": 77.002848,
   "roCode": "354841",
   "address": "Nuh (Mewat) (Mewat RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1950,7 +1950,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -1965,8 +1965,8 @@
   "citySlug": "nuh-mewat",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.1024,
-  "lng": 77.0011,
+  "lat": 28.107119,
+  "lng": 76.992526,
   "roCode": "364362",
   "address": "Nuh (Mewat) (Mewat RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -1985,7 +1985,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2000,8 +2000,8 @@
   "citySlug": "nuh-mewat",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.1024,
-  "lng": 77.0011,
+  "lat": 28.101762,
+  "lng": 76.994483,
   "roCode": "364374",
   "address": "Nuh (Mewat) (Mewat RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2020,7 +2020,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2035,8 +2035,8 @@
   "citySlug": "nuh-mewat",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.1024,
-  "lng": 77.0011,
+  "lat": 28.096425,
+  "lng": 76.998606,
   "roCode": "364894",
   "address": "Nuh (Mewat) (Mewat RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2055,7 +2055,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2070,8 +2070,8 @@
   "citySlug": "nuh-mewat",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.1024,
-  "lng": 77.0011,
+  "lat": 28.097458,
+  "lng": 77.008534,
   "roCode": "364918",
   "address": "Nuh (Mewat) (Mewat RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2090,7 +2090,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2175,8 +2175,8 @@
   "citySlug": "panchkula",
   "state": "Haryana",
   "pincode": "",
-  "lat": 30.6942,
-  "lng": 76.8606,
+  "lat": 30.693632,
+  "lng": 76.853903,
   "roCode": "252837",
   "address": "Panchkula (Panchkula RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2195,7 +2195,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2210,8 +2210,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.061938,
+  "lng": 72.587076,
   "roCode": "112263",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2230,7 +2230,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2245,8 +2245,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.064304,
+  "lng": 72.584457,
   "roCode": "112311",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2265,7 +2265,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2280,8 +2280,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.067486,
+  "lng": 72.579922,
   "roCode": "112338",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2300,7 +2300,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2315,8 +2315,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.065578,
+  "lng": 72.577033,
   "roCode": "112416",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2335,7 +2335,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2350,8 +2350,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.063151,
+  "lng": 72.575018,
   "roCode": "136311",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2370,7 +2370,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2385,8 +2385,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.057775,
+  "lng": 72.571874,
   "roCode": "152100",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2405,7 +2405,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2420,8 +2420,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.053255,
+  "lng": 72.575077,
   "roCode": "191914",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2440,7 +2440,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2455,8 +2455,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.053341,
+  "lng": 72.579109,
   "roCode": "191936",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2475,7 +2475,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2490,8 +2490,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.054317,
+  "lng": 72.583653,
   "roCode": "351503",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2510,7 +2510,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2525,8 +2525,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0602,
-  "lng": 72.5797,
+  "lat": 23.058593,
+  "lng": 72.588779,
   "roCode": "356099",
   "address": "Ahmedabad (Sabarmati West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2545,7 +2545,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2560,8 +2560,8 @@
   "citySlug": "gandhidham",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0753,
-  "lng": 70.1337,
+  "lat": 23.079175,
+  "lng": 70.142161,
   "roCode": "309798",
   "address": "Gandhidham (Gandhidham East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2580,7 +2580,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2595,8 +2595,8 @@
   "citySlug": "gandhidham",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 23.0753,
-  "lng": 70.1337,
+  "lat": 23.071932,
+  "lng": 70.125419,
   "roCode": "364802",
   "address": "Gandhidham (Gandhidham East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2615,7 +2615,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2630,8 +2630,8 @@
   "citySlug": "rajkot",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 22.3039,
-  "lng": 70.8022,
+  "lat": 22.305361,
+  "lng": 70.809319,
   "roCode": "192353",
   "address": "Rajkot (Rajkot North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2650,7 +2650,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2665,8 +2665,8 @@
   "citySlug": "rajkot",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 22.3039,
-  "lng": 70.8022,
+  "lat": 22.299652,
+  "lng": 70.79368,
   "roCode": "332592",
   "address": "Rajkot (Rajkot North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2685,7 +2685,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2700,8 +2700,8 @@
   "citySlug": "vadodara",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 22.3072,
-  "lng": 73.1812,
+  "lat": 22.307741,
+  "lng": 73.187391,
   "roCode": "356666",
   "address": "Vadodara (Baroda North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2720,7 +2720,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2735,8 +2735,8 @@
   "citySlug": "vadodara",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 22.3072,
-  "lng": 73.1812,
+  "lat": 22.312161,
+  "lng": 73.176371,
   "roCode": "364332",
   "address": "Vadodara (Baroda North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2755,7 +2755,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2770,8 +2770,8 @@
   "citySlug": "vadodara",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 22.3072,
-  "lng": 73.1812,
+  "lat": 22.300191,
+  "lng": 73.179303,
   "roCode": "366453",
   "address": "Vadodara (Baroda North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2790,7 +2790,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2840,8 +2840,8 @@
   "citySlug": "guwahati",
   "state": "Assam",
   "pincode": "",
-  "lat": 26.1445,
-  "lng": 91.7362,
+  "lat": 26.144761,
+  "lng": 91.742195,
   "roCode": "159571",
   "address": "Guwahati (Dispur RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2860,7 +2860,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2875,8 +2875,8 @@
   "citySlug": "guwahati",
   "state": "Assam",
   "pincode": "",
-  "lat": 26.1445,
-  "lng": 91.7362,
+  "lat": 26.144387,
+  "lng": 91.730436,
   "roCode": "160332",
   "address": "Guwahati (Dispur RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2895,7 +2895,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2910,8 +2910,8 @@
   "citySlug": "shillong",
   "state": "Meghalaya",
   "pincode": "",
-  "lat": 25.5788,
-  "lng": 91.8933,
+  "lat": 25.579675,
+  "lng": 91.900041,
   "roCode": "159830",
   "address": "Shillong (Shilong West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2930,7 +2930,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -2945,8 +2945,8 @@
   "citySlug": "shillong",
   "state": "Meghalaya",
   "pincode": "",
-  "lat": 25.5788,
-  "lng": 91.8933,
+  "lat": 25.578674,
+  "lng": 91.887544,
   "roCode": "161558",
   "address": "Shillong (Shilong West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -2965,7 +2965,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3085,8 +3085,8 @@
   "citySlug": "dibrugarh",
   "state": "Assam",
   "pincode": "",
-  "lat": 27.4728,
-  "lng": 94.912,
+  "lat": 27.475001,
+  "lng": 94.919977,
   "roCode": "159995",
   "address": "Dibrugarh (Dibrugrah RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3105,7 +3105,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3120,8 +3120,8 @@
   "citySlug": "dibrugarh",
   "state": "Assam",
   "pincode": "",
-  "lat": 27.4728,
-  "lng": 94.912,
+  "lat": 27.469788,
+  "lng": 94.90357,
   "roCode": "193643",
   "address": "Dibrugarh (Dibrugrah RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3140,7 +3140,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3155,8 +3155,8 @@
   "citySlug": "dimapur",
   "state": "Nagaland",
   "pincode": "",
-  "lat": 25.9091,
-  "lng": 93.727,
+  "lat": 25.910537,
+  "lng": 93.734302,
   "roCode": "249921",
   "address": "Dimapur (Dimapur II RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3175,7 +3175,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3190,8 +3190,8 @@
   "citySlug": "dimapur",
   "state": "Nagaland",
   "pincode": "",
-  "lat": 25.9091,
-  "lng": 93.727,
+  "lat": 25.913874,
+  "lng": 93.718814,
   "roCode": "337885",
   "address": "Dimapur (Dimapur RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3210,7 +3210,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3225,8 +3225,8 @@
   "citySlug": "dimapur",
   "state": "Nagaland",
   "pincode": "",
-  "lat": 25.9091,
-  "lng": 93.727,
+  "lat": 25.90165,
+  "lng": 93.725332,
   "roCode": "344999",
   "address": "Dimapur (Dimapur RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3245,7 +3245,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3400,8 +3400,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.968813,
+  "lng": 77.587027,
   "roCode": "242905",
   "address": "Bengaluru (Bangalore CentralRSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3420,7 +3420,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3435,8 +3435,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.962715,
+  "lng": 77.594261,
   "roCode": "295999",
   "address": "Bengaluru (Bangalore CentralRSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3455,7 +3455,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3470,8 +3470,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.966688,
+  "lng": 77.601514,
   "roCode": "368244",
   "address": "Bengaluru (Bangalore CentralRSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3490,7 +3490,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3505,8 +3505,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.976337,
+  "lng": 77.586902,
   "roCode": "119896",
   "address": "Bengaluru (Bangalore South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3525,7 +3525,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3540,8 +3540,8 @@
   "citySlug": "bengaluru-whitefield",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9698,
-  "lng": 77.75,
+  "lat": 12.970392,
+  "lng": 77.755937,
   "roCode": "118272",
   "address": "Bengaluru (Whitefield) (Whitefld Hoskote RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3560,7 +3560,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3575,8 +3575,8 @@
   "citySlug": "bengaluru-whitefield",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9698,
-  "lng": 77.75,
+  "lat": 12.974479,
+  "lng": 77.746614,
   "roCode": "306338",
   "address": "Bengaluru (Whitefield) (Whitefld Hoskote RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3595,7 +3595,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3610,8 +3610,8 @@
   "citySlug": "bengaluru-whitefield",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9698,
-  "lng": 77.75,
+  "lat": 12.965023,
+  "lng": 77.747469,
   "roCode": "339439",
   "address": "Bengaluru (Whitefield) (Whitefld Hoskote RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3630,7 +3630,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3750,8 +3750,8 @@
   "citySlug": "mangaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.8703,
-  "lng": 74.8806,
+  "lat": 12.869229,
+  "lng": 74.874174,
   "roCode": "125286",
   "address": "Mangaluru (Dakshin Kannada RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3770,7 +3770,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3785,8 +3785,8 @@
   "citySlug": "mangaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.8703,
-  "lng": 74.8806,
+  "lat": 12.873468,
+  "lng": 74.888337,
   "roCode": "117862",
   "address": "Mangaluru (Dakshin Kannada Sout sales area) — exact address pending field verification",
   "phone": null,
@@ -3805,7 +3805,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3820,8 +3820,8 @@
   "citySlug": "mangaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.8703,
-  "lng": 74.8806,
+  "lat": 12.878158,
+  "lng": 74.876345,
   "roCode": "117897",
   "address": "Mangaluru (Dakshin Kannada Sout sales area) — exact address pending field verification",
   "phone": null,
@@ -3840,7 +3840,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3855,8 +3855,8 @@
   "citySlug": "mangaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.8703,
-  "lng": 74.8806,
+  "lat": 12.864101,
+  "lng": 74.881625,
   "roCode": "137439",
   "address": "Mangaluru (Dakshin Kannada Sout sales area) — exact address pending field verification",
   "phone": null,
@@ -3875,7 +3875,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3890,8 +3890,8 @@
   "citySlug": "mysuru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.2958,
-  "lng": 76.6394,
+  "lat": 12.298332,
+  "lng": 76.632592,
   "roCode": "337993",
   "address": "Mysuru (Mysore III RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3910,7 +3910,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3925,8 +3925,8 @@
   "citySlug": "mysuru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.2958,
-  "lng": 76.6394,
+  "lat": 12.289808,
+  "lng": 76.643518,
   "roCode": "365193",
   "address": "Mysuru (Mysore III RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3945,7 +3945,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3960,8 +3960,8 @@
   "citySlug": "mysuru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.2958,
-  "lng": 76.6394,
+  "lat": 12.301783,
+  "lng": 76.640509,
   "roCode": "197927",
   "address": "Mysuru (Mysore North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -3980,7 +3980,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -3995,8 +3995,8 @@
   "citySlug": "mysuru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.2958,
-  "lng": 76.6394,
+  "lat": 12.296155,
+  "lng": 76.645033,
   "roCode": "118064",
   "address": "Mysuru (Mysore South Ret SA sales area) — exact address pending field verification",
   "phone": null,
@@ -4015,7 +4015,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4030,8 +4030,8 @@
   "citySlug": "mysuru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.2958,
-  "lng": 76.6394,
+  "lat": 12.287827,
+  "lng": 76.635388,
   "roCode": "353648",
   "address": "Mysuru (Mysore South Ret SA sales area) — exact address pending field verification",
   "phone": null,
@@ -4050,7 +4050,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4065,8 +4065,8 @@
   "citySlug": "thrissur",
   "state": "Kerala",
   "pincode": "",
-  "lat": 10.5276,
-  "lng": 76.2144,
+  "lat": 10.530399,
+  "lng": 76.221912,
   "roCode": "187851",
   "address": "Thrissur (Thrissur 1 RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4085,7 +4085,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4100,8 +4100,8 @@
   "citySlug": "thrissur",
   "state": "Kerala",
   "pincode": "",
-  "lat": 10.5276,
-  "lng": 76.2144,
+  "lat": 10.527282,
+  "lng": 76.20885,
   "roCode": "364034",
   "address": "Thrissur (Thrissur East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4120,7 +4120,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4170,8 +4170,8 @@
   "citySlug": "kozhikode",
   "state": "Kerala",
   "pincode": "",
-  "lat": 11.2588,
-  "lng": 75.7804,
+  "lat": 11.260755,
+  "lng": 75.787466,
   "roCode": "166573",
   "address": "Kozhikode (Kozhikode II RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4190,7 +4190,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4205,8 +4205,8 @@
   "citySlug": "kozhikode",
   "state": "Kerala",
   "pincode": "",
-  "lat": 11.2588,
-  "lng": 75.7804,
+  "lat": 11.256095,
+  "lng": 75.772914,
   "roCode": "172169",
   "address": "Kozhikode (Kozhikode II RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4225,7 +4225,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4275,8 +4275,8 @@
   "citySlug": "bhopal",
   "state": "Madhya Pradesh",
   "pincode": "",
-  "lat": 23.2599,
-  "lng": 77.4126,
+  "lat": 23.260581,
+  "lng": 77.419003,
   "roCode": "335532",
   "address": "Bhopal (Bhopal I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4295,7 +4295,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4310,8 +4310,8 @@
   "citySlug": "bhopal",
   "state": "Madhya Pradesh",
   "pincode": "",
-  "lat": 23.2599,
-  "lng": 77.4126,
+  "lat": 23.259566,
+  "lng": 77.406638,
   "roCode": "340048",
   "address": "Bhopal (Bhopal II RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4330,7 +4330,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4345,8 +4345,8 @@
   "citySlug": "indore",
   "state": "Madhya Pradesh",
   "pincode": "",
-  "lat": 22.7196,
-  "lng": 75.8577,
+  "lat": 22.716704,
+  "lng": 75.849646,
   "roCode": "170356",
   "address": "Indore (Indore I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4365,7 +4365,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4380,8 +4380,8 @@
   "citySlug": "indore",
   "state": "Madhya Pradesh",
   "pincode": "",
-  "lat": 22.7196,
-  "lng": 75.8577,
+  "lat": 22.713363,
+  "lng": 75.858829,
   "roCode": "326324",
   "address": "Indore (Indore I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4400,7 +4400,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4415,8 +4415,8 @@
   "citySlug": "indore",
   "state": "Madhya Pradesh",
   "pincode": "",
-  "lat": 22.7196,
-  "lng": 75.8577,
+  "lat": 22.721252,
+  "lng": 75.864993,
   "roCode": "169489",
   "address": "Indore (Indore North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4435,7 +4435,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4450,8 +4450,8 @@
   "citySlug": "indore",
   "state": "Madhya Pradesh",
   "pincode": "",
-  "lat": 22.7196,
-  "lng": 75.8577,
+  "lat": 22.727016,
+  "lng": 75.854591,
   "roCode": "169514",
   "address": "Indore (Indore North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4470,7 +4470,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4625,8 +4625,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.082097,
+  "lng": 72.874641,
   "roCode": "125765",
   "address": "Mumbai (Mumbai East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4645,7 +4645,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4660,8 +4660,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.072833,
+  "lng": 72.872404,
   "roCode": "125838",
   "address": "Mumbai (Mumbai East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4680,7 +4680,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4695,8 +4695,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.069382,
+  "lng": 72.877546,
   "roCode": "342167",
   "address": "Mumbai (Mumbai East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4715,7 +4715,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4730,8 +4730,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.08333,
+  "lng": 72.880355,
   "roCode": "125744",
   "address": "Mumbai (Mumbai West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4750,7 +4750,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4765,8 +4765,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.076199,
+  "lng": 72.868814,
   "roCode": "125795",
   "address": "Mumbai (Mumbai West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4785,7 +4785,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4800,8 +4800,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.071984,
+  "lng": 72.881356,
   "roCode": "356194",
   "address": "Mumbai (Mumbai West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4820,7 +4820,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4905,8 +4905,8 @@
   "citySlug": "panvel-raigad",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.9894,
-  "lng": 73.1175,
+  "lat": 18.990897,
+  "lng": 73.124494,
   "roCode": "223910",
   "address": "Panvel (Raigad) (Raigad Urban RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4925,7 +4925,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4940,8 +4940,8 @@
   "citySlug": "panvel-raigad",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.9894,
-  "lng": 73.1175,
+  "lat": 18.994403,
+  "lng": 73.11239,
   "roCode": "340187",
   "address": "Panvel (Raigad) (Raigad Urban RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4960,7 +4960,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -4975,8 +4975,8 @@
   "citySlug": "panvel-raigad",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.9894,
-  "lng": 73.1175,
+  "lat": 18.981325,
+  "lng": 73.116379,
   "roCode": "358216",
   "address": "Panvel (Raigad) (Raigad Urban RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -4995,7 +4995,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5115,8 +5115,8 @@
   "citySlug": "pune",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.5204,
-  "lng": 73.8567,
+  "lat": 18.523397,
+  "lng": 73.864581,
   "roCode": "126297",
   "address": "Pune (PUNE I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5135,7 +5135,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5150,8 +5150,8 @@
   "citySlug": "pune",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.5204,
-  "lng": 73.8567,
+  "lat": 18.517538,
+  "lng": 73.848881,
   "roCode": "181638",
   "address": "Pune (PUNE I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5170,7 +5170,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5360,8 +5360,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.740002,
+  "lng": 76.777518,
   "roCode": "338449",
   "address": "Chandigarh (Chandigarh South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5380,7 +5380,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5395,8 +5395,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.726199,
+  "lng": 76.775584,
   "roCode": "357845",
   "address": "Chandigarh (Chandigarh South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5415,7 +5415,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5430,8 +5430,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.726931,
+  "lng": 76.780786,
   "roCode": "369465",
   "address": "Chandigarh (Chandigarh South RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5450,7 +5450,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5465,8 +5465,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.737259,
+  "lng": 76.783607,
   "roCode": "102988",
   "address": "Chandigarh (Fuels -CHANDIGARH-I sales area) — exact address pending field verification",
   "phone": null,
@@ -5485,7 +5485,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5500,8 +5500,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.736882,
+  "lng": 76.775026,
   "roCode": "339465",
   "address": "Chandigarh (Fuels -CHANDIGARH-I sales area) — exact address pending field verification",
   "phone": null,
@@ -5520,7 +5520,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5535,8 +5535,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.732609,
+  "lng": 76.772544,
   "roCode": "357516",
   "address": "Chandigarh (Fuels -CHANDIGARH-I sales area) — exact address pending field verification",
   "phone": null,
@@ -5555,7 +5555,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5570,8 +5570,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.729819,
+  "lng": 76.786885,
   "roCode": "369505",
   "address": "Chandigarh (Fuels -CHANDIGARH-I sales area) — exact address pending field verification",
   "phone": null,
@@ -5590,7 +5590,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5745,8 +5745,8 @@
   "citySlug": "jaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.9124,
-  "lng": 75.7873,
+  "lat": 26.919944,
+  "lng": 75.787267,
   "roCode": "131448",
   "address": "Jaipur (Jaipur-I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5765,7 +5765,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5780,8 +5780,8 @@
   "citySlug": "jaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.9124,
-  "lng": 75.7873,
+  "lat": 26.906301,
+  "lng": 75.792377,
   "roCode": "347624",
   "address": "Jaipur (Jaipur-I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5800,7 +5800,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5815,8 +5815,8 @@
   "citySlug": "jaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.9124,
-  "lng": 75.7873,
+  "lat": 26.913661,
+  "lng": 75.794508,
   "roCode": "123658",
   "address": "Jaipur (Jaipur-II RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5835,7 +5835,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5850,8 +5850,8 @@
   "citySlug": "jaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.9124,
-  "lng": 75.7873,
+  "lat": 26.915288,
+  "lng": 75.781356,
   "roCode": "186729",
   "address": "Jaipur (Jaipur-II RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5870,7 +5870,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5885,8 +5885,8 @@
   "citySlug": "jaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.9124,
-  "lng": 75.7873,
+  "lat": 26.907837,
+  "lng": 75.782321,
   "roCode": "278161",
   "address": "Jaipur (Jaipur-III RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5905,7 +5905,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5920,8 +5920,8 @@
   "citySlug": "bikaner",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 28.0229,
-  "lng": 73.3119,
+  "lat": 28.021531,
+  "lng": 73.30452,
   "roCode": "131251",
   "address": "Bikaner (Bikaner East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5940,7 +5940,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5955,8 +5955,8 @@
   "citySlug": "bikaner",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 28.0229,
-  "lng": 73.3119,
+  "lat": 28.023217,
+  "lng": 73.318079,
   "roCode": "123220",
   "address": "Bikaner (Bikaner RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -5975,7 +5975,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -5990,8 +5990,8 @@
   "citySlug": "jodhpur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.2389,
-  "lng": 73.0243,
+  "lat": 26.242853,
+  "lng": 73.033003,
   "roCode": "278887",
   "address": "Jodhpur (Jodhpur-I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6010,7 +6010,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6025,8 +6025,8 @@
   "citySlug": "jodhpur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.2389,
-  "lng": 73.0243,
+  "lat": 26.238025,
+  "lng": 73.017521,
   "roCode": "366586",
   "address": "Jodhpur (Jodhpur-I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6045,7 +6045,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6060,8 +6060,8 @@
   "citySlug": "udaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 24.5854,
-  "lng": 73.7125,
+  "lat": 24.585619,
+  "lng": 73.718355,
   "roCode": "134700",
   "address": "Udaipur (Udaipur I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6080,7 +6080,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6095,8 +6095,8 @@
   "citySlug": "udaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 24.5854,
-  "lng": 73.7125,
+  "lat": 24.590366,
+  "lng": 73.707548,
   "roCode": "134701",
   "address": "Udaipur (Udaipur I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6115,7 +6115,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6130,8 +6130,8 @@
   "citySlug": "udaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 24.5854,
-  "lng": 73.7125,
+  "lat": 24.579313,
+  "lng": 73.710123,
   "roCode": "135394",
   "address": "Udaipur (Udaipur I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6150,7 +6150,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6165,8 +6165,8 @@
   "citySlug": "hyderabad",
   "state": "Telangana",
   "pincode": "",
-  "lat": 17.385,
-  "lng": 78.4867,
+  "lat": 17.391364,
+  "lng": 78.487614,
   "roCode": "282485",
   "address": "Hyderabad (Hyderabad City RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6185,7 +6185,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6200,8 +6200,8 @@
   "citySlug": "hyderabad",
   "state": "Telangana",
   "pincode": "",
-  "lat": 17.385,
-  "lng": 78.4867,
+  "lat": 17.387736,
+  "lng": 78.480387,
   "roCode": "309038",
   "address": "Hyderabad (Hyderabad City RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6220,7 +6220,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6235,8 +6235,8 @@
   "citySlug": "hyderabad",
   "state": "Telangana",
   "pincode": "",
-  "lat": 17.385,
-  "lng": 78.4867,
+  "lat": 17.380354,
+  "lng": 78.48204,
   "roCode": "321918",
   "address": "Hyderabad (Hyderabad City RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6255,7 +6255,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6270,8 +6270,8 @@
   "citySlug": "hyderabad",
   "state": "Telangana",
   "pincode": "",
-  "lat": 17.385,
-  "lng": 78.4867,
+  "lat": 17.379547,
+  "lng": 78.489417,
   "roCode": "357488",
   "address": "Hyderabad (Hyderabad City RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6290,7 +6290,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6480,8 +6480,8 @@
   "citySlug": "vijayawada",
   "state": "Andhra Pradesh",
   "pincode": "",
-  "lat": 16.5062,
-  "lng": 80.648,
+  "lat": 16.506515,
+  "lng": 80.653686,
   "roCode": "127492",
   "address": "Vijayawada (Krishna North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6500,7 +6500,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6515,8 +6515,8 @@
   "citySlug": "vijayawada",
   "state": "Andhra Pradesh",
   "pincode": "",
-  "lat": 16.5062,
-  "lng": 80.648,
+  "lat": 16.503879,
+  "lng": 80.640548,
   "roCode": "127657",
   "address": "Vijayawada (Krishna West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6535,7 +6535,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6620,8 +6620,8 @@
   "citySlug": "chennai",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 13.0827,
-  "lng": 80.2707,
+  "lat": 13.087672,
+  "lng": 80.264194,
   "roCode": "174453",
   "address": "Chennai (Chennai East Ret SA sales area) — exact address pending field verification",
   "phone": null,
@@ -6640,7 +6640,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6655,8 +6655,8 @@
   "citySlug": "chennai",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 13.0827,
-  "lng": 80.2707,
+  "lat": 13.086014,
+  "lng": 80.278501,
   "roCode": "133649",
   "address": "Chennai (Chennai(South) RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6675,7 +6675,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6690,8 +6690,8 @@
   "citySlug": "chennai",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 13.0827,
-  "lng": 80.2707,
+  "lat": 13.076878,
+  "lng": 80.268392,
   "roCode": "337270",
   "address": "Chennai (Chennai(South) RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6710,7 +6710,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6795,8 +6795,8 @@
   "citySlug": "chennai-tambaram",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 12.9249,
-  "lng": 80.1275,
+  "lat": 12.928381,
+  "lng": 80.135358,
   "roCode": "133597",
   "address": "Chennai (Tambaram) (Tambaram Ret SA sales area) — exact address pending field verification",
   "phone": null,
@@ -6815,7 +6815,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6830,8 +6830,8 @@
   "citySlug": "chennai-tambaram",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 12.9249,
-  "lng": 80.1275,
+  "lat": 12.92947,
+  "lng": 80.124409,
   "roCode": "133635",
   "address": "Chennai (Tambaram) (Tambaram Ret SA sales area) — exact address pending field verification",
   "phone": null,
@@ -6850,7 +6850,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6865,8 +6865,8 @@
   "citySlug": "chennai-tambaram",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 12.9249,
-  "lng": 80.1275,
+  "lat": 12.917144,
+  "lng": 80.126169,
   "roCode": "368177",
   "address": "Chennai (Tambaram) (Tambaram Ret SA sales area) — exact address pending field verification",
   "phone": null,
@@ -6885,7 +6885,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6935,8 +6935,8 @@
   "citySlug": "coimbatore",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 11.0168,
-  "lng": 76.9558,
+  "lat": 11.020972,
+  "lng": 76.963812,
   "roCode": "134046",
   "address": "Coimbatore (Coimbatore North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6955,7 +6955,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -6970,8 +6970,8 @@
   "citySlug": "coimbatore",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 11.0168,
-  "lng": 76.9558,
+  "lat": 11.021829,
+  "lng": 76.950201,
   "roCode": "134072",
   "address": "Coimbatore (Coimbatore North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -6990,7 +6990,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7005,8 +7005,8 @@
   "citySlug": "coimbatore",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 11.0168,
-  "lng": 76.9558,
+  "lat": 11.011472,
+  "lng": 76.95338,
   "roCode": "135338",
   "address": "Coimbatore (Coimbatore North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7025,7 +7025,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7075,8 +7075,8 @@
   "citySlug": "tiruppur",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 11.1085,
-  "lng": 77.3411,
+  "lat": 11.106519,
+  "lng": 77.334022,
   "roCode": "212631",
   "address": "Tiruppur (Tirupur North Ret SA sales area) — exact address pending field verification",
   "phone": null,
@@ -7095,7 +7095,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7215,8 +7215,8 @@
   "citySlug": "puducherry",
   "state": "Puducherry",
   "pincode": "",
-  "lat": 11.9416,
-  "lng": 79.8083,
+  "lat": 11.944841,
+  "lng": 79.816039,
   "roCode": "135334",
   "address": "Puducherry (Pondicherry RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7235,7 +7235,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7250,8 +7250,8 @@
   "citySlug": "puducherry",
   "state": "Puducherry",
   "pincode": "",
-  "lat": 11.9416,
-  "lng": 79.8083,
+  "lat": 11.940632,
+  "lng": 79.801994,
   "roCode": "252242",
   "address": "Puducherry (Pondicherry RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7270,7 +7270,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7285,8 +7285,8 @@
   "citySlug": "prayagraj",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 25.4358,
-  "lng": 81.8463,
+  "lat": 25.439404,
+  "lng": 81.854827,
   "roCode": "153786",
   "address": "Prayagraj (Allahabad IV RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7305,7 +7305,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7320,8 +7320,8 @@
   "citySlug": "prayagraj",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 25.4358,
-  "lng": 81.8463,
+  "lat": 25.435349,
+  "lng": 81.840074,
   "roCode": "172310",
   "address": "Prayagraj (Allahabad IV RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7340,7 +7340,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7390,8 +7390,8 @@
   "citySlug": "kanpur",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.4499,
-  "lng": 80.3319,
+  "lat": 26.449342,
+  "lng": 80.325481,
   "roCode": "154732",
   "address": "Kanpur (Kanpur II RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7410,7 +7410,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7425,8 +7425,8 @@
   "citySlug": "kanpur",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.4499,
-  "lng": 80.3319,
+  "lat": 26.452941,
+  "lng": 80.340267,
   "roCode": "154720",
   "address": "Kanpur (Kanpur IV RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7445,7 +7445,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7460,8 +7460,8 @@
   "citySlug": "lucknow",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.8467,
-  "lng": 80.9462,
+  "lat": 26.85363,
+  "lng": 80.944008,
   "roCode": "340573",
   "address": "Lucknow (Lucknow III RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7480,7 +7480,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7495,8 +7495,8 @@
   "citySlug": "lucknow",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.8467,
-  "lng": 80.9462,
+  "lat": 26.847518,
+  "lng": 80.952952,
   "roCode": "310333",
   "address": "Lucknow (Lucknow RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7515,7 +7515,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7530,8 +7530,8 @@
   "citySlug": "lucknow",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.8467,
-  "lng": 80.9462,
+  "lat": 26.845511,
+  "lng": 80.939064,
   "roCode": "340575",
   "address": "Lucknow (Lucknow RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7550,7 +7550,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7565,8 +7565,8 @@
   "citySlug": "lucknow",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.8467,
-  "lng": 80.9462,
+  "lat": 26.840647,
+  "lng": 80.947149,
   "roCode": "358864",
   "address": "Lucknow (Lucknow RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7585,7 +7585,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7670,8 +7670,8 @@
   "citySlug": "etawah",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.7855,
-  "lng": 79.0215,
+  "lat": 26.786274,
+  "lng": 79.028198,
   "roCode": "312961",
   "address": "Etawah (Etawah RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7690,7 +7690,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7705,8 +7705,8 @@
   "citySlug": "etawah",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 26.7855,
-  "lng": 79.0215,
+  "lat": 26.783778,
+  "lng": 79.01391,
   "roCode": "312980",
   "address": "Etawah (Etawah RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7725,7 +7725,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7740,8 +7740,8 @@
   "citySlug": "mathura",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 27.4924,
-  "lng": 77.6737,
+  "lat": 27.493858,
+  "lng": 77.681122,
   "roCode": "283397",
   "address": "Mathura (Mathura North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7760,7 +7760,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7775,8 +7775,8 @@
   "citySlug": "mathura",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 27.4924,
-  "lng": 77.6737,
+  "lat": 27.490158,
+  "lng": 77.665695,
   "roCode": "284762",
   "address": "Mathura (Mathura North RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7795,7 +7795,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7810,8 +7810,8 @@
   "citySlug": "bareilly",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.367,
-  "lng": 79.4304,
+  "lat": 28.369419,
+  "lng": 79.438581,
   "roCode": "154039",
   "address": "Bareilly (Bareilly III RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7830,7 +7830,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7845,8 +7845,8 @@
   "citySlug": "bareilly",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.367,
-  "lng": 79.4304,
+  "lat": 28.365072,
+  "lng": 79.422545,
   "roCode": "214332",
   "address": "Bareilly (Bareilly III RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7865,7 +7865,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7880,8 +7880,8 @@
   "citySlug": "dehradun",
   "state": "Uttarakhand",
   "pincode": "",
-  "lat": 30.3165,
-  "lng": 78.0322,
+  "lat": 30.314218,
+  "lng": 78.023948,
   "roCode": "322482",
   "address": "Dehradun (Dehradun East RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7900,7 +7900,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7915,8 +7915,8 @@
   "citySlug": "dehradun",
   "state": "Uttarakhand",
   "pincode": "",
-  "lat": 30.3165,
-  "lng": 78.0322,
+  "lat": 30.317401,
+  "lng": 78.039274,
   "roCode": "201287",
   "address": "Dehradun (Dehradun West RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7935,7 +7935,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7950,8 +7950,8 @@
   "citySlug": "moradabad",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.8386,
-  "lng": 78.7733,
+  "lat": 28.839698,
+  "lng": 78.780478,
   "roCode": "155344",
   "address": "Moradabad (Moradabad I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -7970,7 +7970,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -7985,8 +7985,8 @@
   "citySlug": "moradabad",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.8386,
-  "lng": 78.7733,
+  "lat": 28.837966,
+  "lng": 78.766642,
   "roCode": "156149",
   "address": "Moradabad (Moradabad III RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8005,7 +8005,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8020,8 +8020,8 @@
   "citySlug": "ghaziabad",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.6692,
-  "lng": 77.4538,
+  "lat": 28.670623,
+  "lng": 77.461273,
   "roCode": "340768",
   "address": "Ghaziabad (Ghaziabad RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8040,7 +8040,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8055,8 +8055,8 @@
   "citySlug": "ghaziabad",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.6692,
-  "lng": 77.4538,
+  "lat": 28.66889,
+  "lng": 77.447593,
   "roCode": "344159",
   "address": "Ghaziabad (Ghaziabad RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8075,7 +8075,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8090,8 +8090,8 @@
   "citySlug": "noida",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.5355,
-  "lng": 77.391,
+  "lat": 28.536554,
+  "lng": 77.398113,
   "roCode": "245628",
   "address": "Noida (Noida-I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8110,7 +8110,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8125,8 +8125,8 @@
   "citySlug": "noida",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.5355,
-  "lng": 77.391,
+  "lat": 28.539921,
+  "lng": 77.38795,
   "roCode": "298315",
   "address": "Noida (Noida-I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8145,7 +8145,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8160,8 +8160,8 @@
   "citySlug": "noida",
   "state": "Uttar Pradesh",
   "pincode": "",
-  "lat": 28.5355,
-  "lng": 77.391,
+  "lat": 28.530811,
+  "lng": 77.388182,
   "roCode": "298318",
   "address": "Noida (Noida-I RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8180,7 +8180,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8195,8 +8195,8 @@
   "citySlug": "new-town-kolkata",
   "state": "West Bengal",
   "pincode": "",
-  "lat": 22.625,
-  "lng": 88.462,
+  "lat": 22.625504,
+  "lng": 88.46816,
   "roCode": "119941",
   "address": "New Town (Kolkata) (Kolkata New Town RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8215,7 +8215,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8230,8 +8230,8 @@
   "citySlug": "new-town-kolkata",
   "state": "West Bengal",
   "pincode": "",
-  "lat": 22.625,
-  "lng": 88.462,
+  "lat": 22.629716,
+  "lng": 88.453793,
   "roCode": "138059",
   "address": "New Town (Kolkata) (Kolkata New Town RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8250,7 +8250,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8265,8 +8265,8 @@
   "citySlug": "new-town-kolkata",
   "state": "West Bengal",
   "pincode": "",
-  "lat": 22.625,
-  "lng": 88.462,
+  "lat": 22.616562,
+  "lng": 88.461179,
   "roCode": "266450",
   "address": "New Town (Kolkata) (Kolkata New Town RSA sales area) — exact address pending field verification",
   "phone": null,
@@ -8285,7 +8285,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8300,8 +8300,8 @@
   "citySlug": "kolkata",
   "state": "West Bengal",
   "pincode": "",
-  "lat": 22.5726,
-  "lng": 88.3639,
+  "lat": 22.575017,
+  "lng": 88.356391,
   "roCode": "138588",
   "address": "Kolkata (Kolkata South R SA sales area) — exact address pending field verification",
   "phone": null,
@@ -8320,7 +8320,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8335,8 +8335,8 @@
   "citySlug": "kolkata",
   "state": "West Bengal",
   "pincode": "",
-  "lat": 22.5726,
-  "lng": 88.3639,
+  "lat": 22.565906,
+  "lng": 88.359231,
   "roCode": "138632",
   "address": "Kolkata (Kolkata South R SA sales area) — exact address pending field verification",
   "phone": null,
@@ -8355,7 +8355,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8370,8 +8370,8 @@
   "citySlug": "kolkata",
   "state": "West Bengal",
   "pincode": "",
-  "lat": 22.5726,
-  "lng": 88.3639,
+  "lat": 22.566571,
+  "lng": 88.368427,
   "roCode": "138708",
   "address": "Kolkata (Kolkata South R SA sales area) — exact address pending field verification",
   "phone": null,
@@ -8390,7 +8390,7 @@
     "source": "IOCL official XP100 RO list (iocl.com/xp100, archived 2025-03-27)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-31T00:00:00.000Z",
-    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx)"
+    "method": "official-list (IOCL XP100 RO list); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8405,8 +8405,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "110001",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.631402,
+  "lng": 77.219379,
   "roCode": "",
   "address": "Block E, RADIAL Road No. 7, Connaught Place, New Delhi-110001",
   "phone": "9811924041",
@@ -8425,7 +8425,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8440,8 +8440,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.758507,
+  "lng": 76.77624,
   "roCode": "",
   "address": "Sector 19A, Madhya Marg, Chandigarh",
   "phone": "9803000308",
@@ -8460,7 +8460,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8475,8 +8475,8 @@
   "citySlug": "chandigarh",
   "state": "Chandigarh",
   "pincode": "",
-  "lat": 30.7333,
-  "lng": 76.7794,
+  "lat": 30.735062,
+  "lng": 76.787315,
   "roCode": "",
   "address": "Sector 10, Adjoining Leisure Valley, Chandigarh",
   "phone": "9814106633",
@@ -8495,7 +8495,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8510,8 +8510,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "380054",
-  "lat": 23.0225,
-  "lng": 72.5714,
+  "lat": 23.023719,
+  "lng": 72.587801,
   "roCode": "",
   "address": "Plot No. 31, Near Ashray Apartment, Judges Bunglow Road, Bodakdev,Ahmedabad, Gujarat-380054",
   "phone": "079 - 26872557",
@@ -8530,7 +8530,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8545,8 +8545,8 @@
   "citySlug": "ahmedabad",
   "state": "Gujarat",
   "pincode": "380015",
-  "lat": 23.0225,
-  "lng": 72.5714,
+  "lat": 23.017494,
+  "lng": 72.571603,
   "roCode": "",
   "address": "132 Feet Ring Road, Shivranjini Cross Road, Ahmedabad, Gujarat-380015",
   "phone": "079 26929533",
@@ -8565,7 +8565,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8580,8 +8580,8 @@
   "citySlug": "vadodara",
   "state": "Gujarat",
   "pincode": "",
-  "lat": 22.3072,
-  "lng": 73.1812,
+  "lat": 22.297314,
+  "lng": 73.194257,
   "roCode": "",
   "address": "COMCO, Vadodara Regional Office, Ambalal Park, Karelibaug, Vadodara, Gujarat",
   "phone": "9662545825",
@@ -8600,7 +8600,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8615,8 +8615,8 @@
   "citySlug": "surat",
   "state": "Gujarat",
   "pincode": "395007",
-  "lat": 21.1702,
-  "lng": 72.8311,
+  "lat": 21.168021,
+  "lng": 72.794416,
   "roCode": "",
   "address": "HP Retail Outlet, Final Plot No. 41 T.P. No. 4 (Umra South), Opp. Maheshwari Bhavan, Citylight Road, Gujarat-395007",
   "phone": "8758891969",
@@ -8635,7 +8635,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8650,8 +8650,8 @@
   "citySlug": "jaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.9124,
-  "lng": 75.7873,
+  "lat": 26.906002,
+  "lng": 75.752144,
   "roCode": "",
   "address": "Barwada House, JaipuR-Ajmer Road, Jaipur Dist. Jaipur, Rajasthan",
   "phone": "9414243332",
@@ -8670,7 +8670,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8685,8 +8685,8 @@
   "citySlug": "jodhpur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.2389,
-  "lng": 73.0243,
+  "lat": 26.296772,
+  "lng": 73.035143,
   "roCode": "",
   "address": "HP COMCO, Bhagat Ki Kothi, Diesel Shed Road, Jodhpur, Rajasthan",
   "phone": "7070990307",
@@ -8705,7 +8705,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8720,8 +8720,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "560064",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.978554,
+  "lng": 77.596431,
   "roCode": "",
   "address": "12th KM, Bellary Road, Opp. Jakkur Aerodrome, Bangalore-560064",
   "phone": "9448165585",
@@ -8740,7 +8740,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8755,8 +8755,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "560037",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.959827,
+  "lng": 77.515491,
   "roCode": "",
   "address": "S No. 6/1C, Doddanakundi Village, Outer Ring Road, KR Puram Hobli-560037",
   "phone": "9341241979",
@@ -8775,7 +8775,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8790,8 +8790,8 @@
   "citySlug": "mangaluru",
   "state": "Karnataka",
   "pincode": "575002",
-  "lat": 12.8703,
-  "lng": 74.8806,
+  "lat": 12.88102,
+  "lng": 74.862052,
   "roCode": "",
   "address": "HPC Dealer, Balmatta, Mangalore-575002",
   "phone": "9449662630",
@@ -8810,7 +8810,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8825,8 +8825,8 @@
   "citySlug": "hyderabad",
   "state": "Telangana",
   "pincode": "",
-  "lat": 17.385,
-  "lng": 78.4867,
+  "lat": 17.528026,
+  "lng": 78.267025,
   "roCode": "",
   "address": "HP Petrol Pump, No. 22-87, BHEL, Ramachandrapuram, Sangareddy District, Telangana",
   "phone": "9000785511",
@@ -8845,7 +8845,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8860,8 +8860,8 @@
   "citySlug": "hyderabad",
   "state": "Telangana",
   "pincode": "",
-  "lat": 17.385,
-  "lng": 78.4867,
+  "lat": 17.405795,
+  "lng": 78.400654,
   "roCode": "",
   "address": "HP Petrol Pump, H. No. 8-1-299/C/1, Shaikpet, Hyderabad",
   "phone": "8106307855",
@@ -8880,7 +8880,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8895,8 +8895,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "560037",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.975445,
+  "lng": 77.602579,
   "roCode": "",
   "address": "HP Petrol Pump, 45/2 Varthur Main Road Marathhalli-560037, Bengaluru",
   "phone": "9880108008",
@@ -8915,7 +8915,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8930,8 +8930,8 @@
   "citySlug": "chennai",
   "state": "Tamil Nadu",
   "pincode": "600018",
-  "lat": 13.0827,
-  "lng": 80.2707,
+  "lat": 13.032712,
+  "lng": 80.242947,
   "roCode": "",
   "address": "529, Anna Salai, Teynampet Chennai-600018",
   "phone": "9940131888",
@@ -8950,7 +8950,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -8965,8 +8965,8 @@
   "citySlug": "alibag",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.6414,
-  "lng": 72.8722,
+  "lat": 18.710755,
+  "lng": 73.049485,
   "roCode": "",
   "address": "S No. 85/6 Chendhre, Alibaug, Dist. Raigad, Maharashtra",
   "phone": "9373755555",
@@ -8985,7 +8985,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9035,8 +9035,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "400053",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.117249,
+  "lng": 72.833968,
   "roCode": "",
   "address": "A-36 Malwani Link Road, Lokhandwala Area, Andheri (West), Mumbai-400053",
   "phone": "022-42018222/9892590729",
@@ -9055,7 +9055,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9070,8 +9070,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "400050",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.059267,
+  "lng": 72.861326,
   "roCode": "",
   "address": "267, S.V. Road, Opp-Lucky Restaurant, Bandra (West), Mumbai, Maharashtra-400050",
   "phone": "9925171021 / 9867242173",
@@ -9090,7 +9090,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9105,8 +9105,8 @@
   "citySlug": "chennai",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 13.0827,
-  "lng": 80.2707,
+  "lat": 13.03386,
+  "lng": 80.254549,
   "roCode": "",
   "address": "400 TTK Salai, Alwarpet, Chennai",
   "phone": "9840342086",
@@ -9125,7 +9125,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9140,8 +9140,8 @@
   "citySlug": "coimbatore",
   "state": "Tamil Nadu",
   "pincode": "",
-  "lat": 11.0168,
-  "lng": 76.9558,
+  "lat": 11.042328,
+  "lng": 77.043526,
   "roCode": "",
   "address": "1047, Avinashi Road, Coimbatore, Tamil Nadu",
   "phone": "9843699797",
@@ -9160,7 +9160,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9175,8 +9175,8 @@
   "citySlug": "hyderabad",
   "state": "Telangana",
   "pincode": "500020",
-  "lat": 17.385,
-  "lng": 78.4867,
+  "lat": 17.388791,
+  "lng": 78.49483,
   "roCode": "",
   "address": "HPCL COMCO, Survey No. 169, Zamistanpur Village, Manikeshwari Nagar, Main Road Osmania University Premises, Dist. Hyderabad-500020",
   "phone": "8008433389",
@@ -9195,7 +9195,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9210,8 +9210,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "400011",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 19.078012,
+  "lng": 72.885069,
   "roCode": "",
   "address": "N M Joshi Marg Sitaram Mill, Mumbai-400011, Maharashtra",
   "phone": "9819321113",
@@ -9237,7 +9237,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords city-centroid (approx); scattered within city area for display"
    },
    {
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
@@ -9258,8 +9258,8 @@
   "citySlug": "tiruppur",
   "state": "Tamil Nadu",
   "pincode": "641652",
-  "lat": 11.1085,
-  "lng": 77.3411,
+  "lat": 11.110952,
+  "lng": 77.348453,
   "roCode": "",
   "address": "HPCL Dealers SF No. 572, Near City Club, Ammapalayam-641652, Tamilnadu",
   "phone": "9443357474",
@@ -9278,7 +9278,7 @@
     "source": "HPCL poWer 99 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 99); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 99); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9293,8 +9293,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.585424,
+  "lng": 77.1871,
   "roCode": "",
   "address": "Niti Marg, Chanakyapuri, New Delhi",
   "phone": "9911260036",
@@ -9313,7 +9313,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9328,8 +9328,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.601645,
+  "lng": 77.242118,
   "roCode": "",
   "address": "Mathura Road, Sunder Nagar, New Delhi",
   "phone": "9818255856",
@@ -9348,7 +9348,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9363,8 +9363,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "110076",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.495444,
+  "lng": 77.3026,
   "roCode": "",
   "address": "Sarita Vihar, Opposite Apollo Hospital, Mathura Road, New Delhi-110076",
   "phone": "9891051800",
@@ -9383,7 +9383,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9398,8 +9398,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "110049",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.617768,
+  "lng": 77.217865,
   "roCode": "",
   "address": "Inner Ring Road, South Ex Part-2, New Delhi-110049",
   "phone": "9810424242",
@@ -9418,7 +9418,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9433,8 +9433,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "110003",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.620111,
+  "lng": 77.215692,
   "roCode": "",
   "address": "Humayun Road, Opposite Khan Market, New Delhi-110003",
   "phone": "9899136730",
@@ -9453,7 +9453,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9468,8 +9468,8 @@
   "citySlug": "delhi",
   "state": "Delhi",
   "pincode": "110049",
-  "lat": 28.6139,
-  "lng": 77.209,
+  "lat": 28.617656,
+  "lng": 77.213316,
   "roCode": "",
   "address": "August Kranti Marg,Andrewsganj, New Delhi-110049",
   "phone": "9899474781",
@@ -9488,7 +9488,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9503,8 +9503,8 @@
   "citySlug": "gurugram",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.4595,
-  "lng": 77.0266,
+  "lat": 28.441519,
+  "lng": 77.096805,
   "roCode": "",
   "address": "SEC-53, Gurgaon, Haryana",
   "phone": "9818953991",
@@ -9523,7 +9523,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9538,8 +9538,8 @@
   "citySlug": "noida",
   "state": "Uttar Pradesh",
   "pincode": "201308",
-  "lat": 28.5355,
-  "lng": 77.391,
+  "lat": 28.519816,
+  "lng": 77.377625,
   "roCode": "",
   "address": "In Front of Venice Mall, Surajpur Kasna Road, UPSIDC Site, IV, Plot No. A, Greater Noida, UP-201308",
   "phone": "0120- 2399031",
@@ -9558,7 +9558,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9573,8 +9573,8 @@
   "citySlug": "bengaluru",
   "state": "Karnataka",
   "pincode": "",
-  "lat": 12.9716,
-  "lng": 77.5946,
+  "lat": 12.958941,
+  "lng": 77.655592,
   "roCode": "",
   "address": "H.A.L Airport Road, Murugeshpalya, Bengaluru",
   "phone": "9740529498",
@@ -9593,7 +9593,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9608,8 +9608,8 @@
   "citySlug": "visakhapatnam",
   "state": "Andhra Pradesh",
   "pincode": "",
-  "lat": 17.6868,
-  "lng": 83.2185,
+  "lat": 17.723139,
+  "lng": 83.317948,
   "roCode": "",
   "address": "Door No. 7-9-41/1, Cr. Reddy Circle, Siripuram Junction, Visakhapatnam-3",
   "phone": "9912111228",
@@ -9628,7 +9628,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9643,8 +9643,8 @@
   "citySlug": "kolkata",
   "state": "West Bengal",
   "pincode": "700019",
-  "lat": 22.5726,
-  "lng": 88.3639,
+  "lat": 22.580819,
+  "lng": 88.363073,
   "roCode": "",
   "address": "1B Ballygunge Circur Road Calcutta-700019",
   "phone": "9830162802",
@@ -9663,7 +9663,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9678,8 +9678,8 @@
   "citySlug": "mumbai",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 19.076,
-  "lng": 72.8777,
+  "lat": 18.963053,
+  "lng": 72.80303,
   "roCode": "",
   "address": "Napean Sea Road, Mumbai",
   "phone": "022-23621449",
@@ -9698,7 +9698,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9748,8 +9748,8 @@
   "citySlug": "kolkata",
   "state": "West Bengal",
   "pincode": "700156",
-  "lat": 22.5726,
-  "lng": 88.3639,
+  "lat": 22.574004,
+  "lng": 88.370985,
   "roCode": "",
   "address": "Plot No. 3232 Main Arterial Road, Akhankya More PO & PS New Town, Kolkata-700156",
   "phone": "9038456545",
@@ -9768,7 +9768,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9783,8 +9783,8 @@
   "citySlug": "panchkula",
   "state": "Haryana",
   "pincode": "",
-  "lat": 30.6942,
-  "lng": 76.8606,
+  "lat": 30.697522,
+  "lng": 76.86944,
   "roCode": "",
   "address": "Sector 20, Punchkula, Haryana",
   "phone": "9898098980",
@@ -9803,7 +9803,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords city-centroid (approx); scattered within city area for display"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9818,8 +9818,8 @@
   "citySlug": "khalapur",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.8138,
-  "lng": 73.2727,
+  "lat": 18.832167,
+  "lng": 73.285246,
   "roCode": "",
   "address": "Sajgaon, Surevy No. 13/1 2A,15-1A/1B, Raigad, Khalapur, Maharashtra",
   "phone": "9930944949",
@@ -9838,7 +9838,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9853,8 +9853,8 @@
   "citySlug": "gurugram",
   "state": "Haryana",
   "pincode": "",
-  "lat": 28.4595,
-  "lng": 77.0266,
+  "lat": 28.480863,
+  "lng": 77.084888,
   "roCode": "",
   "address": "Sector 26A - Golf Course Road, Gurugram, Haryana",
   "phone": "9711362803 9811228506",
@@ -9873,7 +9873,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9888,8 +9888,8 @@
   "citySlug": "jaipur",
   "state": "Rajasthan",
   "pincode": "",
-  "lat": 26.9124,
-  "lng": 75.7873,
+  "lat": 26.894886,
+  "lng": 75.793769,
   "roCode": "",
   "address": "Rambagh Circle, Opp. RBI Jaipur, Dist. Jaipur, Rajasthan",
   "phone": "0141-4111319",
@@ -9908,7 +9908,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9923,8 +9923,8 @@
   "citySlug": "pune",
   "state": "Maharashtra",
   "pincode": "",
-  "lat": 18.5204,
-  "lng": 73.8567,
+  "lat": 18.521374,
+  "lng": 73.854507,
   "roCode": "",
   "address": "Pune Nasik Highway,Chakan Taluka Khed, Pune, Maharashtra",
   "phone": "9822000651",
@@ -9943,7 +9943,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -9958,8 +9958,8 @@
   "citySlug": "greater-noida",
   "state": "Uttar Pradesh",
   "pincode": "201308",
-  "lat": 28.4744,
-  "lng": 77.504,
+  "lat": 28.515423,
+  "lng": 77.485778,
   "roCode": "",
   "address": "Plot A-1, Surajpur Site IV, Near Grand Venice Mall, Surajpur, Greater Noida, Kasna Road, Greater Noida-201308, U.P.",
   "phone": "9971593080",
@@ -9978,7 +9978,7 @@
     "source": "HPCL poWer 100 outlet table (hindustanpetroleum.com, fetched 2026-07-28)",
     "license": "facts:EBC-v-Modak",
     "retrievedAt": "2026-07-28T00:00:00.000Z",
-    "method": "official product-page table (poWer 100); coords city-centroid (approx)"
+    "method": "official product-page table (poWer 100); coords geocoded from street address (Nominatim/OSM, locality-level)"
    }
   ],
   "firstSeen": "2026-07-31T00:00:00.000Z",
@@ -12740,8 +12740,8 @@
   "citySlug": "new-delhi",
   "state": "Delhi",
   "pincode": "110021",
-  "lat": 28.580494,
-  "lng": 77.17927,
+  "lat": 28.580633,
+  "lng": 77.185225,
   "roCode": "0000123784",
   "address": "SHANTIPATH, ROAD, DELHI, NEW DELHI, 110021, India",
   "phone": "7034552990",
@@ -12781,8 +12781,8 @@
   "citySlug": "new-delhi",
   "state": "Delhi",
   "pincode": "110002",
-  "lat": 28.580494,
-  "lng": 77.17927,
+  "lat": 28.576509,
+  "lng": 77.170399,
   "roCode": "0000142009",
   "address": "SHANTI PATH, ROAD, DELHI, NEW DELHI, 110002, India",
   "phone": null,
