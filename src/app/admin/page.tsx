@@ -17,7 +17,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Moderation queue - OctaneFinder",
+  title: "Moderation queue - MileageBachao",
   robots: { index: false, follow: false },
 };
 

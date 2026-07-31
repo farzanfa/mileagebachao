@@ -12,7 +12,7 @@ import { publicEnv } from "@/lib/env";
 export const metadata: Metadata = {
   title: "Attribution & Data Licences",
   description:
-    "Credits and licences for the data behind OctaneFinder: © OpenStreetMap contributors (ODbL), Government Open Data License – India, our own provenance-tracked register, fonts and open-source software.",
+    "Credits and licences for the data behind MileageBachao: © OpenStreetMap contributors (ODbL), Government Open Data License – India, our own provenance-tracked register, fonts and open-source software.",
   alternates: { canonical: "/attribution" },
 };
 

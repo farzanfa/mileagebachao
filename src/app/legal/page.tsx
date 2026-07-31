@@ -1,5 +1,5 @@
 // Legal overview / hub (BUILD-CONTRACT §11 LEGAL; spec §9).
-// Server component, fully static, token-styled. Summarises OctaneFinder's legal posture
+// Server component, fully static, token-styled. Summarises MileageBachao's legal posture
 // and links to the Privacy Policy, Terms of Use and Attribution pages, plus the
 // engineering data-provenance requirement.
 
@@ -11,7 +11,7 @@ import { SITE_NAME } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Legal overview",
   description:
-    "OctaneFinder's legal posture at a glance — an Indian-owned, India-hosted, provenance-tracked directory of ethanol-free 100-octane fuel — with links to our Privacy Policy, Terms of Use and Attribution.",
+    "MileageBachao's legal posture at a glance — an Indian-owned, India-hosted, provenance-tracked directory of ethanol-free 100-octane fuel — with links to our Privacy Policy, Terms of Use and Attribution.",
   alternates: { canonical: "/legal" },
 };
 
@@ -222,7 +222,7 @@ export default function LegalOverviewPage() {
             <DocCard
               href="/terms"
               title="Terms of Use"
-              desc="The rules for using OctaneFinder, user contributions, and our intermediary safe-harbour and grievance mechanism."
+              desc="The rules for using MileageBachao, user contributions, and our intermediary safe-harbour and grievance mechanism."
             />
             <DocCard
               href="/attribution"

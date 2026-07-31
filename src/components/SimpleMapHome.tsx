@@ -9,6 +9,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 
+import BrandMark from "@/components/BrandMark";
 import MapLibreMap from "@/components/map/MapLibreMap";
 import { haversineKm } from "@/lib/geo";
 import type { Coord, Station } from "@/lib/types";
@@ -170,19 +171,13 @@ export default function SimpleMapHome({ stations, styleUrl }: SimpleMapHomeProps
       {/* Floating search card */}
       <div className={`absolute left-3 top-3 z-10 w-[min(380px,calc(100vw-24px))] ${CARD} p-3`}>
         <div className="mb-2 flex items-center gap-2">
-          <span
-            aria-hidden
-            className="grid h-7 w-7 shrink-0 place-items-center rounded-lg font-mono text-[11px] font-bold text-white"
-            style={{ background: "linear-gradient(150deg, var(--accent), var(--accent-ink))" }}
-          >
-            100
-          </span>
+          <BrandMark size={30} />
           <div className="leading-tight">
             <div className="text-[15px] font-extrabold text-[var(--ink)]">
-              Octane<span className="text-[var(--accent)]">Finder</span>
+              Mileage<span className="text-[var(--accent)]">Bachao</span>
             </div>
             <div className="text-[10.5px] text-[var(--ink-3)]">
-              Ethanol-free 100-octane petrol pumps in India
+              Mileage bachao, E0 bharao — 100-octane pump map
             </div>
           </div>
         </div>

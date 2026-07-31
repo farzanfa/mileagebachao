@@ -9,6 +9,7 @@
 import Link from "next/link";
 
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants";
+import BrandMark from "@/components/BrandMark";
 import Button from "@/components/ui/Button";
 
 const NAV_LINK =
@@ -25,19 +26,10 @@ export function Header() {
       </a>
 
       <Link href="/" className="mr-auto flex items-center gap-[11px] no-underline" aria-label={`${SITE_NAME} home`}>
-        <span
-          aria-hidden
-          className="grid h-[34px] w-[34px] shrink-0 place-items-center rounded-[9px] font-mono text-[13px] font-bold tracking-[-0.5px] text-[var(--accent-contrast)]"
-          style={{
-            background: "linear-gradient(150deg, var(--accent), var(--accent-ink))",
-            boxShadow: "inset 0 0 0 1px rgba(255,255,255,.14)",
-          }}
-        >
-          100
-        </span>
+        <BrandMark size={34} />
         <span className="flex flex-col leading-[1.05]">
           <span className="text-[16.5px] font-extrabold tracking-[-0.3px] text-[var(--ink)]">
-            Octane<span className="text-[var(--accent)]">Finder</span>
+            Mileage<span className="text-[var(--accent)]">Bachao</span>
           </span>
           <span className="mt-[2px] hidden text-[11px] text-[var(--ink-3)] sm:block">
             {SITE_TAGLINE}

@@ -6,7 +6,7 @@ import { test, expect } from "@playwright/test";
 
 test("homepage is the map with search and add-a-pump", async ({ page }) => {
   await page.goto("/");
-  await expect(page).toHaveTitle(/OctaneFinder/i);
+  await expect(page).toHaveTitle(/MileageBachao/i);
   await expect(page.getByRole("searchbox").first()).toBeVisible();
   await expect(page.getByRole("button", { name: /add a pump/i })).toBeVisible();
   await expect(page.getByRole("button", { name: /find pumps near me/i })).toBeVisible();

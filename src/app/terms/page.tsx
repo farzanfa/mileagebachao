@@ -11,7 +11,7 @@ import { SITE_NAME } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description:
-    "The terms governing use of OctaneFinder, including user contributions, our intermediary status and grievance-redressal mechanism under India's IT Rules, 2021.",
+    "The terms governing use of MileageBachao, including user contributions, our intermediary status and grievance-redressal mechanism under India's IT Rules, 2021.",
   alternates: { canonical: "/terms" },
 };
 
@@ -213,7 +213,7 @@ export default function TermsPage() {
               On this page
             </p>
             <ol style={{ margin: 0, paddingLeft: 20, color: "var(--accent-ink)", fontSize: "0.92rem", columnGap: 28, columnCount: 2 }}>
-              <li style={{ margin: "0 0 6px" }}><a href="#service">What OctaneFinder is</a></li>
+              <li style={{ margin: "0 0 6px" }}><a href="#service">What MileageBachao is</a></li>
               <li style={{ margin: "0 0 6px" }}><a href="#eligibility">Eligibility</a></li>
               <li style={{ margin: "0 0 6px" }}><a href="#accuracy">Accuracy, freshness &amp; prices</a></li>
               <li style={{ margin: "0 0 6px" }}><a href="#acceptable">Acceptable use</a></li>

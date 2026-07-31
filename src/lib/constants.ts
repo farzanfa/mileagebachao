@@ -4,12 +4,14 @@
 import type { Brand, GradeName } from "@/lib/types";
 
 // --- Brand identity ---
-export const SITE_NAME = "OctaneFinder" as const;
-export const SITE_TAGLINE = "India's ethanol-free (E0) & 100-octane fuel finder" as const;
-// Positioning copy leads with ethanol-free (E0); octane is supporting (memo §0).
+export const SITE_NAME = "MileageBachao" as const;
+export const SITE_TAGLINE = "Mileage bachao, E0 bharao." as const;
+// Brand voice: campaign-parody name, professional execution. E20 costs you mileage;
+// the map finds the only legal ethanol-free (E0) petrol — the 100-octane grades.
 export const SITE_DESCRIPTION =
-  "Find petrol pumps that stock ethanol-free (E0), 100-octane premium fuel in India — " +
-  "IndianOil XP100, HPCL poWer 100 and BPCL Speed 100 — with freshness you can trust.";
+  "E20 eating your mileage? MileageBachao is the map of India's ethanol-free (E0), " +
+  "100-octane petrol pumps — IndianOil XP100, HP poWer 100 and Bharat Petroleum Speed 100. " +
+  "Find genuine E0 petrol near you, or add a pump you found.";
 
 export const DEFAULT_MAP_ATTRIBUTION = "© OpenStreetMap contributors" as const;
 export const DEFAULT_SITE_URL = "http://localhost:3000" as const;

@@ -11,7 +11,7 @@ import { SITE_NAME } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How OctaneFinder collects, uses, stores and protects personal data under India's Digital Personal Data Protection Act, 2023 — built around data minimisation.",
+    "How MileageBachao collects, uses, stores and protects personal data under India's Digital Personal Data Protection Act, 2023 — built around data minimisation.",
   alternates: { canonical: "/privacy" },
 };
 

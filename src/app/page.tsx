@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <main id="main">
       <h1 className="sr-only">
-        OctaneFinder — map of XP100, poWer 100 and Speed 100 petrol pumps in India
+        MileageBachao — map of XP100, poWer 100 and Speed 100 petrol pumps in India
       </h1>
       <SimpleMapHome stations={allStations()} styleUrl={publicEnv.mapStyleUrl} />
     </main>

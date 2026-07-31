@@ -1,7 +1,7 @@
-/* OctaneFinder design tokens (BUILD-CONTRACT §9; ported from the prototype <style>).
-   Light + dark via prefers-color-scheme AND explicit [data-theme] overrides.
-   Token names are reused verbatim; brand tokens follow the "--brand-*" naming from
-   the contract, with legacy aliases (--iocl etc.) kept for prototype parity. */
+/* MileageBachao design tokens.
+   Brand voice: campaign-parody name, professional execution. Primary = Mileage Green
+   (economy, "go"); secondary = Ethanol Amber (the gauge needle, warnings, protest spark).
+   Token names follow the "--brand-*" naming from the contract, with legacy aliases. */
 
 :root {
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, sans-serif;
@@ -17,11 +17,13 @@
   --line: #dbe3e0;
   --line-strong: #c6d0cd;
 
-  /* accent — petrol teal (interactive), deliberately not acid-green */
-  --accent: #0e938a;
-  --accent-ink: #096a63;
-  --accent-soft: #daf0ed;
+  /* accent — Mileage Green (interactive, brand primary) */
+  --accent: #0f7a3d;
+  --accent-ink: #0a5a2c;
+  --accent-soft: #dcf2e4;
   --accent-contrast: #ffffff;
+  /* brand secondary — Ethanol Amber (gauge needle, sparing highlights) */
+  --brand-amber: #e9a115;
 
   /* schematic map */
   --map-ocean: #e8eeeb;
