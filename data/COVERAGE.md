@@ -1,68 +1,61 @@
-# OctaneFinder — Data Coverage & Provenance
+# MileageBachao — Data Coverage & Provenance
 
-_As of 2026-07-31. This dataset is seeded into the app (`data/stations.seed.json`) and is honest about
-what is **confirmed** vs **candidate**. It is deliberately NOT presented as a complete census — the whole
-reason the product exists is that no complete, current, per-outlet list of 100-octane pumps is published
-anywhere. Community field-verification (check-ins) is what turns "listed" into "confirmed in stock"._
+_As of 2026-07-31. **391 stations across 30 states/UTs** — assembled from the three oil companies'
+own official sources, plus a small curated set of community-reported candidates. Honest by design:
+every row ships as "Unverified" (availability `unknown`) until a field check-in confirms it; a
+listing is not a same-day stock guarantee._
+
+## Sources (all official-first)
+
+1. **IndianOil XP100 official RO list — 220 outlets** (`iocl.com/xp100`, archived snapshot
+   2025-03-27): RO name + RO code + state office + sales area for every XP100 outlet in the
+   country. Coordinates are **city-centroid approximations** (flagged per-row in `sources[].method`);
+   exact pump addresses pend field verification.
+2. **BPCL locator API sweep — 9,926 outlets swept, 93 with Speed 100, 17 with legacy Speed 97**
+   (`api.cep.bpcl.in` rolocators, swept 2026-07-31; 149 polite requests, adaptive grid, every raw
+   response snapshotted). These rows carry **exact coordinates, full addresses, phones, pincodes,
+   and per-outlet dated prices** (Speed 100 ₹169.00 as of 2026-07-31) from BPCL's own feed.
+3. **HPCL official poWer outlet tables — 26 poWer 99 + 21 poWer 100 rows** (product pages,
+   fetched 2026-07-28): full street addresses + phones; coordinates city-centroid. Outlets on both
+   tables (e.g. Sonal Super Services, Mumbai) are one station with both grades.
+4. **Curated candidates (25 rows from launch)** — locator-search leads and announcement-confirmed
+   outlets, kept where not superseded; 7 were matched to the official XP100 list and upgraded with
+   their official RO codes.
 
 ## Totals
 
-- **27 outlets** across **Kerala (22)** and **Karnataka / Bengaluru (5)**.
-- By brand/grade: **IOCL XP100 — 19**, **HPCL poWer 100 — 5** (candidate), **BPCL Speed 100 — 1**.
-- Every outlet ships as **"Unverified"** (availability `unknown`, no field check-in yet). This is truthful:
-  we have a listing or an announcement, not a same-day confirmation of stock.
+- **391 stations · 30 states/UTs · 5 grades**
+- By grade: **XP100 232 · Speed 100 93 · poWer 100 26 · poWer 99 26 · Speed 97 (legacy) 17**
+- Top states: Delhi 44 · Uttar Pradesh 43 · Karnataka 42 · Maharashtra 36 · **Kerala 30** ·
+  Rajasthan 29 · Gujarat 27 · Tamil Nadu 22 · Haryana 20 — full spread includes the North-East
+  (Assam, Meghalaya, Manipur, Tripura, Mizoram, Nagaland, Arunachal Pradesh).
 
-## Confidence tiers (encoded in each row's `sources[].method`)
+## Kerala (priority region, 30 stations)
 
-1. **Confirmed (official announcement).** The grade's availability was publicly announced by the OMC or
-   widely reported. Kerala: IndianOil **Vytilla** and **Thevara** (Kochi) — XP100 launch confirmed by
-   IndianOil Kerala. Bengaluru: **Bowring/St Mark's Rd, COCO ITI/KR Puram, Patel/JP Nagar, Sowbhagya/HSR**
-   (XP100 launch outlets). **BP Cubbon Park** (Speed 100 launch).
-2. **Candidate (official locator).** A real IndianOil/HPCL retail outlet pulled from the company locator
-   (`locator.iocl.com`, `petrolpump.hpretail.in`), **with its real RO code**, in a city where the premium
-   grade is offered — but the locator has **no fuel-grade filter**, so XP100 / poWer 100 availability at that
-   specific pump is **not yet confirmed**. These are strong leads to field-verify, not guarantees.
+- **Official XP100 (9, from IOCL's own list):** COCO Vytilla (Kochi), Madhavam Fuels + Swagat
+  Pongam (Thrissur), Kerala Transport Co + Lakshmi Trading + Lakshmi Sales & Services (Kozhikode),
+  Triveni Fuels (Kanhangad, **Kasaragod**), COCO Palli + COCO Anayara (Thiruvananthapuram).
+- **Official BPCL Speed 100 (5, live API with exact coords + ₹169.00 price):** BP Ernakulam
+  Marine Drive (Kochi), BP Thalappara NH-17 (**Malappuram**), Narayanan & Co + M Kutty Hassan
+  Kutty & Co + KMR Petroleum Adivaram (Kozhikode).
+- **Official HPCL poWer 99 (1):** Kumar Sales & Services, Kalamassery (also a curated candidate,
+  now grade-corrected to poWer 99 per HPCL's table).
+- **Candidates (locator leads, unverified):** SR Fuels Padivattom, Hijaz Kaloor, Kuzhiparambil
+  Karukutty, Manakattil Attipra, KSM Kochuveli, and others — real pumps, XP100 not yet confirmed.
+- **Districts still without any known 100-octane outlet:** Kollam, Kottayam, Alappuzha,
+  Pathanamthitta, Idukki, Palakkad, Wayanad — an honest gap the add-a-pump flow exists to close.
 
-> Because of tier 2, the app must never assert "sells XP100" as fact for a candidate — the UI shows the
-> "Unverified — official listing, not field-confirmed" badge, which is exactly correct here.
+## Known data-quality flags
 
-## Kerala breakdown (the priority region)
+- **Sikkim (16 BPCL rows):** BPCL's feed reports Speed 100/97 availability at outlets around
+  Rangpo/Pakyong — unusually dense for the region and possibly over-inclusive flagging in the
+  upstream feed. Kept with full provenance; field check-ins will settle it.
+- IOCL/HPCL coordinates are city centroids, not pump entrances (flagged per row). BPCL coordinates
+  are exact (from the API).
+- The IOCL list snapshot is dated 2025-03-27; outlets added since won't appear until the next
+  refresh (or via community reports). Quarterly RTI to each OMC remains the statutory refresh path.
 
-| District | Outlets | Notes |
-| --- | --- | --- |
-| Ernakulam (Kochi) | 8 | Vytilla + Thevara **confirmed XP100**; SR Fuels (Padivattom), Hijaz (Kaloor), Kuzhiparambil (Karukutty) candidates; HPCL Falcon Fuels, Kumar S&S (Kalamassery), PM Louis Sons (Aluva), Smart Fuels (Kothamangalam) |
-| Thiruvananthapuram | 3 | Manakattil (Attipra), COCO Anayara, KSM (Kochuveli) — candidates |
-| Kozhikode / Calicut | 6 | Calicut Petrols, Kerala Transport Co, P P Sons, Kokkallur (Balussery), + Mahe — candidates |
-| Kannur | 2 | K C Petroleum (Kodiyeri), Kallikkandy (Thrippangottur) — candidates |
-| Thrissur | 1 | HPCL Unique Petroleum (Chungam) — candidate |
-| Kollam, Kottayam, Alappuzha, Palakkad, Malappuram, Wayanad, Idukki, Pathanamthitta, Kasaragod | 0 | Not yet harvested — **coverage gap to fill** |
+## Refresh pipeline
 
-Coordinates are **locality-centroid approximations** (flagged in each row's `method`), not surveyed pump
-entrances — precise geocoding is a field-verification task.
-
-## Beyond Kerala
-
-The app also confirms XP100 is sold in these launch cities (specific outlets still to be harvested):
-Delhi, Gurgaon, Noida, Agra, Jaipur, Chandigarh, Ludhiana, Mumbai, Pune, Ahmedabad, Bengaluru, Chennai,
-Hyderabad, Kolkata, Bhubaneswar. **BPCL Speed 100** is in ~8 cities only (Bengaluru confirmed;
-~₹169/L). **HPCL poWer 100** availability is thinner and less publicly enumerated.
-
-## A live competitor to know about
-
-**octanemap.com** already bills itself as "the definitive map of every petrol pump in India that sells
-premium high-octane fuel" (XP95/XP100, poWer 95/99/100, Speed 95/97, Jio-bp ACTIVE ~97 RON, Shell
-V-Power). Worth studying for coverage and gaps — and a reminder that OctaneFinder's edge must be
-**freshness + ethanol-free focus + verification**, not merely a static list.
-
-## How to expand this dataset (next harvest — needs deep web fetch / the pipeline)
-
-1. **Team-BHP master thread** (forum/230198) — the largest crowd list; extract outlets per city.
-2. **octanemap.com** — cross-check its outlet set (respect its terms; don't scrape wholesale).
-3. **IOCL / HPCL locator crawl** — `pipeline/crawl_iocl_sitemap.py` joins RO code → address/coords at scale.
-4. **BPCL locator API** — `pipeline/poll_bpcl.py` returns per-outlet `fuelAvailable[]` incl. "SPEED 100".
-5. **RTI to each OMC CPIO** — the statutory way to compel the authoritative XP100/poWer 100/Speed 100
-   outlet lists (₹10, 30-day clock). This is the only path to a truly complete, defensible list.
-6. **Field verification** — the app's own check-ins convert candidates → confirmed and keep them fresh.
-
-_Sources for the current rows: IndianOil `locator.iocl.com`, HPCL `petrolpump.hpretail.in`, IndianOil
-Kerala announcements, BPCL Retail (Speed 100 launch), Team-BHP, and press coverage. Retrieved 2026-07-31._
+`pipeline/poll_bpcl.py` (daily), HPCL page diff (monthly), IOCL list recapture (quarterly + RTI),
+community check-ins continuously via the app. Raw sweep snapshots: scratchpad `bpcl-sweep/`.
