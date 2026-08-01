@@ -1,9 +1,7 @@
-// Moderation console (AUTHMOD slice; BUILD-CONTRACT §7, §11 — v1.1 admin UI).
-//
-// Server component: gates on an admin session (ADMIN_EMAILS), reads the queue via listQueue,
-// and posts approve/reject decisions through a Server Action -> decideQueue. Force-dynamic so it
-// is never prerendered at build (no auth()/DB calls at build; contract §2). Degrades gracefully
-// when auth or the database is unconfigured.
+// /admin — the MileageBachao operations dashboard.
+// Stat tiles, brand/grade/state distributions (entity-colored bars with direct
+// labels), recent edits, publish status, and the moderation queue. All server-
+// rendered; decisions run through a server action re-gated by isAuthorized().
 
 import type { ReactNode } from "react";
 
@@ -19,28 +17,21 @@ import { adminStats, type AdminStats } from "@/lib/queries/adminStations";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-export const metadata = {
-  title: "Moderation queue - MileageBachao",
-  robots: { index: false, follow: false },
+const BRAND_VAR: Record<string, string> = {
+  IOCL: "--brand-iocl",
+  BPCL: "--brand-bpcl",
+  HPCL: "--brand-hpcl",
 };
 
 const TYPE_LABEL: Record<QueueItem["type"], string> = {
   correction: "Correction",
   checkin: "Check-in",
-  new_station: "New station",
+  new_station: "New pump",
 };
 
-const STATUS_COLOR: Record<QueueItem["status"], string> = {
-  pending: "var(--accent)",
-  approved: "var(--fresh)",
-  rejected: "var(--dry)",
-};
-
-// --- Server Action: decide a queue item ------------------------------------------------------
+// --- Server action ---------------------------------------------------------------
 async function decideAction(formData: FormData): Promise<void> {
   "use server";
-
-  // Defence in depth: re-check admin inside the action, never trust the rendered form alone.
   const { ok } = await isAuthorized();
   if (!ok) return;
 
@@ -54,371 +45,358 @@ async function decideAction(formData: FormData): Promise<void> {
     await decideQueue(id, decision, note);
   } catch (e) {
     if (!(e instanceof DbUnavailableError)) throw e;
-    // No database configured => nothing to decide; fall through and re-render.
   }
   revalidatePath("/admin");
 }
 
-// --- Presentational helpers ------------------------------------------------------------------
-function Panel({ title, children }: { title: string; children: ReactNode }) {
+// --- Presentational pieces --------------------------------------------------------
+function Card({ title, children, action }: { title: string; children: ReactNode; action?: ReactNode }) {
   return (
-    <div
-      style={{
-        maxWidth: "48rem",
-        margin: "4rem auto",
-        padding: "2rem",
-        background: "var(--surface)",
-        border: "1px solid var(--line)",
-        borderRadius: "0.75rem",
-        color: "var(--ink)",
-      }}
-    >
-      <h1 style={{ fontSize: "1.25rem", fontWeight: 700, marginBottom: "0.75rem" }}>{title}</h1>
-      <div style={{ color: "var(--ink-2)", lineHeight: 1.6 }}>{children}</div>
+    <section className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5">
+      <div className="mb-4 flex items-baseline justify-between gap-3">
+        <h2 className="text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink-3)]">{title}</h2>
+        {action}
+      </div>
+      {children}
+    </section>
+  );
+}
+
+function StatTile({ label, value, tone }: { label: string; value: string; tone?: "accent" | "warn" }) {
+  return (
+    <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5">
+      <div className="text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink-3)]">{label}</div>
+      <div
+        className={`mt-1 text-[28px] font-extrabold leading-none tracking-tight tabular-nums ${
+          tone === "accent" ? "text-[var(--accent)]" : tone === "warn" ? "text-[var(--stale)]" : ""
+        }`}
+      >
+        {value}
+      </div>
     </div>
+  );
+}
+
+function BarRow({
+  label,
+  sub,
+  n,
+  max,
+  colorVar,
+  href,
+}: {
+  label: string;
+  sub?: string;
+  n: number;
+  max: number;
+  colorVar: string;
+  href?: string;
+}) {
+  const w = max > 0 ? Math.max(3, Math.round((n / max) * 100)) : 0;
+  const text = (
+    <span className="flex items-center gap-2 text-[13px] font-bold text-[var(--ink)]">
+      <span aria-hidden className="h-2.5 w-2.5 rounded-full" style={{ background: `var(${colorVar})` }} />
+      {label}
+      {sub && <span className="text-[10.5px] font-semibold text-[var(--ink-3)]">{sub}</span>}
+    </span>
+  );
+  return (
+    <div className="grid grid-cols-[9.5rem_1fr_2.5rem] items-center gap-3">
+      {href ? <Link href={href} className="no-underline hover:opacity-80">{text}</Link> : text}
+      <div className="h-2.5 overflow-hidden rounded-full bg-[var(--surface-2)]">
+        <div className="h-full rounded-full" style={{ width: `${w}%`, background: `var(${colorVar})` }} />
+      </div>
+      <span className="text-right text-[13px] font-bold tabular-nums text-[var(--ink-2)]">{n}</span>
+    </div>
+  );
+}
+
+function StatusPill({ status }: { status: QueueItem["status"] }) {
+  const map = {
+    pending: ["--stale", "Pending"],
+    approved: ["--fresh", "Approved"],
+    rejected: ["--dry", "Rejected"],
+  } as const;
+  const [v, label] = map[status];
+  return (
+    <span
+      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-bold"
+      style={{ color: `var(${v})`, background: `color-mix(in srgb, var(${v}) 14%, transparent)` }}
+    >
+      <span aria-hidden className="h-1.5 w-1.5 rounded-full" style={{ background: `var(${v})` }} />
+      {label}
+    </span>
   );
 }
 
 function QueueCard({ item }: { item: QueueItem }) {
   return (
-    <li
-      style={{
-        listStyle: "none",
-        background: "var(--surface)",
-        border: "1px solid var(--line)",
-        borderRadius: "0.75rem",
-        padding: "1rem 1.25rem",
-        marginBottom: "1rem",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "0.75rem",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <div style={{ display: "flex", gap: "0.75rem", alignItems: "center" }}>
-          <span
-            style={{
-              fontSize: "0.75rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.04em",
-              padding: "0.15rem 0.5rem",
-              borderRadius: "999px",
-              background: "var(--accent-soft)",
-              color: "var(--accent-ink)",
-            }}
-          >
+    <li className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-2.5">
+          <span className="rounded-lg bg-[var(--accent-soft)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-[var(--accent-ink)]">
             {TYPE_LABEL[item.type]}
           </span>
-          <span
-            style={{
-              fontSize: "0.75rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.04em",
-              color: STATUS_COLOR[item.status],
-            }}
-          >
-            {item.status}
-          </span>
+          <StatusPill status={item.status} />
         </div>
-        <code style={{ fontSize: "0.75rem", color: "var(--ink-3)" }}>
-          {item.stationId ?? "(no station)"} · {new Date(item.createdAt).toLocaleString()}
+        <code className="text-[11px] text-[var(--ink-3)]">
+          #{item.id} · {new Date(item.createdAt).toLocaleString()}
         </code>
       </div>
 
-      <pre
-        style={{
-          marginTop: "0.75rem",
-          padding: "0.75rem",
-          overflowX: "auto",
-          fontSize: "0.8125rem",
-          lineHeight: 1.5,
-          background: "var(--surface-2)",
-          border: "1px solid var(--line)",
-          borderRadius: "0.5rem",
-          color: "var(--ink-2)",
-        }}
-      >
+      <pre className="mt-3 overflow-x-auto rounded-xl border border-[var(--line)] bg-[var(--surface-2)] p-3 text-[12.5px] leading-relaxed text-[var(--ink-2)]">
         {JSON.stringify(item.payload, null, 2)}
       </pre>
 
-      {item.status === "pending" ? (
-        <form action={decideAction} style={{ marginTop: "0.75rem" }}>
+      {item.status === "pending" && (
+        <form action={decideAction} className="mt-3">
           <input type="hidden" name="id" value={item.id} />
-          <label
-            htmlFor={`note-${item.id}`}
-            style={{ display: "block", fontSize: "0.75rem", color: "var(--ink-2)", marginBottom: "0.25rem" }}
-          >
+          <label htmlFor={`note-${item.id}`} className="mb-1 block text-[11px] font-bold text-[var(--ink-2)]">
             Moderator note (optional)
           </label>
           <textarea
             id={`note-${item.id}`}
             name="note"
             rows={2}
-            style={{
-              width: "100%",
-              padding: "0.5rem",
-              fontSize: "0.875rem",
-              background: "var(--bg)",
-              color: "var(--ink)",
-              border: "1px solid var(--line-strong)",
-              borderRadius: "0.5rem",
-              resize: "vertical",
-            }}
+            className="w-full resize-y rounded-lg border border-[var(--line-strong)] bg-[var(--bg)] p-2.5 text-[13px] text-[var(--ink)]"
           />
-          <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.5rem" }}>
+          <div className="mt-2.5 flex gap-2">
             <button
               type="submit"
               name="decision"
               value="approve"
-              style={{
-                minHeight: "44px",
-                padding: "0 1rem",
-                fontWeight: 600,
-                cursor: "pointer",
-                background: "var(--fresh)",
-                color: "#fff",
-                border: "none",
-                borderRadius: "0.5rem",
-              }}
+              className="min-h-[42px] rounded-lg bg-[var(--fresh)] px-4 text-[13px] font-bold text-white hover:opacity-90"
             >
-              Approve
+              Approve {item.type === "new_station" ? "& create pump" : ""}
             </button>
             <button
               type="submit"
               name="decision"
               value="reject"
-              style={{
-                minHeight: "44px",
-                padding: "0 1rem",
-                fontWeight: 600,
-                cursor: "pointer",
-                background: "transparent",
-                color: "var(--dry)",
-                border: "1px solid var(--dry)",
-                borderRadius: "0.5rem",
-              }}
+              className="min-h-[42px] rounded-lg border border-[var(--dry)] px-4 text-[13px] font-bold text-[var(--dry)] hover:bg-[var(--surface-2)]"
             >
               Reject
             </button>
           </div>
         </form>
-      ) : null}
+      )}
     </li>
   );
 }
 
-// --- Page ------------------------------------------------------------------------------------
-export default async function AdminModerationPage({
+// --- Page -------------------------------------------------------------------------
+export default async function AdminDashboard({
   searchParams,
 }: {
   searchParams: Promise<{ error?: string }>;
 }) {
-  const { ok, who } = await isAuthorized();
+  const { ok } = await isAuthorized();
   const { error } = await searchParams;
 
   if (!ok) {
     return (
-      <Panel title="Moderation queue">
-        <p>This console is restricted to moderators.</p>
-        {adminTokenConfigured() ? (
-          <form method="post" action="/admin/login" style={{ marginTop: "1rem" }}>
-            <label htmlFor="admin-token" style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, marginBottom: "0.35rem" }}>
-              Admin token
-            </label>
-            <input
-              id="admin-token"
-              name="token"
-              type="password"
-              autoComplete="current-password"
-              style={{
-                width: "100%",
-                padding: "0.6rem 0.75rem",
-                fontSize: "0.9rem",
-                background: "var(--surface)",
-                color: "var(--ink)",
-                border: "1px solid var(--line-strong)",
-                borderRadius: "0.5rem",
-              }}
-            />
-            {error && (
-              <p style={{ color: "var(--dry)", fontSize: "0.8rem", marginTop: "0.5rem" }}>
-                {error === "rate"
-                  ? "Too many attempts — try again in 15 minutes."
-                  : "That token didn't match."}
-              </p>
-            )}
-            <button
-              type="submit"
-              style={{
-                marginTop: "0.75rem",
-                minHeight: "44px",
-                padding: "0 1.25rem",
-                fontWeight: 700,
-                cursor: "pointer",
-                background: "var(--accent)",
-                color: "#fff",
-                border: "none",
-                borderRadius: "0.5rem",
-              }}
-            >
-              Unlock console
-            </button>
-          </form>
-        ) : (
-          <p style={{ marginTop: "0.75rem", color: "var(--ink-2)" }}>
-            Set <code>ADMIN_TOKEN</code> (or configure Google sign-in with{" "}
-            <code>ADMIN_EMAILS</code>) to enable access.
+      <main className="mx-auto max-w-md px-5 py-16">
+        <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6">
+          <h1 className="text-lg font-extrabold">Moderator access</h1>
+          <p className="mt-1 text-[13px] text-[var(--ink-2)]">This console is restricted.</p>
+          {adminTokenConfigured() ? (
+            <form method="post" action="/admin/login" className="mt-5">
+              <label htmlFor="admin-token" className="mb-1.5 block text-[12px] font-bold text-[var(--ink-2)]">
+                Admin token
+              </label>
+              <input
+                id="admin-token"
+                name="token"
+                type="password"
+                autoComplete="current-password"
+                className="w-full rounded-lg border border-[var(--line-strong)] bg-[var(--bg)] px-3 py-2.5 text-[14px] text-[var(--ink)]"
+              />
+              {error && (
+                <p className="mt-2 text-[12px] font-semibold text-[var(--dry)]">
+                  {error === "rate" ? "Too many attempts — try again in 15 minutes." : "That token didn't match."}
+                </p>
+              )}
+              <button
+                type="submit"
+                className="mt-4 min-h-[44px] w-full rounded-lg bg-[var(--accent)] font-bold text-white hover:bg-[var(--accent-ink)]"
+              >
+                Unlock console
+              </button>
+            </form>
+          ) : (
+            <p className="mt-4 text-[13px] text-[var(--ink-2)]">
+              Set <code>ADMIN_TOKEN</code> (or Google sign-in + <code>ADMIN_EMAILS</code>) to enable access.
+            </p>
+          )}
+          <p className="mt-4 text-[12px] text-[var(--ink-3)]">
+            Using Google?{" "}
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- NextAuth API route */}
+            <a href="/api/auth/signin" className="font-bold text-[var(--accent-ink)] underline">
+              Sign in
+            </a>
           </p>
-        )}
-        <p style={{ marginTop: "1rem", fontSize: "0.8rem", color: "var(--ink-3)" }}>
-          Using Google instead?{" "}
-          {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- NextAuth API route, not a Next.js page */}
-          <a href="/api/auth/signin" style={{ color: "var(--accent)", fontWeight: 600 }}>
-            Sign in
-          </a>{" "}
-          with an account listed in <code>ADMIN_EMAILS</code>.
-        </p>
-      </Panel>
+        </div>
+      </main>
     );
   }
 
   let items: QueueItem[] = [];
   let stats: AdminStats | null = null;
-  let dbUnavailable = false;
   try {
-    items = await listQueue({});
-    stats = await adminStats();
+    [items, stats] = await Promise.all([listQueue({}), adminStats()]);
   } catch (e) {
-    if (e instanceof DbUnavailableError) {
-      dbUnavailable = true;
-    } else {
-      throw e;
-    }
+    if (!(e instanceof DbUnavailableError)) throw e;
   }
 
-  if (dbUnavailable) {
+  if (!stats) {
     return (
-      <Panel title="Moderation queue">
-        <p>
-          The database is not configured (<code>DATABASE_URL</code> is unset), so there is no
-          moderation queue to review. Configure a database to enable writes and moderation.
-        </p>
-      </Panel>
+      <main className="mx-auto max-w-md px-5 py-16 text-[14px] text-[var(--ink-2)]">
+        The database is not configured (<code>DATABASE_URL</code>), so there is nothing to manage.
+      </main>
     );
   }
 
-  const pending = items.filter((i) => i.status === "pending").length;
+  const pendingItems = items.filter((i) => i.status === "pending");
+  const decidedItems = items.filter((i) => i.status !== "pending").slice(0, 5);
+  const maxBrand = Math.max(...stats.byBrand.map((b) => b.n), 1);
+  const maxGrade = Math.max(...stats.byGrade.map((g) => g.n), 1);
+  const maxState = Math.max(...stats.byState.map((s) => s.n), 1);
+  const activeN = stats.byStatus.find((s) => s.status === "active")?.n ?? 0;
 
   return (
-    <main
-      style={{
-        maxWidth: "56rem",
-        margin: "0 auto",
-        padding: "2rem 1.25rem 4rem",
-        color: "var(--ink)",
-        background: "var(--bg)",
-        minHeight: "100vh",
-      }}
-    >
-      <header style={{ marginBottom: "1.25rem", display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "1rem", flexWrap: "wrap" }}>
-        <div>
-          <h1 style={{ fontSize: "1.5rem", fontWeight: 800 }}>MileageBachao admin</h1>
-          <p style={{ color: "var(--ink-2)", marginTop: "0.25rem" }}>Signed in as {who}.</p>
-        </div>
-        <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-          <Link
-            href="/admin/pumps"
-            style={{
-              minHeight: "40px",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 1rem",
-              fontSize: "0.85rem",
-              fontWeight: 700,
-              background: "var(--accent)",
-              color: "#fff",
-              borderRadius: "0.5rem",
-              textDecoration: "none",
-            }}
-          >
-            Manage pumps
-          </Link>
-          <form method="post" action="/admin/logout">
-            <button
-              type="submit"
-              style={{
-                minHeight: "40px",
-                padding: "0 0.9rem",
-                fontSize: "0.8rem",
-                fontWeight: 700,
-                cursor: "pointer",
-                background: "transparent",
-                color: "var(--ink-2)",
-                border: "1px solid var(--line-strong)",
-                borderRadius: "0.5rem",
-              }}
-            >
-              Log out
-            </button>
-          </form>
-        </div>
-      </header>
+    <main className="mx-auto max-w-6xl px-5 py-8">
+      {/* Stat tiles */}
+      <section className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <StatTile label="Pumps in database" value={String(stats.stations)} tone="accent" />
+        <StatTile
+          label="Pending reports"
+          value={String(stats.pendingReports)}
+          tone={stats.pendingReports > 0 ? "warn" : undefined}
+        />
+        <StatTile label="Active status" value={String(activeN)} />
+        <StatTile label="Reports all-time" value={String(stats.totalReports)} />
+      </section>
 
-      {stats && (
-        <section
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
-            gap: "0.75rem",
-            marginBottom: "1.75rem",
-          }}
+      {/* Distributions */}
+      <section className="mt-6 grid gap-4 lg:grid-cols-3">
+        <Card title="Network by company">
+          <div className="grid gap-3">
+            {stats.byBrand.map((b) => (
+              <BarRow
+                key={b.brand}
+                label={b.brand}
+                n={b.n}
+                max={maxBrand}
+                colorVar={BRAND_VAR[b.brand] ?? "--unknown"}
+                href={`/admin/pumps?q=${b.brand}`}
+              />
+            ))}
+          </div>
+        </Card>
+        <Card title="Pumps by fuel grade">
+          <div className="grid gap-3">
+            {stats.byGrade.map((g) => (
+              <BarRow
+                key={g.grade}
+                label={g.grade}
+                n={g.n}
+                max={maxGrade}
+                colorVar={BRAND_VAR[g.brand] ?? "--unknown"}
+              />
+            ))}
+          </div>
+        </Card>
+        <Card title="Top states">
+          <div className="grid gap-3">
+            {stats.byState.map((s) => (
+              <BarRow
+                key={s.state}
+                label={s.state}
+                n={s.n}
+                max={maxState}
+                colorVar="--accent"
+                href={`/admin/pumps?q=${encodeURIComponent(s.state)}`}
+              />
+            ))}
+          </div>
+        </Card>
+      </section>
+
+      {/* Activity + publish */}
+      <section className="mt-6 grid gap-4 lg:grid-cols-2">
+        <Card
+          title="Recently edited pumps"
+          action={
+            <Link href="/admin/pumps" className="text-[12px] font-bold text-[var(--accent-ink)] no-underline hover:underline">
+              All pumps →
+            </Link>
+          }
         >
-          {[
-            ["Pumps in DB", String(stats.stations)],
-            ["Pending reports", String(stats.pendingReports)],
-            ...stats.byBrand.map((b) => [b.brand, String(b.n)] as [string, string]),
-            ["Last edit", stats.lastEdit ?? "—"],
-          ].map(([label, value]) => (
-            <div
-              key={label}
-              style={{
-                background: "var(--surface)",
-                border: "1px solid var(--line)",
-                borderRadius: "0.75rem",
-                padding: "0.9rem 1rem",
-              }}
-            >
-              <div style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--ink-3)" }}>
-                {label}
-              </div>
-              <div style={{ fontSize: "1.25rem", fontWeight: 800, marginTop: "0.15rem", fontVariantNumeric: "tabular-nums" }}>
-                {value}
-              </div>
-            </div>
-          ))}
-        </section>
-      )}
+          <ul className="divide-y divide-[var(--line)]">
+            {stats.recentEdits.map((r) => (
+              <li key={r.publicId}>
+                <Link
+                  href={`/admin/pumps/${encodeURIComponent(r.publicId)}`}
+                  className="flex items-center justify-between gap-3 py-2.5 no-underline hover:opacity-80"
+                >
+                  <span className="flex min-w-0 items-center gap-2">
+                    <span
+                      aria-hidden
+                      className="h-2.5 w-2.5 shrink-0 rounded-full"
+                      style={{ background: `var(${BRAND_VAR[r.brand] ?? "--unknown"})` }}
+                    />
+                    <span className="truncate text-[13px] font-bold text-[var(--ink)]">{r.name}</span>
+                  </span>
+                  <span className="shrink-0 text-[11.5px] tabular-nums text-[var(--ink-3)]">{r.updatedAt}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Card>
+        <Card title="Publishing">
+          <p className="text-[13px] leading-relaxed text-[var(--ink-2)]">
+            The public map serves the committed dataset. Database edits and newly approved pumps go
+            live on the next publish. <strong className="text-[var(--ink)]">Last DB edit: {stats.lastEdit ?? "—"}.</strong>
+          </p>
+          <pre className="mt-3 overflow-x-auto rounded-xl border border-[var(--line)] bg-[var(--surface-2)] p-3 text-[12px] text-[var(--ink-2)]">
+{`npm run publish:data
+git add data/ && git commit -m "publish" && git push`}
+          </pre>
+        </Card>
+      </section>
 
-      <h2 style={{ fontSize: "1.1rem", fontWeight: 800, marginBottom: "0.75rem" }}>
-        Moderation queue — {pending} pending · {items.length} total
-      </h2>
-
-      {items.length === 0 ? (
-        <p style={{ color: "var(--ink-2)" }}>The queue is empty. Nothing to review right now.</p>
-      ) : (
-        <ul style={{ padding: 0, margin: 0 }}>
-          {items.map((item) => (
-            <QueueCard key={item.id} item={item} />
-          ))}
-        </ul>
-      )}
+      {/* Moderation queue */}
+      <section className="mt-8">
+        <h2 className="mb-3 text-[15px] font-extrabold">
+          Moderation queue{" "}
+          <span className="font-semibold text-[var(--ink-3)]">
+            — {pendingItems.length} pending · {items.length} total
+          </span>
+        </h2>
+        {pendingItems.length === 0 ? (
+          <p className="rounded-2xl border border-dashed border-[var(--line-strong)] p-6 text-center text-[13px] text-[var(--ink-3)]">
+            Queue clear — every report has been reviewed.
+          </p>
+        ) : (
+          <ul className="grid gap-4">
+            {pendingItems.map((item) => (
+              <QueueCard key={item.id} item={item} />
+            ))}
+          </ul>
+        )}
+        {decidedItems.length > 0 && (
+          <>
+            <h3 className="mb-2 mt-6 text-[12px] font-bold uppercase tracking-[0.08em] text-[var(--ink-3)]">
+              Recently decided
+            </h3>
+            <ul className="grid gap-4">
+              {decidedItems.map((item) => (
+                <QueueCard key={item.id} item={item} />
+              ))}
+            </ul>
+          </>
+        )}
+      </section>
     </main>
   );
 }

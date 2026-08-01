@@ -1,6 +1,5 @@
-// /admin/pumps — searchable table of every station in the database, with edit links.
-// DB-first: edits land in Postgres; the public map updates on the next publish
-// (`npm run publish:data`). Requires admin (session or token cookie).
+// /admin/pumps — searchable table of every station in the database.
+// DB-first: edits go live on the next publish (npm run publish:data).
 
 import Link from "next/link";
 
@@ -11,9 +10,22 @@ import { listAdminStations, type AdminStationRow } from "@/lib/queries/adminStat
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-export const metadata = { title: "Pumps - Admin - MileageBachao", robots: { index: false, follow: false } };
+export const metadata = { title: "Pumps" };
 
 const PAGE_SIZE = 50;
+
+const BRAND_VAR: Record<string, string> = {
+  IOCL: "--brand-iocl",
+  BPCL: "--brand-bpcl",
+  HPCL: "--brand-hpcl",
+};
+const STATUS_VAR: Record<string, string> = {
+  active: "--fresh",
+  unverified: "--unknown",
+  temporarily_closed: "--stale",
+  permanently_closed: "--dry",
+  duplicate: "--dry",
+};
 
 export default async function AdminPumpsPage({
   searchParams,
@@ -23,10 +35,12 @@ export default async function AdminPumpsPage({
   const { ok } = await isAuthorized();
   if (!ok) {
     return (
-      <main style={{ maxWidth: "40rem", margin: "4rem auto", padding: "0 1rem", color: "var(--ink)" }}>
-        <p>
-          Restricted. <Link href="/admin" style={{ color: "var(--accent)" }}>Log in at /admin</Link> first.
-        </p>
+      <main className="mx-auto max-w-md px-5 py-16 text-[14px]">
+        Restricted.{" "}
+        <Link href="/admin" className="font-bold text-[var(--accent-ink)] underline">
+          Log in at the dashboard
+        </Link>{" "}
+        first.
       </main>
     );
   }
@@ -40,79 +54,110 @@ export default async function AdminPumpsPage({
     ({ rows, total } = await listAdminStations(q, PAGE_SIZE, (pageNum - 1) * PAGE_SIZE));
   } catch (e) {
     if (e instanceof DbUnavailableError) {
-      return (
-        <main style={{ maxWidth: "40rem", margin: "4rem auto", padding: "0 1rem", color: "var(--ink)" }}>
-          <p>The database is not configured, so there are no pumps to manage.</p>
-        </main>
-      );
+      return <main className="mx-auto max-w-md px-5 py-16 text-[14px]">Database not configured.</main>;
     }
     throw e;
   }
   const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
-  const cell: React.CSSProperties = {
-    padding: "0.5rem 0.6rem",
-    borderBottom: "1px solid var(--line)",
-    fontSize: "0.8rem",
-    verticalAlign: "top",
-  };
-
   return (
-    <main style={{ maxWidth: "72rem", margin: "0 auto", padding: "2rem 1.25rem 4rem", color: "var(--ink)", background: "var(--bg)", minHeight: "100vh" }}>
-      <header style={{ display: "flex", justifyContent: "space-between", gap: "1rem", flexWrap: "wrap", alignItems: "center", marginBottom: "1.25rem" }}>
+    <main className="mx-auto max-w-6xl px-5 py-8">
+      <header className="mb-5 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 style={{ fontSize: "1.5rem", fontWeight: 800 }}>Pumps</h1>
-          <p style={{ color: "var(--ink-2)", marginTop: "0.25rem", fontSize: "0.85rem" }}>
-            {total} in database{q ? ` matching “${q}”` : ""}. Edits go live on the next publish.
+          <h1 className="text-xl font-extrabold tracking-tight">Pumps</h1>
+          <p className="mt-0.5 text-[13px] text-[var(--ink-2)]">
+            {total} in database{q ? <> matching <strong>“{q}”</strong></> : ""} · edits go live on the next publish
           </p>
         </div>
-        <Link href="/admin" style={{ color: "var(--accent)", fontWeight: 700, fontSize: "0.85rem" }}>
-          ← Dashboard
-        </Link>
+        <form method="get" className="flex w-full max-w-md gap-2">
+          <input
+            type="search"
+            name="q"
+            defaultValue={q}
+            placeholder="Search name, city, state, PIN, id…"
+            className="min-w-0 flex-1 rounded-lg border border-[var(--line-strong)] bg-[var(--surface)] px-3 py-2.5 text-[14px] text-[var(--ink)]"
+          />
+          <button
+            type="submit"
+            className="min-h-[44px] rounded-lg bg-[var(--accent)] px-4 text-[13px] font-bold text-white hover:bg-[var(--accent-ink)]"
+          >
+            Search
+          </button>
+        </form>
       </header>
 
-      <form method="get" style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem", maxWidth: "28rem" }}>
-        <input
-          type="search"
-          name="q"
-          defaultValue={q}
-          placeholder="Search name, city, state, PIN, id…"
-          style={{ flex: 1, padding: "0.55rem 0.75rem", fontSize: "0.9rem", background: "var(--surface)", color: "var(--ink)", border: "1px solid var(--line-strong)", borderRadius: "0.5rem" }}
-        />
-        <button type="submit" style={{ minHeight: "42px", padding: "0 1rem", fontWeight: 700, cursor: "pointer", background: "var(--accent)", color: "#fff", border: "none", borderRadius: "0.5rem" }}>
-          Search
-        </button>
-      </form>
-
-      <div style={{ overflowX: "auto", background: "var(--surface)", border: "1px solid var(--line)", borderRadius: "0.75rem" }}>
-        <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "56rem" }}>
+      <div className="overflow-x-auto rounded-2xl border border-[var(--line)] bg-[var(--surface)]">
+        <table className="w-full min-w-[58rem] border-collapse text-[13px]">
           <thead>
-            <tr>
+            <tr className="border-b border-[var(--line)]">
               {["Pump", "Grades", "City", "State", "PIN", "Location", "Status", "Updated", ""].map((h) => (
-                <th key={h} style={{ ...cell, textAlign: "left", fontSize: "0.7rem", textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--ink-3)" }}>
+                <th
+                  key={h}
+                  className="px-3 py-2.5 text-left text-[10.5px] font-bold uppercase tracking-[0.08em] text-[var(--ink-3)]"
+                >
                   {h}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-[var(--line)]">
             {rows.map((r) => (
-              <tr key={r.publicId}>
-                <td style={cell}>
-                  <strong>{r.name}</strong>
-                  <div style={{ color: "var(--ink-3)", fontSize: "0.7rem" }}>{r.brand} · {r.publicId}</div>
+              <tr key={r.publicId} className="hover:bg-[var(--surface-2)]">
+                <td className="px-3 py-2.5">
+                  <span className="flex items-center gap-2">
+                    <span
+                      aria-hidden
+                      className="h-2.5 w-2.5 shrink-0 rounded-full"
+                      style={{ background: `var(${BRAND_VAR[r.brand] ?? "--unknown"})` }}
+                    />
+                    <span>
+                      <strong className="block leading-tight">{r.name}</strong>
+                      <span className="text-[10.5px] text-[var(--ink-3)]">
+                        {r.brand} · {r.publicId}
+                      </span>
+                    </span>
+                  </span>
                 </td>
-                <td style={cell}>{r.grades || "—"}</td>
-                <td style={cell}>{r.city ?? "—"}</td>
-                <td style={cell}>{r.state}</td>
-                <td style={cell}>{r.pincode ?? "—"}</td>
-                <td style={{ ...cell, fontVariantNumeric: "tabular-nums" }}>
-                  {r.lat !== null && r.lng !== null ? `${r.lat.toFixed(5)}, ${r.lng.toFixed(5)}` : "—"}
+                <td className="px-3 py-2.5">
+                  <span className="flex flex-wrap gap-1">
+                    {(r.grades ? r.grades.split(", ") : []).map((g) => (
+                      <span
+                        key={g}
+                        className="rounded-md border border-[var(--line)] bg-[var(--surface-2)] px-1.5 py-0.5 text-[11px] font-bold"
+                      >
+                        {g}
+                      </span>
+                    ))}
+                  </span>
                 </td>
-                <td style={cell}>{r.status}</td>
-                <td style={{ ...cell, whiteSpace: "nowrap" }}>{r.updatedAt}</td>
-                <td style={cell}>
-                  <Link href={`/admin/pumps/${encodeURIComponent(r.publicId)}`} style={{ color: "var(--accent)", fontWeight: 700 }}>
+                <td className="px-3 py-2.5">{r.city ?? "—"}</td>
+                <td className="px-3 py-2.5">{r.state}</td>
+                <td className="px-3 py-2.5 tabular-nums">{r.pincode ?? "—"}</td>
+                <td className="px-3 py-2.5 tabular-nums">
+                  {r.lat !== null && r.lng !== null ? `${r.lat.toFixed(4)}, ${r.lng.toFixed(4)}` : "—"}
+                </td>
+                <td className="px-3 py-2.5">
+                  <span
+                    className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-bold"
+                    style={{
+                      color: `var(${STATUS_VAR[r.status] ?? "--unknown"})`,
+                      background: `color-mix(in srgb, var(${STATUS_VAR[r.status] ?? "--unknown"}) 13%, transparent)`,
+                    }}
+                  >
+                    <span
+                      aria-hidden
+                      className="h-1.5 w-1.5 rounded-full"
+                      style={{ background: `var(${STATUS_VAR[r.status] ?? "--unknown"})` }}
+                    />
+                    {r.status.replaceAll("_", " ")}
+                  </span>
+                </td>
+                <td className="whitespace-nowrap px-3 py-2.5 tabular-nums text-[var(--ink-3)]">{r.updatedAt}</td>
+                <td className="px-3 py-2.5">
+                  <Link
+                    href={`/admin/pumps/${encodeURIComponent(r.publicId)}`}
+                    className="font-bold text-[var(--accent-ink)] no-underline hover:underline"
+                  >
                     Edit
                   </Link>
                 </td>
@@ -123,15 +168,23 @@ export default async function AdminPumpsPage({
       </div>
 
       {pages > 1 && (
-        <nav style={{ display: "flex", gap: "0.75rem", marginTop: "1rem", fontSize: "0.85rem" }}>
+        <nav className="mt-4 flex items-center gap-4 text-[13px]">
           {pageNum > 1 && (
-            <Link href={`/admin/pumps?q=${encodeURIComponent(q)}&page=${pageNum - 1}`} style={{ color: "var(--accent)", fontWeight: 700 }}>
+            <Link
+              href={`/admin/pumps?q=${encodeURIComponent(q)}&page=${pageNum - 1}`}
+              className="font-bold text-[var(--accent-ink)]"
+            >
               ← Prev
             </Link>
           )}
-          <span style={{ color: "var(--ink-2)" }}>Page {pageNum} of {pages}</span>
+          <span className="text-[var(--ink-2)]">
+            Page {pageNum} of {pages}
+          </span>
           {pageNum < pages && (
-            <Link href={`/admin/pumps?q=${encodeURIComponent(q)}&page=${pageNum + 1}`} style={{ color: "var(--accent)", fontWeight: 700 }}>
+            <Link
+              href={`/admin/pumps?q=${encodeURIComponent(q)}&page=${pageNum + 1}`}
+              className="font-bold text-[var(--accent-ink)]"
+            >
               Next →
             </Link>
           )}

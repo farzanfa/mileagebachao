@@ -50,21 +50,40 @@ export interface AdminStats {
   stations: number;
   byBrand: { brand: string; n: number }[];
   byStatus: { status: string; n: number }[];
+  byGrade: { grade: string; brand: string; n: number }[];
+  byState: { state: string; n: number }[];
+  recentEdits: { publicId: string; name: string; brand: string; updatedAt: string }[];
   pendingReports: number;
+  totalReports: number;
   lastEdit: string | null;
 }
 
 export async function adminStats(): Promise<AdminStats> {
   const sql = requireDb();
-  const [tot, brands, statuses, pend, last] = await Promise.all([
+  const [tot, brands, statuses, grades, states, recent, pend, allRep, last] = await Promise.all([
     sql<{ n: number }[]>`SELECT count(*)::int AS n FROM app.stations`,
     sql<{ brand: string; n: number }[]>`
       SELECT b.code AS brand, count(*)::int AS n FROM app.stations s
       JOIN app.brands b ON b.id = s.brand_id GROUP BY 1 ORDER BY 2 DESC`,
     sql<{ status: string; n: number }[]>`
       SELECT status::text AS status, count(*)::int AS n FROM app.stations GROUP BY 1 ORDER BY 2 DESC`,
+    sql<{ grade: string; brand: string; n: number }[]>`
+      SELECT ft.grade_name AS grade, b.code AS brand, count(*)::int AS n
+        FROM app.station_fuels sf
+        JOIN app.fuel_types ft ON ft.id = sf.fuel_type_id
+        JOIN app.brands b ON b.id = ft.brand_id
+       GROUP BY 1, 2 ORDER BY 3 DESC`,
+    sql<{ state: string; n: number }[]>`
+      SELECT st.name AS state, count(*)::int AS n FROM app.stations s
+      JOIN app.states st ON st.id = s.state_id GROUP BY 1 ORDER BY 2 DESC LIMIT 8`,
+    sql<{ publicId: string; name: string; brand: string; updatedAt: string }[]>`
+      SELECT s.public_id AS "publicId", s.name, b.code AS brand,
+             to_char(s.updated_at, 'DD Mon HH24:MI') AS "updatedAt"
+        FROM app.stations s JOIN app.brands b ON b.id = s.brand_id
+       ORDER BY s.updated_at DESC LIMIT 5`,
     sql<{ n: number }[]>`
       SELECT count(*)::int AS n FROM app.user_reports WHERE status = 'pending'::app.moderation_status`,
+    sql<{ n: number }[]>`SELECT count(*)::int AS n FROM app.user_reports`,
     sql<{ t: string | null }[]>`
       SELECT to_char(max(updated_at), 'YYYY-MM-DD HH24:MI') AS t FROM app.stations`,
   ]);
@@ -72,7 +91,11 @@ export async function adminStats(): Promise<AdminStats> {
     stations: tot[0]?.n ?? 0,
     byBrand: brands,
     byStatus: statuses,
+    byGrade: grades,
+    byState: states,
+    recentEdits: recent,
     pendingReports: pend[0]?.n ?? 0,
+    totalReports: allRep[0]?.n ?? 0,
     lastEdit: last[0]?.t ?? null,
   };
 }
